@@ -1,4 +1,5 @@
 
+import Link from "next/link";
 import { FaTooth } from "react-icons/fa";
 import { IoIosArrowRoundForward } from "react-icons/io";
 
@@ -13,14 +14,17 @@ export const WhatWeDo = () => {
 
             <section className="flex gap-5 items-center mt-20">
                 {info.map((item, index) => (
-                    <div className="bg-gradient-to-br from-white via-zinc-100 flex flex-col pt-10 items-center gap-5  to-[#00a2af] rounded-lg min-h-[32rem] w-1/3">
+                    <div key={index} className="bg-gradient-to-br from-white via-zinc-100 flex flex-col pt-10 items-center gap-5  to-[#00a2af] rounded-lg min-h-[32rem] w-1/3">
                         <FaTooth size={40} className="text-[#a6a6a6]"/>
                         <h1 className="text-center text-4xl font-semibold text-[#a6a6a6] mx-10">{item.title}</h1>
                         <p className="mx-10 mt-5 text-zinc-600">{item.description}</p>
-                        <button className="flex items-center w-[167px] gap-2 hover:gap-5 mt-16 px-6 py-3 bg-[#00a2af] text-white font-semibold text-lg rounded-lg shadow-md transition-all duration-150">
+                        <Link 
+                            href='/work'
+                            className="flex items-center w-[167px] gap-2 hover:gap-5 mt-16 px-6 py-3 bg-[#00a2af] text-white font-semibold text-lg rounded-lg shadow-md transition-all duration-150"
+                        >
                             <p>Ver Más</p>
                             <IoIosArrowRoundForward size={30}/>
-                        </button>
+                        </Link>
                     </div>
                 ))}
             </section>
