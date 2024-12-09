@@ -4,7 +4,7 @@ import { FaTooth } from "react-icons/fa";
 
 export const CustomSeparator = () => {
     return (
-        <div className="my-20 flex flex-col gap-5">
+        <div className="my-20 flex flex-col gap-5 h-[20]">
             <Marquee speed={100} gradient={false}>
                 {Array(10).fill("").map((_, index) => (
                     <div key={index} className="flex items-center">
