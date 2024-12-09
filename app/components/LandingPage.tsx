@@ -14,9 +14,6 @@ export const LandingPage = () => {
                     <CiMemoPad size={25} />
                 </button>
             </div>
-            {/* <div className="relative w-1/2 h-96 overflow-hidden ">
-                <img className="absolute top-0 w-[120%] right-[-200px] animate-rotate" src={img}/>
-            </div> */}
         </div>
     )
 }
