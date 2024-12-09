@@ -23,10 +23,10 @@ export const Header = () => {
     return (
         <header className="bg-gradient-to-b from-[#00a2af] to-white  flex flex-col items-center ">
             <div className="flex items-center justify-end gap-3 border-b pr-10 border-zinc-500 border-opacity-40 w-full p-3">
-                <PiMapPinLineLight size={20}/>
-                <IoLogoInstagram size={20}/>
-                <BiLogoWhatsapp size={20}/>
-                <button className="bg-white text-[#a6a6a6] p-2 rounded-lg mb-2 text-sm">
+                <PiMapPinLineLight size={22}/>
+                <IoLogoInstagram size={22}/>
+                <BiLogoWhatsapp size={22}/>
+                <button className="border border-zinc-800 text-zinc-800 p-2 rounded-lg mb-2 text-sm">
                     Contactanos
                 </button>
             </div>
@@ -46,28 +46,35 @@ export const Header = () => {
                 <Breadcrumb>
                     <BreadcrumbList >
                         <BreadcrumbItem>
-                            <BreadcrumbLink href="/" className="text-zinc-600">Home</BreadcrumbLink>
+                            <BreadcrumbLink href="/" className={`text-zinc-600 ${pathname != '/' ? 'text-blue-700 hover:underline hover:text-blue-700' : ''}`}>Home</BreadcrumbLink>
                         </BreadcrumbItem>
                         <BreadcrumbSeparator className="text-zinc-600"/>
                         <BreadcrumbItem>
                             <BreadcrumbEllipsis />
                         </BreadcrumbItem>
                         {pathname === '/work' && (
-                            <BreadcrumbItem>
-                            <BreadcrumbLink href="/work" className="text-zinc-600">Nuestro Trabajo</BreadcrumbLink>
-                            </BreadcrumbItem>
+                            <>
+                                <BreadcrumbSeparator className="text-zinc-600"/>
+                                <BreadcrumbItem>
+                                    <BreadcrumbLink href="/work" className="text-zinc-600">Nuestro Trabajo</BreadcrumbLink>
+                                </BreadcrumbItem>
+                            </>
                         )}
-                        {pathname === '/contact-us' && <BreadcrumbSeparator className="text-zinc-600"/>}
                         {pathname === '/contact-us' && (
-                            <BreadcrumbItem>
-                                <BreadcrumbLink href="/contact-us" className="text-zinc-600">Contactanos</BreadcrumbLink>
-                            </BreadcrumbItem>
+                            <>
+                                <BreadcrumbSeparator className="text-zinc-600"/>
+                                <BreadcrumbItem>
+                                    <BreadcrumbLink href="/contact-us" className="text-zinc-600">Contactanos</BreadcrumbLink>
+                                </BreadcrumbItem>
+                            </>
                         )}
-                        {pathname === '/history' && <BreadcrumbSeparator className="text-zinc-600"/>}
                         {pathname === '/history' && (
-                            <BreadcrumbItem>
-                                <BreadcrumbLink href="/history" className="text-zinc-600">Conoce Nuestra Historia</BreadcrumbLink>
-                            </BreadcrumbItem>
+                            <>
+                                <BreadcrumbSeparator className="text-zinc-600"/>
+                                <BreadcrumbItem>
+                                    <BreadcrumbLink href="/history" className="text-zinc-600">Conoce Nuestra Historia</BreadcrumbLink>
+                                </BreadcrumbItem>
+                            </>
                         )}
                     </BreadcrumbList>
                 </Breadcrumb>

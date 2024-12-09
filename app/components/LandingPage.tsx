@@ -4,10 +4,10 @@ import img from "../img/back.png";
 export const LandingPage = () => {
   return (
     <div
-      className="bg-cover bg-center h-[90vh] flex "
+      className="bg-cover bg-center h-[93vh]"
       style={{ backgroundImage: `url(${img.src})` }}
     >
-      <div className="flex gap-5 mx-auto pt-10 rounded-lg">
+      <div className="flex gap-5 mx-auto pt-20 rounded-lg">
         <div className="w-1/2 flex flex-col gap-2 pl-20 pr-10">
           <h1 className="text-5xl font-semibold mb-5">
             Pinasco Odontología Consultorio Privado.
