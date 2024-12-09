@@ -1,7 +1,7 @@
 
 
 import { CiMemoPad } from "react-icons/ci";
-// import img from "../img/Periodoncia.png"
+import img from "../img/Periodoncia.png"
 
 export const LandingPage = () => {
     return (
