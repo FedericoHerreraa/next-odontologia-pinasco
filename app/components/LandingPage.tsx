@@ -5,7 +5,7 @@ import { CiMemoPad } from "react-icons/ci";
 
 export const LandingPage = () => {
     return (
-        <div className="flex gap-5 h-[65vh]  mx-auto pt-40 bg-gradient-to-b from-[#00a2af] to-white">
+        <div className="flex gap-5 h-[65vh]  mx-auto pt-40">
             <div className="w-1/2 flex flex-col gap-2 pl-40 pr-10">
                 <h1 className="text-5xl font-semibold mb-5 font-Bebas-Neue">Pinasco Odontologia Consultorio Privado.</h1>
                 <p className="text-zinc-500 mb-10 text-lg">En nuestro consultorio privado, nos especializamos en brindarte el mejor cuidado dental con un enfoque personalizado y profesional. Nuestro equipo de odontólogos altamente capacitados utiliza tecnología de vanguardia para garantizarte una experiencia cómoda, segura y efectiva.</p>
