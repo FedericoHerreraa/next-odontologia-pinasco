@@ -24,7 +24,7 @@ export const WhatWeDo = () => {
                         <p className="mx-10 mt-5 text-zinc-600">{item.description}</p>
                         <Link 
                             href='/work'
-                            className="flex items-center w-[167px] gap-2 hover:gap-5 mt-6 px-4 py-2 bg-[#00a2af] text-white font-semibold text-md rounded-lg shadow-md transition-all duration-150"
+                            className="flex items-center w-[145px] gap-2 hover:gap-5 mt-6 pl-4 py-2 bg-[#00a2af] text-white font-semibold text-md rounded-lg shadow-md transition-all duration-150"
                         >
                             <p>Ver Más</p>
                             <IoIosArrowRoundForward size={30}/>
