@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Header } from "./components/Header";
+import { WhatsAppIcon } from "./components/WhatsAppIcon";
 
 export const metadata: Metadata = {
   title: "Pinasco Odontologia",
@@ -14,6 +15,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       <body>
         <Header />
         {children}
+        <WhatsAppIcon />
       </body>
     </html>
   );

@@ -22,11 +22,11 @@ export const Header = () => {
     
     return (
         <header className="bg-gradient-to-b from-[#00a2af] to-white  flex flex-col items-center ">
-            <div className="flex items-center justify-end gap-3 border-b pr-10 border-zinc-500 border-opacity-40 w-full p-3">
+            <div className="flex items-center justify-end gap-3 border-b pr-10 border-zinc-500 border-opacity-40 w-full">
                 <PiMapPinLineLight size={20}/>
                 <IoLogoInstagram size={20}/>
                 <BiLogoWhatsapp size={20}/>
-                <button className="bg-white text-[#a6a6a6] p-2 rounded-lg mb-2 text-sm">
+                <button className="border border-zinc-600 mt-2  text-zinc-700 px-2 py-1 rounded-lg mb-2 text-sm">
                     Contactanos
                 </button>
             </div>
