@@ -21,7 +21,7 @@ export default function ContactUs() {
     return (
         <div className="h-screen bg-cover bg-center relative" style={{ backgroundImage: `url(${img.src})` }}>
             
-            <div className="absolute top-[70%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 md:top-[60%] md:right-10 md:left-auto md:translate-x-0 md:translate-y-[-50%] w-[90%] md:w-[60%] bg-[#e0f0f1] shadow-lg rounded-lg p-8">
+            <div className="absolute top-[50%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 md:top-[50%] md:right-10 md:left-auto md:translate-x-0 md:translate-y-[-50%] w-[90%] md:w-[60%] bg-[#e0f0f1] shadow-lg rounded-lg p-8">
                 <h1 className={`text-4xl md:text-5xl font-bold text-gray-700 mb-10 text-center md:text-left ${bebas.className}`}>
                     Contacto
                 </h1>
@@ -77,7 +77,7 @@ export default function ContactUs() {
                     </div>
                     <button
                         type="submit"
-                        className="w-[20%] bg-none border border-[#00A2AF] text-[#00A2AF] font-semibold py-1 rounded-lg hover:bg-[#008891] transition-all duration-150"
+                        className="w-[20%] bg-none border border-[#00A2AF] text-[#00A2AF] font-semibold py-1 rounded-lg hover:scale-110 transition-all duration-200"
                     >
                         Enviar
                     </button>
