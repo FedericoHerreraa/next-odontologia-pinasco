@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Header } from "./components/Header";
 import { WhatsAppIcon } from "./components/WhatsAppIcon";
+import { MobileViewProvider } from "./context/MobileView";
 
 export const metadata: Metadata = {
   title: "Pinasco Odontologia",
@@ -13,9 +14,11 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="es">
       <body>
-        <Header />
-        {children}
-        <WhatsAppIcon />
+        <MobileViewProvider>
+          <Header />
+          {children}
+          <WhatsAppIcon />
+        </MobileViewProvider>
       </body>
     </html>
   );

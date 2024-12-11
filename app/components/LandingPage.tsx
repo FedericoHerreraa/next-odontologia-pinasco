@@ -1,11 +1,16 @@
+'use client'
+
 import { CiMemoPad } from "react-icons/ci";
 import img from "../img/back.png";
+import { useMobileView } from "../context/MobileView";
 
 export const LandingPage = () => {
+  const { isMobile } = useMobileView();
+
   return (
     <div
       className="bg-cover bg-center md:h-[90vh] h-[70vh] flex items-center"
-      style={{ backgroundImage: `url(${img.src})` }}
+      style={!isMobile ? { backgroundImage: `url(${img.src})` } : {}}
     >
       <div className="flex flex-col lg:flex-row gap-5 mx-auto px-5 sm:px-10 lg:px-20 pt-10 rounded-lg w-full max-w-7xl">
         <div className="lg:w-1/2 flex flex-col gap-4">
