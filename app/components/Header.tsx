@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useMobileView } from '../context/MobileView';
 
 import { PiMapPinLineLight } from "react-icons/pi";
 import { IoLogoInstagram } from "react-icons/io";
@@ -30,16 +31,12 @@ import {
 
 
 import { Montserrat} from "next/font/google";
+
 const montserrat = Montserrat({
     subsets: ['latin'],
     style: ['normal'],
     weight: ['400'],
 });
-
-import { useMobileView } from '../context/MobileView';
-
-  
-  
 
 export const Header = () => {
     const pathname = usePathname();
