@@ -49,7 +49,7 @@ export const Header = () => {
                 <IoLogoInstagram size={20} className="cursor-pointer"/>
                 <BiLogoWhatsapp size={20} className="cursor-pointer"/>
                 <button className="border border-zinc-600 mt-2  text-zinc-700 px-2 py-1 rounded-lg mb-2 text-sm">
-                    Contactanos
+                    Encontranos
                 </button>
             </div>
             <div className="flex items-center  text-zinc-800 text-md justify-between md:px-10 px-3 cursor-pointer border-b border-b-zinc-400 border-opacity-60 w-full h-16">
