@@ -8,16 +8,16 @@ export const CustomSeparator = () => {
             <Marquee speed={100} gradient={false}>
                 {Array(10).fill("").map((_, index) => (
                     <div key={index} className="flex items-center">
-                        <FaTooth size={24} className="text-[#46bcc9]" />
-                        <div className="w-[200px] h-[1.5px] bg-[#a6a6a6] mx-10"></div>
+                        <FaTooth className="text-[#46bcc9] md:text-2xl text-xl" />
+                        <div className="md:w-[200px] w-[100px] h-[1.5px] bg-[#a6a6a6] md:mx-10 mx-5"></div>
                     </div>
                 ))}
             </Marquee>
             <Marquee speed={100} gradient={false} direction="right">
                 {Array(10).fill("").map((_, index) => (
                     <div key={index} className="flex items-center">
-                        <FaTooth size={24} className="text-[#46bcc9]" />
-                        <div className="w-[200px] h-[1.5px] bg-[#a6a6a6] mx-10"></div>
+                        <FaTooth className="text-[#46bcc9] md:text-2xl text-xl" />
+                        <div className="md:w-[200px] w-[100px] h-[1.5px] bg-[#a6a6a6] md:mx-10 mx-5"></div>
                     </div>
                 ))}
             </Marquee>
