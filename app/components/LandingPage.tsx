@@ -1,5 +1,15 @@
 import { CiMemoPad } from "react-icons/ci";
 import img from "../img/back.png";
+import {Bebas_Neue, Montserrat} from "next/font/google";
+const bebas = Bebas_Neue({
+  subsets: ['latin'],
+  weight: ['400'],
+});
+const montserrat = Montserrat({
+  subsets: ['latin'],
+  style: ['normal'],
+  weight: ['400'],
+});
 
 export const LandingPage = () => {
   return (
@@ -9,10 +19,10 @@ export const LandingPage = () => {
     >
       <div className="flex flex-col lg:flex-row gap-5 mx-auto px-5 sm:px-10 lg:px-20 pt-10 rounded-lg w-full max-w-7xl">
         <div className="lg:w-1/2 flex flex-col gap-4">
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-5 text-center lg:text-left">
+          <h1 className={`text-3xl sm:text-4xl lg:text-5xl font-semibold mb-5 text-center lg:text-left ${bebas.className}`}>
             Pinasco Odontología Consultorio Privado.
           </h1>
-          <p className="text-zinc-500 text-sm sm:text-base lg:text-lg mb-10 text-center lg:text-left">
+          <p className={`"text-zinc-500 text-sm sm:text-base lg:text-lg mb-10 text-center lg:text-left ${montserrat.className}`}>
             En nuestro consultorio privado, nos especializamos en brindarte el
             mejor cuidado dental con un enfoque personalizado y profesional.
             Nuestro equipo de odontólogos altamente capacitados utiliza
