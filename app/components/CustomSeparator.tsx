@@ -1,5 +1,7 @@
 
 import Marquee from "react-fast-marquee"
+import Image from "next/image"
+import p from '../img/P.png'
 
 export const CustomSeparator = () => {
     return (
@@ -7,14 +9,26 @@ export const CustomSeparator = () => {
             <Marquee speed={100} gradient={false}>
                 {Array(10).fill("").map((_, index) => (
                     <div key={index} className="flex items-center">
-                        <div className="md:w-[200px] w-[150px] h-[1.5px] bg-[#00a2af] md:mx-10 mx-5"></div>
+                        <Image
+                            src={p}
+                            alt="p logo"
+                            width={40}
+                            height={40}
+                        />
+                        <div className="md:w-[250px] w-[150px] h-[1px] bg-zinc-400 md:mx-10 mx-5"></div>
                     </div>
                 ))}
             </Marquee>
             <Marquee speed={100} gradient={false} direction="right">
                 {Array(10).fill("").map((_, index) => (
                     <div key={index} className="flex items-center">
-                        <div className="md:w-[200px] w-[150px] h-[1.5px] bg-[#46bcc9] md:mx-10 mx-5"></div>
+                        <Image
+                            src={p}
+                            alt="p logo"
+                            width={40}
+                            height={40}
+                        />
+                        <div className="md:w-[250px] w-[150px] h-[1px] bg-zinc-400 md:mx-10 mx-5"></div>
                     </div>
                 ))}
             </Marquee>
