@@ -1,6 +1,5 @@
 
 import Marquee from "react-fast-marquee"
-import { FaTooth } from "react-icons/fa";
 
 export const CustomSeparator = () => {
     return (
