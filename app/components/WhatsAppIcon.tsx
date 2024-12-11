@@ -14,7 +14,10 @@ import {
 
 export const WhatsAppIcon = () => {
     const navigateToWhatsApp = () => {
-        // Hacer la navegacion a WhatsApp
+        const phoneNumber = "1122343359";
+        const message = encodeURIComponent("Hola, me gustaria hacer una consulta, gracias!")
+
+        window.open(`https://wa.me/${phoneNumber}?text=${message}`, "_blank");
     }
 
     return (
