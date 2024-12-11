@@ -27,7 +27,17 @@ import {
     SheetTitle,
     SheetTrigger,
 } from "./ui/sheet"
+
+
+import { Montserrat} from "next/font/google";
+const montserrat = Montserrat({
+    subsets: ['latin'],
+    style: ['normal'],
+    weight: ['400'],
+});
+
 import { useMobileView } from '../context/MobileView';
+
   
   
 
@@ -61,19 +71,19 @@ export const Header = () => {
                         <SheetContent>
                             <SheetHeader>
                             <SheetTitle className="text-start mb-10 text-lg">Pinasco Odontologia</SheetTitle>
-                            <SheetDescription className="flex flex-col gap-5 items-start">
-                                <Link href='/work' className="hover:scale-110 duration-200 font-semibold">Nuestro Trabajo</Link>
-                                <Link href='/history' className="hover:scale-110 duration-200 font-semibold">Conoce Nuestra Historia</Link>
-                                <Link href='/contact-us' className="hover:scale-110 duration-200 font-semibold">Contactanos Ahora</Link>
+                            <SheetDescription className={`flex flex-col gap-5 items-start ${montserrat.className}`}>
+                                <Link href='/work' className={`hover:scale-110 duration-200 font-semibold ${montserrat.className}`}>Nuestro Trabajo</Link>
+                                <Link href='/history' className={`hover:scale-110 duration-200 font-semibold ${montserrat.className}`}>Conoce Nuestra Historia</Link>
+                                <Link href='/contact-us' className={`hover:scale-110 duration-200 font-semibold ${montserrat.className}`}>Contactanos Ahora</Link>
                             </SheetDescription>
                             </SheetHeader>
                         </SheetContent>
                     </Sheet>
                 ) : (
                     <div className="flex gap-10 text-lg text-zinc-600">
-                        <Link href='/work' className="hover:scale-110 duration-200">Nuestro Trabajo</Link>
-                        <Link href='/history' className="hover:scale-110 duration-200">Conoce Nuestra Historia</Link>
-                        <Link href='/contact-us' className="hover:scale-110 duration-200">Contactanos Ahora</Link>
+                        <Link href='/work' className={`hover:scale-110 duration-200 ${montserrat.className}`}>Nuestro Trabajo</Link>
+                        <Link href='/history' className={`hover:scale-110 duration-200 ${montserrat.className}`}>Conoce Nuestra Historia</Link>
+                        <Link href='/contact-us' className={`hover:scale-110 duration-200 ${montserrat.className}`}>Contactanos Ahora</Link>
                     </div>
                 )}
             </div>
