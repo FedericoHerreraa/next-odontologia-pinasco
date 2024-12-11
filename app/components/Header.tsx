@@ -1,6 +1,5 @@
 'use client'
 
-import { useState, useEffect } from 'react'
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -29,32 +28,22 @@ import {
     SheetTrigger,
 } from "./ui/sheet"
 
+
 import { Montserrat} from "next/font/google";
 const montserrat = Montserrat({
     subsets: ['latin'],
     style: ['normal'],
     weight: ['400'],
 });
+
+import { useMobileView } from '../context/MobileView';
+
   
   
 
 export const Header = () => {
     const pathname = usePathname();
-    const [isMobile, setIsMobile] = useState(false);
-
-    useEffect(() => {
-        setIsMobile(window.innerWidth <= 768);
-
-        const handleResize = () => {
-            setIsMobile(window.innerWidth <= 768);
-        };
-
-        window.addEventListener("resize", handleResize);
-
-        return () => {
-            window.removeEventListener("resize", handleResize);
-        };
-    }, []);
+    const { isMobile } = useMobileView();
     
     return (
         <header className="bg-gradient-to-b from-[#00a2af] to-white  flex flex-col items-center ">
