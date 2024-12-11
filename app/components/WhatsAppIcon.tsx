@@ -26,7 +26,7 @@ export const WhatsAppIcon = () => {
                 <DialogTrigger>
                     <BiLogoWhatsapp size={50} className="text-green-500 bg-white rounded-full"/>
                 </DialogTrigger>
-                <DialogContent>
+                <DialogContent className="md:mx-0 mx-auto w-[90%] rounded-lg">
                     <DialogHeader>
                         <DialogTitle>Seguro que quieres navegar a WhatsApp?</DialogTitle>
                         <DialogDescription>
