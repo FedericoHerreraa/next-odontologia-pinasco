@@ -1,9 +1,10 @@
 'use client'
 
 import { CiMemoPad } from "react-icons/ci";
-import img from "../img/back.png";
+import img from "@/app/img/back.png";
+import { useMobileView } from "@/app/context/MobileView";
+import { Bebas_Neue, Montserrat } from "next/font/google";
 
-import {Bebas_Neue, Montserrat} from "next/font/google";
 const bebas = Bebas_Neue({
   subsets: ['latin'],
   weight: ['400'],
@@ -13,8 +14,6 @@ const montserrat = Montserrat({
   style: ['normal'],
   weight: ['400'],
 });
-
-import { useMobileView } from "../context/MobileView";
 
 
 export const LandingPage = () => {
@@ -37,7 +36,7 @@ export const LandingPage = () => {
             tecnología de vanguardia para garantizarte una experiencia cómoda,
             segura y efectiva.
           </p>
-          <button className="bg-[#00a2af] text-white md:w-full w-[60%] px-5 py-4 mt-5 rounded-xl hover:scale-105 duration-200 flex justify-center items-center gap-3 mx-auto lg:mx-0">
+          <button className="bg-[#00a2af] text-white w-[60%] px-5 py-4 mt-5 rounded-xl hover:scale-105 duration-200 flex justify-center items-center gap-3 mx-auto lg:mx-0">
             <p className="text-sm sm:text-base lg:text-lg">Agenda tu Cita Ahora</p>
             <CiMemoPad size={25} />
           </button>

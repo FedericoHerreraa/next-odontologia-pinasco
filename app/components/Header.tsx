@@ -57,8 +57,6 @@ export const Header = () => {
                     <Link href='/'>
                         <RiToothFill size={isMobile ? 35 : 40}/>
                     </Link>
-                    
-
                 </div>
                 {isMobile ? (
                     <Sheet>
@@ -69,18 +67,18 @@ export const Header = () => {
                             <SheetHeader>
                             <SheetTitle className="text-start mb-10 text-lg">Pinasco Odontologia</SheetTitle>
                             <SheetDescription className={`flex flex-col gap-5 items-start ${montserrat.className}`}>
-                                <Link href='/work' className={`hover:scale-110 duration-200 font-semibold ${montserrat.className}`}>Nuestro Trabajo</Link>
-                                <Link href='/history' className={`hover:scale-110 duration-200 font-semibold ${montserrat.className}`}>Conoce Nuestra Historia</Link>
-                                <Link href='/contact-us' className={`hover:scale-110 duration-200 font-semibold ${montserrat.className}`}>Contactanos Ahora</Link>
+                                <Link href='/work' className={`font-semibold ${montserrat.className}`}>Nuestro Trabajo</Link>
+                                <Link href='/history' className={`font-semibold ${montserrat.className}`}>Conoce Nuestra Historia</Link>
+                                <Link href='/contact-us' className={`font-semibold ${montserrat.className}`}>Contactanos Ahora</Link>
                             </SheetDescription>
                             </SheetHeader>
                         </SheetContent>
                     </Sheet>
                 ) : (
                     <div className="flex gap-10 text-lg text-zinc-600">
-                        <Link href='/work' className={`hover:scale-110 duration-200 ${montserrat.className}`}>Nuestro Trabajo</Link>
-                        <Link href='/history' className={`hover:scale-110 duration-200 ${montserrat.className}`}>Conoce Nuestra Historia</Link>
-                        <Link href='/contact-us' className={`hover:scale-110 duration-200 ${montserrat.className}`}>Contactanos Ahora</Link>
+                        <Link href='/work' className={`hover:scale-105 duration-200 ${montserrat.className}`}>Nuestro Trabajo</Link>
+                        <Link href='/history' className={`hover:scale-105 duration-200 ${montserrat.className}`}>Conoce Nuestra Historia</Link>
+                        <Link href='/contact-us' className={`hover:scale-105 duration-200 ${montserrat.className}`}>Contactanos Ahora</Link>
                     </div>
                 )}
             </div>
