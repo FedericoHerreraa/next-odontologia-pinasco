@@ -13,9 +13,9 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-    title: "Contacta Pincasco Odontología",
-    description: "En este apartado puedes contactarnos para agendar una cita, o para cualquier duda o comentario que tengas.",
-};
+    title: "Contactanos | Pincasco Odontología",
+    description: "En este aparatado puedes contactarnos para agendar una cita, o para cualquier duda o comentario que tengas.",
+}
 
 export default function ContactUs() {
     return (
