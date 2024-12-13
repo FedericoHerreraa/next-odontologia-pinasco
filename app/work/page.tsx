@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 export default function OurWork() {
     return (
         <div>
-            <h1>Nuestro trabajo</h1>
+            <h1 className="text-5xl text-black mt-10 text-center">Mira Nuestro <span className="bg-gradient-to-r to-[#00a2af] from-[#46bcc9] bg-clip-text text-transparent">Trabajo.</span></h1>
         </div>
     )
 

@@ -45,12 +45,15 @@ export const Header = () => {
     return (
         <header className="bg-gradient-to-b from-[#00a2af] to-white  flex flex-col items-center ">
             <div className="flex items-center justify-end  gap-3 border-b md:pr-10 pr-2 border-zinc-500 border-opacity-40 w-full">
-                <PiMapPinLineLight size={20} className="cursor-pointer"/>
-                <IoLogoInstagram size={20} className="cursor-pointer"/>
-                <BiLogoWhatsapp size={20} className="cursor-pointer"/>
-                <button className="border border-zinc-600 mt-2  text-zinc-700 px-2 py-1 rounded-lg mb-2 text-sm">
-                    Encontranos
-                </button>
+                <PiMapPinLineLight size={20} className="cursor-pointer text-red-800"/>
+                <IoLogoInstagram size={20} className="cursor-pointer text-indigo-800"/>
+                <BiLogoWhatsapp size={20} className="cursor-pointer text-green-800"/>
+                <Link
+                    href='/' 
+                    className="border border-zinc-600 mt-2  text-zinc-700 px-2 py-1 rounded-lg mb-2 text-sm"
+                >
+                    Pinasco
+                </Link>
             </div>
             <div className="flex items-center  text-zinc-800 text-md justify-between md:px-10 px-3 cursor-pointer border-b border-b-zinc-400 border-opacity-60 w-full h-16">
                 <div>
