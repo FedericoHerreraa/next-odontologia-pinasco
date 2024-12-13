@@ -11,27 +11,25 @@ export const HistoryContent = () => {
 
     return (
         <div className="relative w-full">
-            {/* Línea vertical central */}
             <div className="absolute top-0 bottom-0 left-1/2 w-[1px] bg-zinc-300 -translate-x-1/2"></div>
             
             {info.map((item, index) => (
                 <div 
                     id={item.id} 
                     key={index} 
-                    className={`flex ${parseInt(item.id) % 2 === 0 ? 'flex-row-reverse' : 'flex-row' } items-center gap-10 relative mb-40`}
+                    className={`flex ${parseInt(item.id) % 2 === 0 ? 'flex-row-reverse' : 'flex-row' } items-center md:gap-10 gap-5 relative mb-40`}
                 >
-                    {/* Contenido del lado izquierdo o derecho */}
                     <div className="flex flex-col items-start w-1/2 gap-2">
-                        <h1 className="text-3xl font-semibold">{item.title}</h1>
-                        <p className="text-zinc-900 mb-5 text-lg">Año {item.date}</p>
-                        <p>{item.description}</p>
+                        <h1 className="md:text-3xl text-xl font-semibold">{item.title}.</h1>
+                        <p className="text-zinc-900 mb-5 md:text-lg">Año {item.date}.</p>
+                        <p className="md:text-md text-sm">{item.description}.</p>
                         {item.id !== "6" && (
-                            <div className="flex gap-1 items-end mt-7">
+                            <div className="flex gap-1 items-end md:mt-7 mt-3">
                                 <button 
                                     onClick={() => navigateNext(parseInt(item.id) + 1)}
-                                    className="border border-zinc-300 rounded-lg px-4 py-1 hover:border-zinc-500 hover:bg-zinc-100"
+                                    className="border border-zinc-300 rounded-lg md:px-4 px-2 py-1 hover:border-zinc-500 hover:bg-zinc-100 transition-all duration-200"
                                 >
-                                    <p>Siguiente</p>
+                                    <p className="md:text-md text-sm">Siguiente</p>
                                 </button>
                                 <PiArrowBendUpRightFill size={25} className="text-zinc-500 rotate-90"/>
                             </div>
@@ -41,7 +39,7 @@ export const HistoryContent = () => {
                     <div className="w-1/2 h-64 bg-zinc-100 rounded-lg shadow-xl">
                     </div>
 
-                    <div className="absolute left-1/2 w-6 h-6 bg-[#00a2af] rounded-full -translate-x-1/2"></div>
+                    <div className="absolute left-1/2 md:w-6 w-3 md:h-6 h-3 bg-[#00a2af] rounded-full -translate-x-1/2"></div>
                 </div>
             ))}
         </div>
