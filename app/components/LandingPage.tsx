@@ -26,7 +26,7 @@ export const LandingPage = () => {
     >
       <div className="flex flex-col lg:flex-row gap-5 mx-auto px-5 sm:px-10 lg:px-20 pt-10 rounded-lg w-full max-w-7xl">
         <div className="lg:w-1/2 flex flex-col gap-4">
-          <h1 className={`text-3xl sm:text-4xl lg:text-5xl font-semibold mb-5 text-center lg:text-left ${bebas.className}`}>
+          <h1 className={`text-3xl md:text-6xl font-semibold mb-5 text-center md:text-left ${bebas.className}`}>
             Pinasco Odontología Consultorio Privado.
           </h1>
           <p className={`"text-zinc-500 text-sm sm:text-base lg:text-lg mb-10 text-center lg:text-left ${montserrat.className}`}>
@@ -37,7 +37,7 @@ export const LandingPage = () => {
             segura y efectiva.
           </p>
           <button className="bg-[#00a2af] text-white w-[60%] px-5 py-4 mt-5 rounded-xl hover:scale-105 duration-200 flex justify-center items-center gap-3 mx-auto lg:mx-0">
-            <p className="text-sm sm:text-base lg:text-lg">Agenda tu Cita Ahora</p>
+            <p className="text-sm sm:text-base lg:text-lg">Consulta Disponibilidad</p>
             <CiMemoPad size={25} />
           </button>
         </div>
