@@ -2,6 +2,7 @@
 
 import { InfoHistory } from "../dto/Types";
 import { PiArrowBendUpRightFill } from "react-icons/pi";
+import { PiArrowBendUpLeftFill } from "react-icons/pi";
 
 export const HistoryContent = () => {
     const navigateNext = (id: number) => {        
@@ -19,19 +20,23 @@ export const HistoryContent = () => {
                     key={index} 
                     className={`flex ${parseInt(item.id) % 2 === 0 ? 'flex-row-reverse' : 'flex-row' } items-center md:gap-10 gap-5 relative mb-40`}
                 >
-                    <div className="flex flex-col items-start w-1/2 gap-2">
-                        <h1 className="md:text-3xl text-xl font-semibold">{item.title}.</h1>
+                    <div className={`flex flex-col ${parseInt(item.id) % 2 === 0 ? 'items-end' : 'items-start'} w-1/2 gap-2`}>
+                        <h1 className={`md:text-3xl text-xl font-semibold ${parseInt(item.id) % 2 === 0 && 'text-end'}`}>{item.title}.</h1>
                         <p className="text-zinc-900 mb-5 md:text-lg">Año {item.date}.</p>
-                        <p className="md:text-md text-sm">{item.description}.</p>
+                        <p className={`md:text-md text-sm ${parseInt(item.id) % 2 === 0 && 'text-end'}`}>{item.description}.</p>
                         {item.id !== "6" && (
-                            <div className="flex gap-1 items-end md:mt-7 mt-3">
+                            <div className={`flex ${parseInt(item.id) % 2 === 0 ? 'flex-row-reverse' : 'flex-row' } gap-1 items-end md:mt-7 mt-3`}>
                                 <button 
                                     onClick={() => navigateNext(parseInt(item.id) + 1)}
                                     className="border border-zinc-300 rounded-lg md:px-4 px-2 py-1 hover:border-zinc-500 hover:bg-zinc-100 transition-all duration-200"
                                 >
                                     <p className="md:text-md text-sm">Siguiente</p>
                                 </button>
-                                <PiArrowBendUpRightFill size={25} className="text-zinc-500 rotate-90"/>
+                                {parseInt(item.id) % 2 === 0 ? (
+                                    <PiArrowBendUpLeftFill size={25} className="text-zinc-500 -rotate-90"/>
+                                ) : (
+                                    <PiArrowBendUpRightFill size={25} className="text-zinc-500 rotate-90"/>
+                                )}
                             </div>
                         )}
                     </div>
