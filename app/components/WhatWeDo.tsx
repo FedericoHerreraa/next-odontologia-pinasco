@@ -47,7 +47,7 @@ export const WhatWeDo = () => {
 
                         <Link
                             href="/work"
-                            className={`flex items-center justify-center w-[135px] sm:w-[145px] gap-2 hover:gap-5 mt-auto pl-4 py-2 border border-[#00a2af] bg-zinc-100 text-zinc-800 font-semibold text-sm sm:text-md rounded-lg shadow-md transition-all duration-150 ${montserrat.className}`}
+                            className={`flex items-center justify-center w-[135px] sm:w-[145px] gap-2 hover:gap-5 mt-auto pl-4 py-2 border border-[#00a2af] bg-zinc-100 text-zinc-800 font-semibold text-sm md:text-base rounded-lg shadow-md transition-all duration-150 ${montserrat.className}`}
                         >
                             <p>Ver Más</p>
                             <IoIosArrowRoundForward size={30} />
