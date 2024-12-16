@@ -14,7 +14,6 @@ import {
     Breadcrumb,
     BreadcrumbEllipsis,
     BreadcrumbItem,
-    BreadcrumbLink,
     BreadcrumbList,
     BreadcrumbSeparator,
 } from "./ui/breadcrumb";
@@ -55,7 +54,7 @@ export const Header = () => {
                     Pinasco
                 </Link>
             </div>
-            <div className="flex items-center  text-zinc-800 text-md justify-between md:px-10 px-3 cursor-pointer border-b border-b-zinc-400 border-opacity-60 w-full h-16">
+            <div className="flex items-center  text-zinc-800 text-base justify-between md:px-10 px-3 cursor-pointer border-b border-b-zinc-400 border-opacity-60 w-full h-16">
                 <div>
                     <Link href='/'>
                         <RiToothFill size={isMobile ? 35 : 40}/>
@@ -89,7 +88,7 @@ export const Header = () => {
                 <Breadcrumb>
                     <BreadcrumbList >
                         <BreadcrumbItem>
-                            <BreadcrumbLink href="/" className={`text-zinc-600 ${pathname != '/' ? 'text-blue-800 hover:underline' : ''}`}>Home</BreadcrumbLink>
+                            <Link href="/" className={`${pathname != '/' ? 'text-blue-800 hover:underline' : 'text-zinc-600'}`}>Home</Link>
                         </BreadcrumbItem>
                         <BreadcrumbSeparator className="text-zinc-600"/>
                         {pathname === '/' && (
@@ -99,20 +98,20 @@ export const Header = () => {
                         )}
                         {pathname === '/work' && (
                             <BreadcrumbItem>
-                                <BreadcrumbLink href="/work" className="text-zinc-600">Nuestro Trabajo</BreadcrumbLink>
+                                <Link href="/work" className="text-zinc-600">Nuestro Trabajo</Link>
                             </BreadcrumbItem>
                         )}
                         {pathname === '/contact-us' && (
                             <>
                                 <BreadcrumbItem>
-                                    <BreadcrumbLink href="/contact-us" className="text-zinc-600">Contactanos</BreadcrumbLink>
+                                    <Link href="/contact-us" className="text-zinc-600">Contactanos</Link>
                                 </BreadcrumbItem>
                             </>
                         )}
                         {pathname === '/history' && (
                             <>
                                 <BreadcrumbItem>
-                                    <BreadcrumbLink href="/history" className="text-zinc-600">Conoce Nuestra Historia</BreadcrumbLink>
+                                    <Link href="/history" className="text-zinc-600">Conoce Nuestra Historia</Link>
                                 </BreadcrumbItem>
                             </>
                         )}

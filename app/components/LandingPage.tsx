@@ -26,7 +26,7 @@ export const LandingPage = () => {
     >
       <div className="flex flex-col md:flex-row gap-5 mx-auto px-5 md:px-20 pt-10 rounded-lg w-full max-w-7xl">
         <div className="lg:w-1/2 flex flex-col gap-2">
-          <p className="text-zinc-600 md:text-left text-center md:text-md text-sm">Consultorio Privado.</p>
+          <p className="text-zinc-600 md:text-left text-center md:text-base text-sm">Consultorio Privado.</p>
           <h1 className={`text-3xl md:text-6xl font-semibold mb-5 text-center md:text-left ${bebas.className}`}>
             Pinasco Odontología.
           </h1>
