@@ -2,6 +2,7 @@ import { LandingPage } from "./components/LandingPage";
 import { WhatWeDo } from "./components/WhatWeDo";
 import { CustomSeparator } from "./components/CustomSeparator";
 import { Metadata } from "next";
+import { PreviewContact } from "./components/PreviewContact";
 
 export const metadata: Metadata = {
   title: "Inicio | Pinasco Odontología",
@@ -14,6 +15,7 @@ export default function Home() {
       <LandingPage />
       <CustomSeparator />
       <WhatWeDo />
+      <PreviewContact />
       <CustomSeparator />
     </>
   );
