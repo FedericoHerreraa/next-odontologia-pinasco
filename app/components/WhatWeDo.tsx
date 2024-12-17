@@ -9,6 +9,7 @@ const bebas = Bebas_Neue({
     style: ['normal'],
     weight: ['400'],
 });
+
 const montserrat = Montserrat({
     subsets: ['latin'],
     style: ['normal'],
