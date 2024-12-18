@@ -4,6 +4,7 @@ import { InfoHistory } from "../dto/Types";
 import { PiArrowBendUpRightFill } from "react-icons/pi";
 import { PiArrowBendUpLeftFill } from "react-icons/pi";
 
+
 export const HistoryContent = () => {
     const navigateNext = (id: number) => {        
         const element = document.getElementById(id.toString());

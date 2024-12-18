@@ -80,7 +80,7 @@ export const Header = () => {
             </div>
             <div className="flex justify-start w-full items-center md:px-10 px-4 py-5">
                 <Breadcrumb>
-                    <BreadcrumbList >
+                    <BreadcrumbList className={`${montserrat.className}`}>
                         <BreadcrumbItem>
                             <Link href="/" className={`${pathname != '/' ? 'text-blue-800 hover:underline' : 'text-zinc-600'}`}>Home</Link>
                         </BreadcrumbItem>
