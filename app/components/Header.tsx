@@ -2,12 +2,12 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useMobileView } from '../context/MobileView';
+import { useMobileView } from '@/app/context/MobileView';
 
 import { PiMapPinLineLight } from "react-icons/pi";
 import { IoLogoInstagram } from "react-icons/io";
 import { BiLogoWhatsapp } from "react-icons/bi";
-// import { RiToothFill } from "react-icons/ri";
+import { RiToothFill } from "react-icons/ri";
 import { VscListFlat } from "react-icons/vsc";
 
 import {
@@ -28,18 +28,10 @@ import {
     SheetTrigger,
 } from "./ui/sheet"
 
+import { montserrat } from "@/app/fonts/fonts";
 
-
-import { Montserrat} from "next/font/google";
-import Image from "next/image";
-import img from "./../img/NoBack.png";
-
-const montserrat = Montserrat({
-    subsets: ['latin'],
-    style: ['normal'],
-    weight: ['400'],
-});
-
+// import Image from "next/image";
+// import img from "./../img/NoBack.png";
 
 
 export const Header = () => {
@@ -59,10 +51,11 @@ export const Header = () => {
                     Pinasco
                 </Link>
             </div>
-            <div className="flex items-center  text-zinc-800 text-base justify-between md:px-10 px-3 cursor-pointer border-b border-b-zinc-400 border-opacity-60 w-full h-18 bg-zinc-100">
+            <div className="flex items-center  text-zinc-800 text-base justify-between md:px-10 px-3 cursor-pointer border-b border-b-zinc-400 border-opacity-60 w-full h-20">
                 <div>
                     <Link href='/'>
-                        <Image src={img} alt="Logo" className="w-40 h-auto"/>
+                        <RiToothFill size={40}/>
+                        {/* <Image src={img} alt="Logo" className="w-40 h-auto"/> */}
                     </Link>
                 </div>
                 {isMobile ? (
