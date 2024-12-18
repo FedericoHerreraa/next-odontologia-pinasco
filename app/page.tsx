@@ -3,6 +3,7 @@ import { PreviewWork } from "./components/PreviewWork";
 import { CustomSeparator } from "./components/CustomSeparator";
 import { Metadata } from "next";
 import { PreviewContact } from "./components/PreviewContact";
+import { ImagesHomePage } from "./components/ImagesHomePage";
 
 export const metadata: Metadata = {
   title: "Inicio | Pinasco Odontología",
@@ -17,6 +18,7 @@ export default function Home() {
       <PreviewWork />
       <PreviewContact />
       <CustomSeparator />
+      <ImagesHomePage />
     </>
   );
 }
