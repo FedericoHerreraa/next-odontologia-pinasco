@@ -5,7 +5,7 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 
 import { bebas, montserrat } from "../fonts/fonts";
 
-export const WhatWeDo = () => {
+export const PreviewWork = () => {
     return (
         <div className="w-[90%] md:w-[80%] mx-auto mt-10">
             <p className={`text-center mb-3 text-zinc-600 text-base md:text-xl ${bebas.className}`}>
