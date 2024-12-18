@@ -3,17 +3,7 @@
 import { CiMemoPad } from "react-icons/ci";
 import img from "@/app/img/back.png";
 import { useMobileView } from "@/app/context/MobileView";
-import { Bebas_Neue, Montserrat } from "next/font/google";
-
-const bebas = Bebas_Neue({
-  subsets: ['latin'],
-  weight: ['400'],
-});
-const montserrat = Montserrat({
-  subsets: ['latin'],
-  style: ['normal'],
-  weight: ['400'],
-});
+import { bebas, montserrat } from "../fonts/fonts";
 
 
 export const LandingPage = () => {

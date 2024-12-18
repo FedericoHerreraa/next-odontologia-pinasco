@@ -29,13 +29,7 @@ import {
 } from "./ui/sheet"
 
 
-import { Montserrat} from "next/font/google";
-
-const montserrat = Montserrat({
-    subsets: ['latin'],
-    style: ['normal'],
-    weight: ['400'],
-});
+import { montserrat } from "../fonts/fonts";
 
 export const Header = () => {
     const pathname = usePathname();

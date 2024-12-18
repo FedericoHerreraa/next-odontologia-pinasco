@@ -1,20 +1,9 @@
 import Link from "next/link";
+
 import { FaTooth } from "react-icons/fa";
 import { IoIosArrowRoundForward } from "react-icons/io";
-import { Bebas_Neue } from "next/font/google";
-import { Montserrat } from "next/font/google";
 
-const bebas = Bebas_Neue({
-    subsets: ['latin'],
-    style: ['normal'],
-    weight: ['400'],
-});
-
-const montserrat = Montserrat({
-    subsets: ['latin'],
-    style: ['normal'],
-    weight: ['400'],
-});
+import { bebas, montserrat } from "../fonts/fonts";
 
 export const WhatWeDo = () => {
     return (

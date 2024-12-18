@@ -2,17 +2,7 @@
 
 
 import img from "../img/contacto.png";
-import { Bebas_Neue, Montserrat } from "next/font/google";
-
-const bebas = Bebas_Neue({
-    subsets: ['latin'],
-    weight: ['400'],
-});
-const montserrat = Montserrat({
-    subsets: ['latin'],
-    style: ['normal'],
-    weight: ['400'],
-});
+import { bebas, montserrat } from "../fonts/fonts";
 
 export const ContactContent = () => {
     return (
