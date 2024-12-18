@@ -5,13 +5,13 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 
 import { bebas, montserrat } from "../fonts/fonts";
 
-export const WhatWeDo = () => {
+export const PreviewWork = () => {
     return (
         <div className="w-[90%] md:w-[80%] mx-auto mt-10">
-            <p className="text-center mb-3 text-zinc-600 text-sm md:text-base">
+            <p className={`text-center mb-3 text-zinc-600 text-base md:text-xl ${bebas.className}`}>
                 Conoce nuestro trabajo que nos lleva a la perfección.
             </p>
-            <h1 className="text-3xl md:text-5xl font-semibold text-center">
+            <h1 className={`text-3xl md:text-5xl text-center ${montserrat.className}`}>
                 Te Contamos un Poco de <span className="bg-gradient-to-r to-[#00a2af] from-[#46bcc9] bg-clip-text text-transparent">lo que Hacemos.</span>
             </h1>
 
@@ -37,7 +37,7 @@ export const WhatWeDo = () => {
 
                         <Link
                             href="/work"
-                            className={`flex items-center justify-center w-[135px] md:w-[145px] gap-2 hover:gap-5 mt-auto pl-4 py-2 border border-[#00a2af] bg-zinc-100 text-zinc-800 font-semibold text-sm md:text-base rounded-lg shadow-md transition-all duration-150 ${montserrat.className}`}
+                            className={`flex items-center justify-center w-[135px] md:w-[145px] gap-2 hover:gap-5 mt-auto md:pl-4 pl-2 md:py-2 py-1 border border-[#00a2af] bg-zinc-100 text-zinc-800 font-semibold text-sm md:text-base rounded-lg shadow-md transition-all duration-150 ${montserrat.className}`}
                         >
                             <p>Ver Más</p>
                             <IoIosArrowRoundForward size={30} />
