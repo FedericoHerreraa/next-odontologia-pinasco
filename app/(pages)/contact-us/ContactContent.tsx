@@ -1,8 +1,8 @@
 'use client'
 
 
-import img from "../img/contacto.png";
-import { bebas, montserrat } from "../fonts/fonts";
+import img from "@/app/img/contacto.png";
+import { bebas, montserrat } from "@/app/fonts/fonts";
 
 export const ContactContent = () => {
     return (

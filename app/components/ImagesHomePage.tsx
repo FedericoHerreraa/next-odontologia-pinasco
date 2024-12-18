@@ -5,8 +5,8 @@ import { bebas, montserrat } from "@/app/fonts/fonts"
 export const ImagesHomePage = () => {
     return (
         <div className="min-h-[100vh]">
-            <p className={`text-center mt-10 mb-3 text-zinc-500 md:text-xl text-base ${bebas.className}`}>Conocenos un poco mas.</p>
-            <h1 className={`md:text-5xl text-3xl text-black  text-center ${montserrat.className}`}>Te Mostramos Algunas <span className="bg-gradient-to-r to-[#00a2af] from-[#46bcc9] bg-clip-text text-transparent">Imagenes.</span></h1>
+            <p className={`text-center mt-10 mb-3 text-zinc-500 md:text-lg text-base ${montserrat.className}`}>Conocenos un poco mas.</p>
+            <h1 className={`md:text-6xl text-3xl text-zinc-700  text-center ${bebas.className}`}>Te Mostramos Algunas <span className="bg-gradient-to-r to-[#00a2af] from-[#46bcc9] bg-clip-text text-transparent">Imagenes.</span></h1>
 
             <section className="flex flex-col gap-20 items-center mt-20 w-[60%] mx-auto mb-20">
                 {info.map((item, index) => (

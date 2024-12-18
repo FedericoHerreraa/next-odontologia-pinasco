@@ -1,5 +1,5 @@
 
-import { bebas, montserrat } from "../fonts/fonts";
+import { bebas, montserrat } from "@/app/fonts/fonts";
 import Link from "next/link"
 import { IoIosArrowRoundForward } from "react-icons/io"
 

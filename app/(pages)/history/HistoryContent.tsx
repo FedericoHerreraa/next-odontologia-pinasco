@@ -1,6 +1,6 @@
 'use client';
 
-import { InfoHistory } from "../dto/Types";
+import { InfoHistory } from "@/app/dto/Types";
 import { PiArrowBendUpRightFill } from "react-icons/pi";
 import { PiArrowBendUpLeftFill } from "react-icons/pi";
 
