@@ -10,9 +10,11 @@ import {
     DialogTitle,
     DialogTrigger,
 } from "@/app/components/ui/dialog"
+import { useMobileView } from "@/app/context/MobileView";
 
 
 export const WhatsAppIcon = () => {
+    const { isMobile } = useMobileView()
     const navigateToWhatsApp = () => {
         const phoneNumber = process.env.NEXT_PUBLIC_PHONE_NUMBER
         console.log(phoneNumber)
@@ -22,10 +24,10 @@ export const WhatsAppIcon = () => {
     }
 
     return (
-        <div className="fixed bottom-5 right-5 rounded-full cursor-pointer z-50">
+        <div className="fixed md:bottom-5 bottom-1 md:right-5 right-1 rounded-full cursor-pointer z-50">
             <Dialog>
                 <DialogTrigger>
-                    <BiLogoWhatsapp size={50} className="text-green-500 bg-white rounded-full"/>
+                    <BiLogoWhatsapp size={isMobile ? 40 : 50} className="text-green-500 bg-white rounded-full"/>
                 </DialogTrigger>
                 <DialogContent className="md:mx-0 mx-auto w-[90%] rounded-lg">
                     <DialogHeader>

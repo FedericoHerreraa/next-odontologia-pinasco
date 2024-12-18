@@ -29,6 +29,7 @@ import {
 } from "./ui/sheet"
 
 
+
 import { Montserrat} from "next/font/google";
 import Image from "next/image";
 import img from "./../img/NoBack.png";
@@ -38,6 +39,8 @@ const montserrat = Montserrat({
     style: ['normal'],
     weight: ['400'],
 });
+
+
 
 export const Header = () => {
     const pathname = usePathname();
@@ -88,7 +91,7 @@ export const Header = () => {
             </div>
             <div className="flex justify-start w-full items-center md:px-10 px-4 py-5">
                 <Breadcrumb>
-                    <BreadcrumbList >
+                    <BreadcrumbList className={`${montserrat.className}`}>
                         <BreadcrumbItem>
                             <Link href="/" className={`${pathname != '/' ? 'text-blue-800 hover:underline' : 'text-zinc-600'}`}>Home</Link>
                         </BreadcrumbItem>

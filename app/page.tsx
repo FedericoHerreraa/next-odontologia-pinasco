@@ -1,5 +1,5 @@
 import { LandingPage } from "./components/LandingPage";
-import { WhatWeDo } from "./components/WhatWeDo";
+import { PreviewWork } from "./components/PreviewWork";
 import { CustomSeparator } from "./components/CustomSeparator";
 import { Metadata } from "next";
 import { PreviewContact } from "./components/PreviewContact";
@@ -14,7 +14,7 @@ export default function Home() {
     <>
       <LandingPage />
       <CustomSeparator />
-      <WhatWeDo />
+      <PreviewWork />
       <PreviewContact />
       <CustomSeparator />
     </>
