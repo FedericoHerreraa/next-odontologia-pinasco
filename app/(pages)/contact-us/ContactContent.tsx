@@ -7,7 +7,6 @@ import { bebas, montserrat } from "@/app/fonts/fonts";
 export const ContactContent = () => {
     return (
         <div className="h-screen bg-cover bg-center relative" style={{ backgroundImage: `url(${img.src})` }}>
-            
             <div className="absolute top-[50%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 md:top-[50%] md:right-10 md:left-auto md:translate-x-0 md:translate-y-[-50%] w-[90%] md:w-[60%] bg-[#e0f0f1] shadow-lg rounded-lg p-8">
                 <h1 className={`text-4xl md:text-5xl font-bold text-gray-700 mb-10 text-center md:text-left ${bebas.className}`}>
                     Contacto

@@ -8,11 +8,14 @@ export const ImagesHomePage = () => {
             <p className={`text-center mt-10 mb-3 text-zinc-500 md:text-lg text-base ${montserrat.className}`}>Conocenos un poco mas.</p>
             <h1 className={`md:text-6xl text-3xl text-zinc-700  text-center ${bebas.className}`}>Te Mostramos Algunas <span className="bg-gradient-to-r to-[#00a2af] from-[#46bcc9] bg-clip-text text-transparent">Imagenes.</span></h1>
 
-            <section className="flex flex-col gap-20 items-center mt-20 w-[60%] mx-auto mb-20">
+            <section className="flex flex-col gap-28 items-center mt-32 w-[60%] mx-auto mb-32">
                 {info.map((item, index) => (
                     <div key={index} className={`flex ${index%2 == 0 ? 'flex-row' : 'flex-row-reverse' } w-full`}>
                         <div className="w-1/2 h-60 bg-zinc-100 rounded-lg"></div>
-                        <p className={`w-1/2 text-center mt-3 ${montserrat.className}`}>{item.description}</p>
+                        <div className="w-1/2 p-5">
+                            <h2 className="text-2xl text-center">{item.title}</h2>
+                            <p className={`text-center mt-3 ${montserrat.className}`}>{item.description}</p>
+                        </div>
                     </div>
                 ))}
             </section>
@@ -23,15 +26,15 @@ export const ImagesHomePage = () => {
 
 const info = [
     {
-        title: "Imagen 1",
-        description: "Descripcion de la imagen 1"
+        title: "Nuestra Ubicación",
+        description: "Nos encontramos en una ubicación estratégica y accesible para todos nuestros pacientes. Visítanos y experimenta un entorno diseñado para tu comodidad."
     },
     {
-        title: "Imagen 2",
-        description: "Descripcion de la imagen 2"
+        title: "Sala de Espera",
+        description: "Nuestra sala de espera está equipada con un ambiente moderno y acogedor, pensado para brindarte tranquilidad antes de tu consulta."
     },
     {
-        title: "Imagen 3",
-        description: "Descripcion de la imagen 3"
+        title: "Equipamiento Moderno",
+        description: "Contamos con tecnología de punta para ofrecerte los mejores tratamientos odontológicos en un entorno profesional y seguro."
     },
-]
+];
