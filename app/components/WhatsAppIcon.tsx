@@ -26,8 +26,8 @@ export const WhatsAppIcon = () => {
     return (
         <div className="fixed md:bottom-5 bottom-1 md:right-5 right-1 rounded-full cursor-pointer z-50">
             <Dialog>
-                <DialogTrigger>
-                    <BiLogoWhatsapp size={isMobile ? 40 : 50} className="text-green-500 bg-white rounded-full"/>
+                <DialogTrigger className="p-0">
+                    <BiLogoWhatsapp size={isMobile ? 40 : 50} className="text-green-500 z-50 bg-white rounded-full p-0 m-0"/>
                 </DialogTrigger>
                 <DialogContent className="md:mx-0 mx-auto w-[90%] rounded-lg">
                     <DialogHeader>
