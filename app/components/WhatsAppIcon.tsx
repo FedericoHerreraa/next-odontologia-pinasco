@@ -35,7 +35,6 @@ export const WhatsAppIcon = () => {
                         width={isMobile ? 40 : 50}
                         height={isMobile ? 40 : 50}
                     />
-                    {/* <RiWhatsappFill size={isMobile ? 40 : 50} className="text-green-500 z-50"/> */}
                 </DialogTrigger>
                 <DialogContent className="md:mx-0 mx-auto w-[90%] rounded-lg">
                     <DialogHeader>
