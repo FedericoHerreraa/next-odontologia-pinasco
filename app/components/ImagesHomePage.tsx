@@ -1,6 +1,10 @@
 
 
 import { bebas, montserrat } from "@/app/fonts/fonts"
+import Image from "next/image";
+import camilla from "@/app/img/2020-01-07-3.jpg"
+import salaEspera from "@/app/img/2020-01-07-2.jpg"
+import consultorio from "@/app/img/2020-01-07.jpg"
 
 export const ImagesHomePage = () => {
     return (
@@ -11,7 +15,12 @@ export const ImagesHomePage = () => {
             <section className="flex flex-col gap-28 items-center mt-32 w-[60%] mx-auto mb-32">
                 {info.map((item, index) => (
                     <div key={index} className={`flex ${index%2 == 0 ? 'flex-row' : 'flex-row-reverse' } w-full`}>
-                        <div className="w-1/2 h-60 bg-zinc-100 rounded-lg"></div>
+                        {/* <div className="w-1/2 h-60 bg-zinc-100 rounded-lg"></div> */}
+                        <Image 
+                            src={item.img}
+                            alt=""
+                            className="w-1/2 h-auto rounded-lg shadow-lg"
+                        />
                         <div className="w-1/2 p-5">
                             <h2 className="text-2xl text-center">{item.title}</h2>
                             <p className={`text-center mt-3 ${montserrat.className}`}>{item.description}</p>
@@ -26,15 +35,18 @@ export const ImagesHomePage = () => {
 
 const info = [
     {
-        title: "Nuestra Ubicación",
-        description: "Nos encontramos en una ubicación estratégica y accesible para todos nuestros pacientes. Visítanos y experimenta un entorno diseñado para tu comodidad."
+        title: "Equipamiento Moderno",
+        description: "Contamos con tecnología de punta para ofrecerte los mejores tratamientos odontológicos en un entorno profesional y seguro.",
+        img: camilla
+    },
+    {
+        title: "Nuestro Consultorio",
+        description: "Nuestro consultorio está equipado con la última tecnología en odontología, para brindarte un servicio de calidad y profesionalismo.",
+        img: consultorio
     },
     {
         title: "Sala de Espera",
-        description: "Nuestra sala de espera está equipada con un ambiente moderno y acogedor, pensado para brindarte tranquilidad antes de tu consulta."
-    },
-    {
-        title: "Equipamiento Moderno",
-        description: "Contamos con tecnología de punta para ofrecerte los mejores tratamientos odontológicos en un entorno profesional y seguro."
+        description: "Nuestra sala de espera está equipada con un ambiente moderno y acogedor, pensado para brindarte tranquilidad antes de tu consulta.",
+        img: salaEspera
     },
 ];
