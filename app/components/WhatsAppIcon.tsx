@@ -1,7 +1,10 @@
 'use client'
 
-import { RiWhatsappFill } from "react-icons/ri";
+// import { RiWhatsappFill } from "react-icons/ri";
 import { useMobileView } from "@/app/context/MobileView";
+
+import whatsappLogo from "@/app/img/pngwing.com-2.png"
+import Image from "next/image";
 
 import {
     Dialog,
@@ -26,7 +29,13 @@ export const WhatsAppIcon = () => {
         <div className="fixed md:bottom-5 bottom-1 md:right-5 right-1 rounded-full cursor-pointer z-50">
             <Dialog>
                 <DialogTrigger className="p-0">
-                    <RiWhatsappFill size={isMobile ? 40 : 50} className="text-green-500 z-50"/>
+                    <Image 
+                        src={whatsappLogo}
+                        alt="WhatsApp"
+                        width={isMobile ? 40 : 50}
+                        height={isMobile ? 40 : 50}
+                    />
+                    {/* <RiWhatsappFill size={isMobile ? 40 : 50} className="text-green-500 z-50"/> */}
                 </DialogTrigger>
                 <DialogContent className="md:mx-0 mx-auto w-[90%] rounded-lg">
                     <DialogHeader>

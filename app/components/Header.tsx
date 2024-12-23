@@ -51,7 +51,7 @@ export const Header = () => {
             <div className="flex items-center  text-zinc-800 text-base justify-between md:px-10 px-3 cursor-pointer border-b border-b-zinc-400 border-opacity-30 w-full h-20">
                 <div>
                     <Link href='/'>
-                        <Image src={logoHorizontal} alt="Logo" className="w-40 h-auto"/>
+                        <Image src={logoHorizontal} alt="Logo" className="w-44 h-auto"/>
                     </Link>
                 </div>
                 {isMobile ? (
