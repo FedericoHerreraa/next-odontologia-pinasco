@@ -1,7 +1,7 @@
 
 
 export interface InfoHistory {
-    id: string;
+    id: number;
     date: string;
     title: string;
     description: string;

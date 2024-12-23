@@ -1,13 +1,13 @@
 'use client'
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { useMobileView } from '@/app/context/MobileView';
 
-import { PiMapPinLineLight } from "react-icons/pi";
-import { IoLogoInstagram } from "react-icons/io";
-import { BiLogoWhatsapp } from "react-icons/bi";
-import { RiToothFill } from "react-icons/ri";
+import { useMobileView } from '@/app/context/MobileView';
+import { montserrat } from "@/app/fonts/fonts";
+import logoHorizontal from "@/app/img/LogoHorizontal@2x.png";
+
 import { VscListFlat } from "react-icons/vsc";
 
 import {
@@ -18,7 +18,6 @@ import {
     BreadcrumbSeparator,
 } from "./ui/breadcrumb";
 
-
 import {
     Sheet,
     SheetContent,
@@ -28,22 +27,20 @@ import {
     SheetTrigger,
 } from "./ui/sheet"
 
-import { montserrat } from "@/app/fonts/fonts";
-
-// import Image from "next/image";
-// import img from "./../img/NoBack.png";
-
+import { AiFillInstagram } from "react-icons/ai";
+import { RiWhatsappFill } from "react-icons/ri";
+import { MdLocationPin } from "react-icons/md";
 
 export const Header = () => {
     const pathname = usePathname();
     const { isMobile } = useMobileView();
     
     return (
-        <header className="bg-gradient-to-b from-[#00a2af] to-white  flex flex-col items-center ">
-            <div className="flex items-center justify-end  gap-3 border-b md:pr-10 pr-2 border-zinc-500 border-opacity-40 w-full">
-                <PiMapPinLineLight size={20} className="cursor-pointer text-red-800"/>
-                <IoLogoInstagram size={20} className="cursor-pointer text-indigo-800"/>
-                <BiLogoWhatsapp size={20} className="cursor-pointer text-green-800"/>
+        <header className="bg-gradient-to-b from-[#58c8d0] via-zinc-200 to-white  flex flex-col items-center ">
+            <div className="flex items-center justify-end  gap-3 border-b md:pr-10 pr-2 border-zinc-500 border-opacity-20 w-full">
+                <MdLocationPin size={20} className="cursor-pointer text-red-800 opacity-65"/>
+                <AiFillInstagram size={20} className="cursor-pointer text-violet-600 opacity-65"/>
+                <RiWhatsappFill size={20} className="cursor-pointer text-green-800 opacity-65"/>
                 <Link
                     href='/' 
                     className="border border-zinc-600 mt-2  text-zinc-700 px-2 py-1 rounded-lg mb-2 text-sm"
@@ -51,11 +48,10 @@ export const Header = () => {
                     Pinasco
                 </Link>
             </div>
-            <div className="flex items-center  text-zinc-800 text-base justify-between md:px-10 px-3 cursor-pointer border-b border-b-zinc-400 border-opacity-60 w-full h-20">
+            <div className="flex items-center  text-zinc-800 text-base justify-between md:px-10 px-3 cursor-pointer border-b border-b-zinc-400 border-opacity-30 w-full h-20">
                 <div>
                     <Link href='/'>
-                        <RiToothFill size={40}/>
-                        {/* <Image src={img} alt="Logo" className="w-40 h-auto"/> */}
+                        <Image src={logoHorizontal} alt="Logo" className="w-40 h-auto"/>
                     </Link>
                 </div>
                 {isMobile ? (

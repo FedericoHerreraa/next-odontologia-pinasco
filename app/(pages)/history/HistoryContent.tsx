@@ -3,6 +3,7 @@
 import { InfoHistory } from "@/app/dto/Types";
 import { PiArrowBendUpRightFill } from "react-icons/pi";
 import { PiArrowBendUpLeftFill } from "react-icons/pi";
+import { montserrat, bebas } from "@/app/fonts/fonts";
 
 
 export const HistoryContent = () => {
@@ -17,23 +18,23 @@ export const HistoryContent = () => {
             
             {info.map((item, index) => (
                 <div 
-                    id={item.id} 
+                    id={item.id.toString()} 
                     key={index} 
-                    className={`flex ${parseInt(item.id) % 2 === 0 ? 'flex-row-reverse' : 'flex-row' } items-center md:gap-10 gap-5 relative mb-40`}
+                    className={`flex ${item.id % 2 === 0 ? 'flex-row-reverse' : 'flex-row' } items-center md:gap-10 gap-5 relative mb-40`}
                 >
-                    <div className={`flex flex-col ${parseInt(item.id) % 2 === 0 ? 'items-end' : 'items-start'} w-1/2 gap-2`}>
-                        <h1 className={`md:text-3xl text-xl font-semibold ${parseInt(item.id) % 2 === 0 && 'text-end'}`}>{item.title}.</h1>
-                        <p className="text-zinc-900 mb-5 md:text-lg">Año {item.date}.</p>
-                        <p className={`md:text-base text-sm ${parseInt(item.id) % 2 === 0 && 'text-end'}`}>{item.description}.</p>
-                        {item.id !== "6" && (
-                            <div className={`flex ${parseInt(item.id) % 2 === 0 ? 'flex-row-reverse' : 'flex-row' } gap-1 items-end md:mt-7 mt-3`}>
+                    <div className={`flex flex-col ${item.id % 2 === 0 ? 'items-end' : 'items-start'} w-1/2 gap-2`}>
+                        <h1 className={`md:text-3xl text-xl font-semibold ${bebas.className} ${item.id % 2 === 0 && 'text-end'}`}>{item.title}.</h1>
+                        <p className={`text-zinc-900 mb-5 md:text-lg ${montserrat.className}`}>Año {item.date}.</p>
+                        <p className={`md:text-base text-sm ${montserrat.className} ${item.id % 2 === 0 && 'text-end'}`}>{item.description}.</p>
+                        {item.id !== 6 && (
+                            <div className={`flex ${item.id % 2 === 0 ? 'flex-row-reverse' : 'flex-row' } gap-1 items-end md:mt-7 mt-3`}>
                                 <button 
-                                    onClick={() => navigateNext(parseInt(item.id) + 1)}
+                                    onClick={() => navigateNext(item.id + 1)}
                                     className="border border-zinc-300 rounded-lg md:px-4 px-2 py-1 hover:border-zinc-500 hover:bg-zinc-100 transition-all duration-200"
                                 >
                                     <p className="md:text-base text-sm">Siguiente</p>
                                 </button>
-                                {parseInt(item.id) % 2 === 0 ? (
+                                {item.id % 2 === 0 ? (
                                     <PiArrowBendUpLeftFill size={25} className="text-zinc-500 -rotate-90"/>
                                 ) : (
                                     <PiArrowBendUpRightFill size={25} className="text-zinc-500 rotate-90"/>
@@ -55,37 +56,37 @@ export const HistoryContent = () => {
 
 const info: InfoHistory[] = [
     {
-        id: "1",
+        id: 1,
         date: "2000",
         title: "Inicio de la Clínica",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, vestibulum neque et, varius nunc. Nullam et orci eu lorem consequat tincidunt vitae utenim. Cras non luctus sem, se"
     },
     {
-        id: "2",
+        id: 2,
         date: "2005",
         title: "Primera Expansión",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, vestibulum neque et, varius nunc. Nullam et orci eu lorem consequat tincidunt vitae utenim. Cras non luctus sem, se"
     },
     {
-        id: "3",
+        id: 3,
         date: "2010",
         title: "Incorporación de Nuevas Tecnologías",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, vestibulum neque et, varius nunc. Nullam et orci eu lorem consequat tincidunt vitae utenim. Cras non luctus sem, se"
     },
     {
-        id: "4",
+        id: 4,
         date: "2015",
         title: "Expansión a Nuevos Mercados",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, vestibulum neque et, varius nunc. Nullam et orci eu lorem consequat tincidunt vitae utenim. Cras non luctus sem, se"
     },
     {
-        id: "5",
+        id: 5,
         date: "2020",
         title: "Lanzamiento de Nueva Marca",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, vestibulum neque et, varius nunc. Nullam et orci eu lorem consequat tincidunt vitae utenim. Cras non luctus sem, se"
     },
     {
-        id: "6",
+        id: 6,
         date: "2025",
         title: "Proyección a Nivel Internacional",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, vestibulum neque et, varius nunc. Nullam et orci eu lorem consequat tincidunt vitae utenim. Cras non luctus sem, se"
