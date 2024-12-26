@@ -68,23 +68,23 @@ const info = [
 
 const peopleOpinions = [
     {
-        name: "Juan Perez",
-        opinion: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, voluptatum."
+        name: "Lucía Fernández",
+        opinion: "La atención fue excelente, muy profesional y me explicaron todo con claridad. ¡Estoy muy contenta con los resultados!"
     },
     {
-        name: "Maria Rodriguez",
-        opinion: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Qu"
+        name: "Martín Gómez",
+        opinion: "Tenía un poco de miedo, pero todo salió perfecto. El personal es muy amable y el consultorio está impecable. Lo recomiendo."
     },
     {
-        name: "Pedro Martinez",
-        opinion: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Qu"
+        name: "Sofía Ramírez",
+        opinion: "Es el mejor lugar al que he ido, se nota que se preocupan por sus pacientes. El trato fue increíble."
     },
     {
-        name: "Pedro Martinez",
-        opinion: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Qu"
+        name: "Joaquín López",
+        opinion: "Todo el proceso fue rápido y eficiente. Me gustó mucho el ambiente relajado y la dedicación del equipo."
     },
     {
-        name: "Pedro Martinez",
-        opinion: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Qu"
+        name: "Valeria Sánchez",
+        opinion: "Los resultados superaron mis expectativas, y eso que soy bastante exigente. Sin duda volveré para mis controles."
     },
-]
+];
