@@ -3,8 +3,31 @@
 
 import img from "@/app/img/contacto.png";
 import { bebas, montserrat } from "@/app/fonts/fonts";
+import { useState } from 'react';
 
 export const ContactContent = () => {
+    const [formData, setFormData] = useState({
+        name: '',
+        lastName: '',
+        email: '',
+        phone: '',
+        subject: '',
+        message: '',
+    });
+    
+    const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+        const { name, value } = e.target;
+        setFormData((prevData) => ({
+            ...prevData,
+            [name]: value,
+        }));
+    };
+
+    const onSubmit = () => {
+        // Logica para enviar mail o este mismo mensaje por wsp. Como se prefiera.
+    }
+
+
     return (
         <div className="h-screen bg-cover bg-center relative" style={{ backgroundImage: `url(${img.src})` }}>
             <div className="absolute top-[50%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 md:top-[50%] md:right-10 md:left-auto md:translate-x-0 md:translate-y-[-50%] w-[90%] md:w-[60%] bg-[#e0f0f1] shadow-lg rounded-lg p-8">
@@ -18,6 +41,9 @@ export const ContactContent = () => {
                             <input
                                 type="text"
                                 placeholder="Nombre"
+                                name="name"
+                                value={formData.name}
+                                onChange={handleInputChange}
                                 className="w-full border border-gray-300 rounded-lg px-4 py-1 text-gray-700 focus:outline-none focus:ring-2 focus:ring-[#00A2AF]"
                             />
                         </div>
@@ -26,6 +52,9 @@ export const ContactContent = () => {
                             <input
                                 type="text"
                                 placeholder="Apellido"
+                                name="lastName"
+                                value={formData.lastName}
+                                onChange={handleInputChange}
                                 className="w-full border border-gray-300 rounded-lg px-4 py-1 text-gray-700 focus:outline-none focus:ring-2 focus:ring-[#00A2AF]"
                             />
                         </div>
@@ -35,6 +64,9 @@ export const ContactContent = () => {
                         <input
                             type="email"
                             placeholder="Ej: nombreapellido@mail.com"
+                            name="email"
+                            value={formData.email}
+                            onChange={handleInputChange}
                             className="w-full border border-gray-300 rounded-lg px-4 py-1 text-gray-700 focus:outline-none focus:ring-2 focus:ring-[#00A2AF]"
                         />
                     </div>
@@ -43,6 +75,9 @@ export const ContactContent = () => {
                         <input
                             type="tel"
                             placeholder="Ej: 1122334455"
+                            name="phone"
+                            value={formData.phone}
+                            onChange={handleInputChange}
                             className="w-full border border-gray-300 rounded-lg px-4 py-1 text-gray-700 focus:outline-none focus:ring-2 focus:ring-[#00A2AF]"
                         />
                     </div>
@@ -51,6 +86,9 @@ export const ContactContent = () => {
                         <input
                             type="text"
                             placeholder="Escribe el asunto aquí"
+                            name="subject"
+                            value={formData.subject}
+                            onChange={handleInputChange}
                             className="w-full border border-gray-300 rounded-lg px-4 py-1 text-gray-700 focus:outline-none focus:ring-2 focus:ring-[#00A2AF]"
                         />
                     </div>
@@ -58,11 +96,15 @@ export const ContactContent = () => {
                         <label className="block text-sm font-semibold text-gray-600 mb-1">Mensaje*</label>
                         <textarea
                             placeholder="Deje su mensaje..."
+                            name="message"
+                            value={formData.message}
+                            onChange={handleInputChange}
                             className="w-full border border-gray-300 rounded-lg px-4 py-1 text-gray-700 h-28 resize-none focus:outline-none focus:ring-2 focus:ring-[#00A2AF]"
-                            ></textarea>
+                        ></textarea>
                     </div>
                     <button
                         type="submit"
+                        onClick={onSubmit}
                         className="w-[20%] bg-none border border-[#00A2AF] text-[#00A2AF] font-semibold py-1 rounded-lg hover:scale-110 transition-all duration-200"
                     >
                         Enviar

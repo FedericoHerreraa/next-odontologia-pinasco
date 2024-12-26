@@ -43,7 +43,7 @@ export const Header = () => {
                 <RiWhatsappFill size={20} className="cursor-pointer text-green-800 opacity-65"/>
                 <Link
                     href='/' 
-                    className="border border-zinc-600 mt-2  text-zinc-700 px-2 py-1 rounded-lg mb-2 text-sm"
+                    className={`border border-zinc-600 mt-2  text-zinc-700 px-2 py-1 rounded-lg mb-2 text-sm ${montserrat.className}`}
                 >
                     Pinasco
                 </Link>

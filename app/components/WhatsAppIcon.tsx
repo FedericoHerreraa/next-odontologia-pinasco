@@ -1,6 +1,5 @@
 'use client'
 
-// import { RiWhatsappFill } from "react-icons/ri";
 import { useMobileView } from "@/app/context/MobileView";
 
 import whatsappLogo from "@/app/img/pngwing.com-2.png"
@@ -17,6 +16,7 @@ import {
 
 export const WhatsAppIcon = () => {
     const { isMobile } = useMobileView()
+
     const navigateToWhatsApp = () => {
         const phoneNumber = process.env.NEXT_PUBLIC_PHONE_NUMBER
         console.log(phoneNumber)
