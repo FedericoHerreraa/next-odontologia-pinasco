@@ -4,6 +4,7 @@ import { CustomSeparator } from "./components/CustomSeparator";
 import { Metadata } from "next";
 import { PreviewContact } from "./components/PreviewContact";
 import { ImagesHomePage } from "./components/ImagesHomePage";
+import { Location } from "./components/Location";
 
 export const metadata: Metadata = {
   title: "Inicio | Pinasco Odontología",
@@ -20,6 +21,7 @@ export default function Home() {
       <PreviewContact />
       <CustomSeparator />
       <ImagesHomePage />
+      <Location />
     </>
   );
 }
