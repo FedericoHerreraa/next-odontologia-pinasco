@@ -102,15 +102,17 @@ export const ContactContent = () => {
                             className="w-full border border-gray-300 rounded-lg px-4 py-1 text-gray-700 h-28 resize-none focus:outline-none focus:ring-2 focus:ring-[#00A2AF]"
                         ></textarea>
                     </div>
-                    <button
-                        type="submit"
-                        onClick={onSubmit}
-                        className="w-[20%] bg-none border border-[#00A2AF] text-[#00A2AF] font-semibold py-1 rounded-lg hover:scale-110 transition-all duration-200"
-                    >
-                        Enviar
-                    </button>
+                    <div className="md:text-left text-center">    
+                        <button
+                            type="submit"
+                            onClick={onSubmit}
+                            className="md:w-[20%] w-[30%] bg-none border border-[#00A2AF] text-[#00A2AF] font-semibold py-1 rounded-lg hover:scale-110 transition-all duration-200"
+                        >
+                            Enviar
+                        </button>
+                    </div>
                 </form>
             </div>
         </div>
-    )
+    ) 
 }
