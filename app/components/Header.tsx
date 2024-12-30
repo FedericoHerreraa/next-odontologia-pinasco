@@ -28,19 +28,30 @@ import {
 } from "./ui/sheet"
 
 import { AiFillInstagram } from "react-icons/ai";
-import { RiWhatsappFill } from "react-icons/ri";
+// import { RiWhatsappFill } from "react-icons/ri";
 import { MdLocationPin } from "react-icons/md";
 
 export const Header = () => {
     const pathname = usePathname();
     const { isMobile } = useMobileView();
+
+    const scrollToSection = (sectionId: string) => {
+        const element = document.getElementById(sectionId);
+        if (element) element.scrollIntoView({ behavior: "smooth" });
+    };
     
     return (
         <header className="bg-gradient-to-b from-[#58c8d0] via-zinc-200 to-white  flex flex-col items-center ">
-            <div className="flex items-center justify-end  gap-3 border-b md:pr-10 pr-2 border-zinc-500 border-opacity-20 w-full">
-                <MdLocationPin size={20} className="cursor-pointer text-red-800 opacity-65"/>
-                <AiFillInstagram size={20} className="cursor-pointer text-violet-600 opacity-65"/>
-                <RiWhatsappFill size={20} className="cursor-pointer text-green-800 opacity-65"/>
+            <div className="flex items-center justify-end gap-2 border-b md:pr-10 pr-2 border-zinc-500 border-opacity-20 w-full">
+                <div onClick={() => scrollToSection("location")}>
+                    <MdLocationPin size={20} className="cursor-pointer text-red-800 opacity-65"/>
+                </div>
+                <Link 
+                    href="https://www.instagram.com/odontologiapinasco/?hl=es" 
+                    target="_blank">
+                        <AiFillInstagram size={20} className="cursor-pointer text-violet-600 opacity-65"/>
+                </Link>
+                {/* <RiWhatsappFill size={20} className="cursor-pointer text-green-800 opacity-65"/> */}
                 <Link
                     href='/' 
                     className={`border border-zinc-600 mt-2  text-zinc-700 px-2 py-1 rounded-lg mb-2 text-sm ${montserrat.className}`}
@@ -111,7 +122,6 @@ export const Header = () => {
                         )}
                     </BreadcrumbList>
                 </Breadcrumb>
-
             </div>
         </header>
     )

@@ -4,7 +4,7 @@ import { MdLocationPin } from "react-icons/md";
 
 export const Location = () => {
     return (
-        <div className="h-[100vh] mt-40">
+        <div id="location" className="h-[100vh] mt-40">
             <p className={`text-center mt-10 mb-3 text-zinc-500 md:text-lg text-base ${montserrat.className}`}>Encontranos ahora.</p>
             <h1 className={`md:text-6xl text-4xl text-zinc-700  text-center ${bebas.className}`}>Te Mostramos Nuestra <span className="bg-gradient-to-r to-[#00a2af] from-[#46bcc9] bg-clip-text text-transparent">Ubicacion.</span></h1>
 
