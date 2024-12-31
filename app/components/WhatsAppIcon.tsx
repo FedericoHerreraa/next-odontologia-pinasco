@@ -19,7 +19,6 @@ export const WhatsAppIcon = () => {
 
     const navigateToWhatsApp = () => {
         const phoneNumber = process.env.NEXT_PUBLIC_PHONE_NUMBER
-        console.log(phoneNumber)
         const message = encodeURIComponent("Hola, me gustaria hacer una consulta...")
 
         window.open(`https://wa.me/${phoneNumber}?text=${message}`, "_blank");
