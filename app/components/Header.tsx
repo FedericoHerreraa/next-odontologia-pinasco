@@ -9,6 +9,9 @@ import { montserrat } from "@/app/fonts/fonts";
 import logoHorizontal from "@/app/img/LogoHorizontal@2x.png";
 
 import { VscListFlat } from "react-icons/vsc";
+import { AiFillInstagram } from "react-icons/ai";
+import { MdLocationPin } from "react-icons/md";
+// import { RiWhatsappFill } from "react-icons/ri";
 
 import {
     Breadcrumb,
@@ -26,14 +29,12 @@ import {
     SheetTitle,
     SheetTrigger,
 } from "./ui/sheet"
-
-import { AiFillInstagram } from "react-icons/ai";
-// import { RiWhatsappFill } from "react-icons/ri";
-import { MdLocationPin } from "react-icons/md";
+import { useState } from "react";
 
 export const Header = () => {
     const pathname = usePathname();
     const { isMobile } = useMobileView();
+    const [isOpen, setIsOpen] = useState(false)
 
     const scrollToSection = (sectionId: string) => {
         const element = document.getElementById(sectionId);
@@ -66,17 +67,19 @@ export const Header = () => {
                     </Link>
                 </div>
                 {isMobile ? (
-                    <Sheet>
-                        <SheetTrigger>
+                    <Sheet open={isOpen} onOpenChange={setIsOpen}>
+                        <SheetTrigger onClick={() => setIsOpen(true)}>
                             <VscListFlat size={30}/>
                         </SheetTrigger>
                         <SheetContent>
                             <SheetHeader>
-                            <SheetTitle className="text-start mb-10 text-lg">Pinasco Odontologia</SheetTitle>
+                            <SheetTitle className="text-start mb-10 text-lg">
+                                <Image src={logoHorizontal} alt="Logo" className="w-44 h-auto"/>
+                            </SheetTitle>
                             <SheetDescription className={`flex flex-col gap-5 items-start ${montserrat.className}`}>
-                                <Link href='/work' className={`font-semibold ${montserrat.className}`}>Nuestro Trabajo</Link>
-                                <Link href='/history' className={`font-semibold ${montserrat.className}`}>Conoce Nuestra Historia</Link>
-                                <Link href='/contact-us' className={`font-semibold ${montserrat.className}`}>Contactanos Ahora</Link>
+                                <Link href='/work' className={`font-semibold ${montserrat.className}`} onClick={() => setIsOpen(false)}>Nuestro Trabajo</Link>
+                                <Link href='/history' className={`font-semibold ${montserrat.className}`} onClick={() => setIsOpen(false)}>Conoce Nuestra Historia</Link>
+                                <Link href='/contact-us' className={`font-semibold ${montserrat.className}`} onClick={() => setIsOpen(false)}>Contactanos Ahora</Link>
                             </SheetDescription>
                             </SheetHeader>
                         </SheetContent>

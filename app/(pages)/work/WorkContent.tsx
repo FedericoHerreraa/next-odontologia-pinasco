@@ -2,7 +2,8 @@
 import { bebas, montserrat } from "@/app/fonts/fonts"
 import { TitleSection } from "./TitleSection"
 import Marquee from "react-fast-marquee"
-
+import Image from "next/image"
+import dentist from '@/app/img/limpiarse-dientes.jpg'
 
 export const WorkContent = () => {
     return (
@@ -10,13 +11,13 @@ export const WorkContent = () => {
             <p className={`text-center mt-10 mb-3 text-zinc-500 md:text-lg text-base ${montserrat.className}`}>Que hacemos en el dia a dia</p>
             <h1 className={`md:text-6xl text-4xl text-black text-center ${bebas.className}`}>Mira Nuestro <span className="bg-gradient-to-r to-[#00a2af] from-[#46bcc9] bg-clip-text text-transparent">Trabajo Diario.</span></h1>
 
-            <div className="relative w-[80%] mx-auto mt-20">
+            <div className="relative md:w-[80%] mx-auto mt-20">
                 <div className="absolute top-0 left-0 w-10 h-full bg-gradient-to-r from-white via-white/80 to-transparent pointer-events-none z-10" />
                     <Marquee speed={80} gradient={false} direction="left">
                         {peopleOpinions.map((item, index) => (
-                        <div key={index} className="w-[500px] h-40 bg-zinc-100 rounded-xl mx-3 p-5">
-                            <h2 className="font-semibold text-lg">{item.name}</h2>
-                            <p className="text-zinc-600">{item.opinion}</p>
+                        <div key={index} className="md:w-[500px] w-[250px] h-40 bg-zinc-100 rounded-xl mx-3 p-5">
+                            <h2 className="font-semibold md:text-lg">{item.name}</h2>
+                            <p className="text-zinc-600 md:text-base text-sm">{item.opinion}</p>
                         </div>
                         ))}
                     </Marquee>
@@ -27,12 +28,17 @@ export const WorkContent = () => {
                 {info.map((item, index) => (
                     <div key={index}>
                         <TitleSection title={item.title}/>
-                        <div className={`flex ${index%2 === 0 ? 'flex-row' : 'flex-row-reverse'} gap-5 mt-10 w-[85%] mx-auto`}>
-                            <div className="w-1/2 flex flex-col">
-                                <h2 className="text-3xl">Tratamientos</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic provident rem quam esse exercitationem. Est odit architecto, veritatis ea rem temporibus necessitatibus, distinctio vitae nemo aut iusto veniam facere? Molestias? Lorem ipsum dolor sit amet consectetur adipisicing elit. Et a aliquam maiores reiciendis. Nemo culpa, animi voluptate quaerat, esse mollitia et, modi maxime nulla necessitatibus est obcaecati eligendi? Libero, ratione! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, eaque ex. Placeat, quae nulla quisquam saepe dolore beatae corrupti debitis quis excepturi iusto qui in dicta consequuntur voluptatum sed facere!</p>
-                            </div>
-                            <div className="w-1/2 h-72 bg-zinc-200 rounded-xl">
+                        <div className={`flex md:${index%2 === 0 ? 'flex-row' : 'flex-row-reverse'} flex-col gap-5 mt-10 w-[85%] mx-auto`}>
+                            <div className="md:w-1/2 flex flex-col">
+                                <h2 className={`md:text-2xl text-xl ${montserrat.className}`}>Tratamientos</h2>
+                                <p className="md:text-base text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic provident rem quam esse exercitationem. Est odit architecto, veritatis ea rem temporibus necessitatibus, distinctio vitae nemo aut iusto veniam facere? Molestias? Lorem ipsum dolor sit amet consectetur adipisicing elit. Et a aliquam maiores reiciendis. Nemo culpa, animi voluptate quaerat, esse mollitia et, modi maxime nulla necessitatibus est obcaecati eligendi? Libero, ratione! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, eaque ex. Placeat, quae nulla quisquam saepe dolore beatae corrupti debitis quis excepturi iusto qui in dicta consequuntur voluptatum sed facere!</p>
+                            </div>  
+                            <div className="md:w-1/2 min-h-72 rounded-xl">
+                                <Image 
+                                    alt="Dentist"
+                                    src={dentist}
+                                    className="rounded-md"
+                                />
                             </div>
                         </div>
                     </div>
