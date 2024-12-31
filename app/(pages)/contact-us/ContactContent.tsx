@@ -24,7 +24,22 @@ export const ContactContent = () => {
     };
 
     const onSubmit = () => {
-        // Logica para enviar mail o este mismo mensaje por wsp. Como se prefiera.
+        const { name, lastName, email, phone, subject, message } = formData;
+        const phoneNumber = process.env.NEXT_PUBLIC_PHONE_NUMBER;
+
+        const whatsappMessage = `
+            Hola, quiero ponerme en contacto:
+            - Nombre: ${name}
+            - Apellido: ${lastName}
+            - Email: ${email}
+            - Teléfono: ${phone || 'No especificado'}
+            - Asunto: ${subject || 'No especificado'}
+            - Mensaje: ${message}
+        `.trim();
+    
+        const encodedMessage = encodeURIComponent(whatsappMessage);
+        const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+        window.open(whatsappURL, "_blank");
     }
 
 
@@ -102,6 +117,7 @@ export const ContactContent = () => {
                             className="w-full border border-gray-300 rounded-lg px-4 py-1 text-gray-700 h-28 resize-none focus:outline-none focus:ring-2 focus:ring-[#00A2AF]"
                         ></textarea>
                     </div>
+                    <p className={`mb-2 text-zinc-500 md:text-base text-sm ${montserrat.className}`}>***Este mensaje se enviara al WhatsApp de Pinasco***</p>
                     <div className="md:text-left text-center">    
                         <button
                             type="submit"
