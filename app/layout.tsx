@@ -8,15 +8,15 @@ import { Footer } from "./components/Footer";
 export const metadata: Metadata = {
   title: "Pinasco Odontologia",
   description: "Pinasco Odontologia es una clinica odontologica que se dedica a la salud bucal de sus pacientes.",
+  icons: {
+    icon: 'img/favicon.ico',
+  }
 };
 
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="es">
-      {/* <head>
-        <link rel="icon" href="/P.png" sizes="any" />
-      </head> */}
       <body>
         <MobileViewProvider>
           <Header />

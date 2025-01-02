@@ -94,12 +94,4 @@ const peopleOpinions = [
         name: "Reseña de Google 3",
         opinion: "Un espectáculo, muy atentas, muy cálidas. Te explican todo, me hice una limpieza y no me dolio nada. Se nota que hacen las cosas con amor <3 y que les gustan su trabajo. 100% recomendado."
     },
-    // {
-    //     name: "Joaquín López",
-    //     opinion: "Todo el proceso fue rápido y eficiente. Me gustó mucho el ambiente relajado y la dedicación del equipo."
-    // },
-    // {
-    //     name: "Valeria Sánchez",
-    //     opinion: "Los resultados superaron mis expectativas, y eso que soy bastante exigente. Sin duda volveré para mis controles."
-    // },
 ];
