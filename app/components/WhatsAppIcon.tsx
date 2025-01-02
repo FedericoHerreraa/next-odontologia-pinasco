@@ -2,7 +2,7 @@
 
 import { useMobileView } from "@/app/context/MobileView";
 
-import whatsappLogo from "@/app/img/pngwing.com-2.png"
+import whatsappLogo from "@/app/img/wspLogo.png"
 import Image from "next/image";
 
 import {

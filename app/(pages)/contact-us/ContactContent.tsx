@@ -1,7 +1,7 @@
 'use client'
 
 
-import img from "@/app/img/contacto.png";
+import img from "@/app/img/contactoBackground.png";
 import { bebas, montserrat } from "@/app/fonts/fonts";
 import { useState } from 'react';
 

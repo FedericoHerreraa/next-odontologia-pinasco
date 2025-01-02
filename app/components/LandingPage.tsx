@@ -1,7 +1,7 @@
 'use client'
 
 import { CiMemoPad } from "react-icons/ci";
-import img from "@/app/img/back.png";
+import img from "@/app/img/landingBackground.png";
 import { useMobileView } from "@/app/context/MobileView";
 import { bebas, montserrat } from "@/app/fonts/fonts";
 import Link from "next/link";
@@ -29,7 +29,7 @@ export const LandingPage = () => {
             segura y efectiva.
           </p>
           <Link href='/contact-us' className="bg-[#00a2af] text-white md:w-[60%] w-[70%] md:px-5 px-1 md:py-4 py-2 mt-5 rounded-xl hover:scale-105 duration-200 flex justify-center items-center md:gap-3 gap-1 mx-auto md:mx-0">
-            <p className={`text-sm md:text-lg ${montserrat.className}`}>Consulta Disponibilidad</p>
+            <p className={`text-sm md:text-lg ${montserrat.className}`}>Haz tu Consulta Acá</p>
             <CiMemoPad size={isMobile ? 20 : 25} />
           </Link>
         </div>
