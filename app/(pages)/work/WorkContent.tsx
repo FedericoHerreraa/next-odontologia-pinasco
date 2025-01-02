@@ -4,6 +4,8 @@ import { TitleSection } from "./TitleSection"
 import Marquee from "react-fast-marquee"
 import Image from "next/image"
 import dentist from '@/app/img/limpiarse-dientes.jpg'
+import { RiStarSFill } from "react-icons/ri";
+
 
 export const WorkContent = () => {
     return (
@@ -16,7 +18,15 @@ export const WorkContent = () => {
                     <Marquee speed={80} gradient={false} direction="left">
                         {peopleOpinions.map((item, index) => (
                         <div key={index} className="md:w-[500px] w-[250px] h-40 bg-zinc-100 rounded-xl mx-3 p-5">
-                            <h2 className="font-semibold md:text-lg">{item.name}</h2>
+                            <div className="flex gap-4 items-center">
+                                <h2 className="font-semibold md:text-lg">{item.name}</h2>
+                                <div className="flex gap-1">
+                                    {Array(5).fill(0).map((_, index) => (
+                                        <RiStarSFill key={index} size={20} className="text-yellow-500"/>
+                                    ))}
+                                </div>
+                                {/* <RiStarSFill size={20} className="text-yellow-500"/> */}
+                            </div>
                             <p className="text-zinc-600 md:text-base text-sm">{item.opinion}</p>
                         </div>
                         ))}
@@ -74,23 +84,23 @@ const info = [
 
 const peopleOpinions = [
     {
-        name: "Lucía Fernández",
-        opinion: "La atención fue excelente, muy profesional y me explicaron todo con claridad. ¡Estoy muy contenta con los resultados!"
+        name: "Reseña de Google 1",
+        opinion: "Excelente atención y calidez humana, son lo más ! 👌"
     },
     {
-        name: "Martín Gómez",
-        opinion: "Tenía un poco de miedo, pero todo salió perfecto. El personal es muy amable y el consultorio está impecable. Lo recomiendo."
+        name: "Reseña de Google 2",
+        opinion: "Muy buena atención y dedicación!! Prolijos y detallistas. Excelente!! Muy recomendable."
     },
     {
-        name: "Sofía Ramírez",
-        opinion: "Es el mejor lugar al que he ido, se nota que se preocupan por sus pacientes. El trato fue increíble."
+        name: "Reseña de Google 3",
+        opinion: "Un espectáculo, muy atentas, muy cálidas. Te explican todo, me hice una limpieza y no me dolio nada. Se nota que hacen las cosas con amor <3 y que les gustan su trabajo. 100% recomendado."
     },
-    {
-        name: "Joaquín López",
-        opinion: "Todo el proceso fue rápido y eficiente. Me gustó mucho el ambiente relajado y la dedicación del equipo."
-    },
-    {
-        name: "Valeria Sánchez",
-        opinion: "Los resultados superaron mis expectativas, y eso que soy bastante exigente. Sin duda volveré para mis controles."
-    },
+    // {
+    //     name: "Joaquín López",
+    //     opinion: "Todo el proceso fue rápido y eficiente. Me gustó mucho el ambiente relajado y la dedicación del equipo."
+    // },
+    // {
+    //     name: "Valeria Sánchez",
+    //     opinion: "Los resultados superaron mis expectativas, y eso que soy bastante exigente. Sin duda volveré para mis controles."
+    // },
 ];
