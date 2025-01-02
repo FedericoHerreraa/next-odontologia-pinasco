@@ -40,7 +40,7 @@ export const WorkContent = () => {
                         <div className={`flex md:${index%2 === 0 ? 'flex-row' : 'flex-row-reverse'} flex-col gap-5 mt-10 w-[85%] mx-auto`}>
                             <div className="md:w-1/2 flex flex-col">
                                 <h2 className={`md:text-2xl text-xl ${montserrat.className}`}>Tratamientos</h2>
-                                <p className="md:text-base text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic provident rem quam esse exercitationem. Est odit architecto, veritatis ea rem temporibus necessitatibus, distinctio vitae nemo aut iusto veniam facere? Molestias? Lorem ipsum dolor sit amet consectetur adipisicing elit. Et a aliquam maiores reiciendis. Nemo culpa, animi voluptate quaerat, esse mollitia et, modi maxime nulla necessitatibus est obcaecati eligendi? Libero, ratione! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, eaque ex. Placeat, quae nulla quisquam saepe dolore beatae corrupti debitis quis excepturi iusto qui in dicta consequuntur voluptatum sed facere!</p>
+                                <p className="md:text-base text-sm">{item.description}</p>
                             </div>  
                             <div className="md:w-1/2 min-h-72 rounded-xl">
                                 <Image 
@@ -60,25 +60,25 @@ export const WorkContent = () => {
 const info = [
     {
         title: "Prevención y Mantenimiento",
-        description: ""
+        description: "Enfocado en mantener tu salud bucal con limpiezas regulares, revisiones periódicas y educación sobre técnicas de higiene dental para prevenir problemas futuros."
     },
     {
         title: "Odontología General y Rehabilitación",
-        description: ""
+        description: "Ofrecemos tratamientos como obturaciones, coronas, puentes y prótesis para restaurar la funcionalidad y estética de tus dientes, adaptándonos a tus necesidades específicas."
     },
     {
         title: "Odontología Especializada",
-        description: ""
+        description: "Tratamientos avanzados realizados por especialistas en endodoncia, periodoncia, cirugía oral e implantes dentales, garantizando atención personalizada para casos más complejos."
     },
     {
         title: "Estética y Ortodoncia",
-        description: ""
+        description: "Brindamos soluciones para mejorar la apariencia de tu sonrisa con tratamientos como carillas, blanqueamientos, brackets y alineadores invisibles, diseñados para crear una sonrisa armónica."
     },
     {
         title: "Odontología Infantil y Emergencias",
-        description: ""
+        description: "Atención cariñosa y profesional para niños, incluyendo educación preventiva, tratamientos adaptados y manejo de emergencias dentales para toda la familia."
     },
-]
+];
 
 
 const peopleOpinions = [
