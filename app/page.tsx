@@ -5,6 +5,8 @@ import { Metadata } from "next";
 import { PreviewContact } from "./components/PreviewContact";
 import { ImagesHomePage } from "./components/ImagesHomePage";
 import { Location } from "./components/Location";
+import { CallToHistory } from "./components/CallToHistory";
+
 
 export const metadata: Metadata = {
   title: "Inicio | Pinasco Odontología",
@@ -19,6 +21,7 @@ export default function Home() {
       <CustomSeparator />
       <PreviewWork />
       <PreviewContact />
+      <CallToHistory />
       <CustomSeparator />
       <ImagesHomePage />
       <Location />
