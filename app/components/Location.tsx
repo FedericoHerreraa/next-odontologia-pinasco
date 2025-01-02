@@ -14,7 +14,7 @@ export const Location = () => {
                 <div className="md:w-1/3">
                     <h2 className={`md:text-3xl text-2xl mb-4 ${bebas.className} text-zinc-700`}>Posición Estratégica.</h2>
                     <p className={`${montserrat.className} text-zinc-700`}>
-                        Nuestro consultorio está ubicado en un punto estratégico, en el barrio de Núñez, ofreciendo fácil acceso desde cualquier parte de la región. Estamos en una de las <span className="font-bold">mejores ubicaciones de la zona</span>, rodeados de servicios y con excelentes opciones de transporte y estacionamiento. Además, contamos con un <span className="font-bold">estacionamiento pago justo enfrente</span> para mayor comodidad. A continuación, te mostramos una foto del mapa con la ubicación para que puedas darte una idea de la zona donde estamos. <span className="font-bold">¡Ven y descubre la excelencia en odontología en el lugar ideal!</span>
+                        Nuestro consultorio está ubicado en un punto estratégico, en el barrio de Núñez, ofreciendo fácil acceso desde cualquier parte de la región. Estamos en una de las <span className="font-bold">mejores ubicaciones de la zona</span>, rodeados de servicios y con excelentes opciones de transporte. Además, contamos con un <span className="font-bold">estacionamiento pago justo enfrente</span> para mayor comodidad. A continuación, te mostramos una foto del mapa con la ubicación para que puedas darte una idea de la zona donde estamos. <span className="font-bold">¡Ven y descubre la excelencia en odontología en el lugar ideal!</span>
                     </p>
                     <div className="mt-5 flex items-center gap-3">
                         <MdLocationPin size={30} className="text-[#46bcc9]"/>
