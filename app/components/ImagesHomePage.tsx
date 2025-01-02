@@ -2,9 +2,9 @@
 
 import { bebas, montserrat } from "@/app/fonts/fonts"
 import Image from "next/image";
-import camilla from "@/app/img/2020-01-07-3.jpg"
-import salaEspera from "@/app/img/2020-01-07-2.jpg"
-import consultorio from "@/app/img/2020-01-07.jpg"
+import camilla from "@/app/img/camilla.jpg"
+import salaEspera from "@/app/img/salaEspera.jpg"
+import consultorio from "@/app/img/consultorio.jpg"
 
 export const ImagesHomePage = () => {
     return (
