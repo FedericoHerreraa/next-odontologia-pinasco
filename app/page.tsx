@@ -20,8 +20,8 @@ export default function Home() {
       <LandingPage />
       <CustomSeparator />
       <PreviewWork />
-      <PreviewContact />
       <CallToHistory />
+      <PreviewContact />
       <CustomSeparator />
       <ImagesHomePage />
       <Location />
