@@ -25,7 +25,6 @@ export const WorkContent = () => {
                                         <RiStarSFill key={index} size={20} className="text-yellow-500"/>
                                     ))}
                                 </div>
-                                {/* <RiStarSFill size={20} className="text-yellow-500"/> */}
                             </div>
                             <p className="text-zinc-600 md:text-base text-sm">{item.opinion}</p>
                         </div>
