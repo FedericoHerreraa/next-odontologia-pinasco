@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 
 import { useMobileView } from '@/app/context/MobileView';
 import { montserrat } from "@/app/fonts/fonts";
-import logoHorizontal from "@/app/img/LogoHorizontal@2x.png";
+import logoHorizontal from "@/app/img/logoHorizontal@2x.png";
 
 import { VscListFlat } from "react-icons/vsc";
 import { AiFillInstagram } from "react-icons/ai";
