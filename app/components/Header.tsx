@@ -1,5 +1,6 @@
 'use client'
 
+import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
@@ -28,7 +29,6 @@ import {
     SheetTitle,
     SheetTrigger,
 } from "./ui/sheet"
-import { useState } from "react";
 
 export const Header = () => {
     const pathname = usePathname();
@@ -51,7 +51,6 @@ export const Header = () => {
                     target="_blank">
                         <AiFillInstagram size={20} className="cursor-pointer text-violet-600 opacity-65"/>
                 </Link>
-                {/* <RiWhatsappFill size={20} className="cursor-pointer text-green-800 opacity-65"/> */}
                 <Link
                     href='/' 
                     className={`border border-zinc-600 mt-2  text-zinc-700 px-2 py-1 rounded-lg mb-2 text-sm ${montserrat.className}`}
@@ -73,6 +72,9 @@ export const Header = () => {
                         <SheetContent>
                             <SheetHeader>
                             <SheetTitle className="text-start mb-10 text-lg">
+                                <div onClick={() => setIsOpen(false)} className="absolute top-0 right-0 mt-2 mr-4 cursor-pointer">
+                                    <p className='text-lg text-zinc-400'>X</p>
+                                </div>
                                 <Image src={logoHorizontal} alt="Logo" className="w-44 h-auto"/>
                             </SheetTitle>
                             <SheetDescription className={`flex flex-col gap-5 items-start ${montserrat.className}`}>
