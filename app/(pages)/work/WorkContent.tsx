@@ -1,21 +1,26 @@
+'use client'
+
 
 import { bebas, montserrat } from "@/app/fonts/fonts"
 import { TitleSection } from "./TitleSection"
 import Marquee from "react-fast-marquee"
 import Image from "next/image"
-// import dentist from '@/app/img/limpiarse-dientes.jpg'
 import { RiStarSFill } from "react-icons/ri";
 
 import esteticaDental from '@/app/img/estetica.png'
 import protesis from '@/app/img/protesis.png'
 import blanqueamiento from '@/app/img/blanqueamiento.png'
-
+import endodoncia from '@/app/img/endodoncia.png'
+import limpieza from '@/app/img/limpieza.png'
+import peridontal from '@/app/img/peridontal.png'
+import bucomaxilofacial from '@/app/img/bucomaxilofacial.png'
+import placa from '@/app/img/placa.png'
 
 export const WorkContent = () => {
-    // const scrollToSection = (sectionId: string) => {
-    //     const element = document.getElementById(sectionId);
-    //     if (element) element.scrollIntoView({ behavior: "smooth" });
-    // };
+    const scrollToSection = (sectionId: string) => {
+        const element = document.getElementById(sectionId);
+        if (element) element.scrollIntoView({ behavior: "smooth" });
+    };
 
     return (
         <div className="min-h-[100vh]">
@@ -45,57 +50,127 @@ export const WorkContent = () => {
             <section className="mb-20">
                 <div>
                     <TitleSection title={'Nuestros Tratamientos'}/>
-                    <div className="flex gap-10 items-center justify-center mt-10">
-                        <Image 
-                            src={esteticaDental}
-                            width={80}
-                            height={80}
-                            alt="img"
-                            className="cursor-pointer"
-                        />
-                        <Image 
-                            src={protesis}
-                            width={80}
-                            height={80}
-                            alt="img"
-                            className="cursor-pointer"
-                        />
-                        <Image 
-                            src={blanqueamiento}
-                            width={80}
-                            height={80}
-                            alt="img"
-                            className="cursor-pointer"
-                        />
+                    <div className="flex gap-16 items-center mx-auto w-[50%] justify-center mt-10 flex-wrap">
+                        {icons.map((item, index) => (
+                            <div 
+                                onClick={() => scrollToSection(item.id)}
+                                key={index} 
+                                className="flex flex-col items-center hover:opacity-60 cursor-pointer w-1/2 md:w-auto"
+                            >
+                                <Image 
+                                    src={item.icon}
+                                    width={80}
+                                    height={80}
+                                    alt={item.title}
+                                />
+                                <p className={`text-zinc-600 text-sm mt-2 ${montserrat.className}`}>{item.title}</p>
+                            </div>
+                        ))}
                     </div>
                 </div>
+            </section>
+
+
+            <section className="flex flex-col gap-40 w-[80%] mx-auto mt-60 min-h-[60vh]">
+                {infoWork.map((item, index) => (
+                    <div id={item.id} key={index} className={`flex ${index%2 === 0 ? 'flex-row' : 'flex-row-reverse'} gap-10 h-[60vh]`}>
+                        <div className="w-1/3">
+                            <h1 className="text-4xl mb-10">{item.title}</h1>
+                            <p>{item.description}</p>
+                        </div>
+                        <div className="w-2/3 bg-zinc-100 rounded-xl h-full shadow-lg"></div>
+                    </div>
+                ))}
             </section>
         </div>
     )
 }
 
-// const info = [
-//     {
-//         title: "Prevención y Mantenimiento",
-//         description: "Enfocado en mantener tu salud bucal con limpiezas regulares, revisiones periódicas y educación sobre técnicas de higiene dental para prevenir problemas futuros."
-//     },
-//     {
-//         title: "Odontología General y Rehabilitación",
-//         description: "Ofrecemos tratamientos como obturaciones, coronas, puentes y prótesis para restaurar la funcionalidad y estética de tus dientes, adaptándonos a tus necesidades específicas."
-//     },
-//     {
-//         title: "Odontología Especializada",
-//         description: "Tratamientos avanzados realizados por especialistas en endodoncia, periodoncia, cirugía oral e implantes dentales, garantizando atención personalizada para casos más complejos."
-//     },
-//     {
-//         title: "Estética y Ortodoncia",
-//         description: "Brindamos soluciones para mejorar la apariencia de tu sonrisa con tratamientos como carillas, blanqueamientos, brackets y alineadores invisibles, diseñados para crear una sonrisa armónica."
-//     },
-//     {
-//         title: "Odontología Infantil y Emergencias",
-//         description: "Atención cariñosa y profesional para niños, incluyendo educación preventiva, tratamientos adaptados y manejo de emergencias dentales para toda la familia."
-//     },
-// ];
+const icons = [
+    {
+        id: 'estetica',
+        title: "Estética Dental",
+        icon: esteticaDental
+    },
+    {
+        id: 'protesis',
+        title: "Prótesis",
+        icon: protesis
+    },
+    {
+        id: 'blanqueamiento',
+        title: "Blanqueamiento",
+        icon: blanqueamiento
+    },
+    {
+        id: 'endodoncia',
+        title: "Endodoncia",
+        icon: endodoncia
+    },
+    {
+        id: 'limpieza',
+        title: "Limpieza",
+        icon: limpieza
+    },
+    {
+        id: 'peridontal',
+        title: "Peridontal",
+        icon: peridontal
+    },
+    {
+        id: 'bucomaxilofacial',
+        title: "Bucomaxilofacial",
+        icon: bucomaxilofacial
+    },
+    {
+        id: 'placa',
+        title: "Placa",
+        icon: placa
+    },
+]
+
+const infoWork = [
+    {
+        id: 'estetica',
+        title: 'Estetica Dental',
+        description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis eum natus tempore cumque nostrum ipsum dignissimos, in aspernatur autem praesentium illum eveniet expedita omnis sed error! Vero deserunt magnam quae. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut nulla, illum reprehenderit cupiditate totam consequuntur, culpa consequatur quod nemo distinctio quibusdam impedit esse, iusto ratione sit sapiente facere repellendus nam.'
+    },
+    {
+        id: 'protesis',
+        title: 'Prótesis',
+        description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis eum natus tempore cumque nostrum ipsum dignissimos, in aspernatur autem praesentium illum eveniet expedita omnis sed error! Vero deserunt magnam quae. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut nulla, illum reprehenderit cupiditate totam consequuntur, culpa consequatur quod nemo distinctio quibusdam impedit esse, iusto ratione sit sapiente facere repellendus nam.'
+    },
+    {
+        id: 'blanqueamiento',
+        title: 'Blanqueamiento',
+        description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis eum natus tempore cumque nostrum ipsum dignissimos, in aspernatur autem praesentium illum eveniet expedita omnis sed error! Vero deserunt magnam quae. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut nulla, illum reprehenderit cupiditate totam consequuntur, culpa consequatur quod nemo distinctio quibusdam impedit esse, iusto ratione sit sapiente facere repellendus nam.'
+    },
+    {
+        id: 'endodoncia',
+        title: 'Endodoncia',
+        description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis eum natus tempore cumque nostrum ipsum dignissimos, in aspernatur autem praesentium illum eveniet expedita omnis sed error! Vero deserunt magnam quae. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut nulla, illum reprehenderit cupiditate totam consequuntur, culpa consequatur quod nemo distinctio quibusdam impedit esse, iusto ratione sit sapiente facere repellendus nam.'
+    },
+    {
+        id: 'limpieza',
+        title: 'Limpieza',
+        description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis eum natus tempore cumque nostrum ipsum dignissimos, in aspernatur autem praesentium illum eveniet expedita omnis sed error! Vero deserunt magnam quae. Lorem ipsum dolor',
+    },
+    {
+        id: 'peridontal',
+        title: 'Peridontal',
+        description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis eum natus tempore cumque nostrum ipsum dignissimos, in aspernatur autem praesentium illum eveniet expedita omnis sed error! Vero deserunt magnam quae. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut nulla, illum reprehenderit cupiditate totam consequuntur, culpa consequatur quod nemo distinctio quibusdam impedit esse, iusto ratione sit sapiente facere repellendus nam.'
+    },
+    {
+        id: 'bucomaxilofacial',
+        title: 'Bucomaxilofacial',
+        description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis eum natus tempore cumque nostrum ipsum dignissimos, in aspernatur autem praesentium illum eveniet expedita omnis sed error! Vero deserunt magnam quae. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut nulla, illum reprehenderit cupiditate totam consequuntur, culpa consequatur quod nemo distinctio quibusdam impedit esse, iusto ratione sit sapiente facere repellendus nam.'
+    },
+    {
+        id: 'placa',
+        title: 'Placa',
+        description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis eum natus tempore cumque nostrum ipsum dignissimos, in aspernatur autem praesentium illum eveniet expedita omnis sed error! Vero deserunt magnam quae. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut nulla, illum reprehenderit cupiditate totam consequuntur, culpa consequatur quod nemo distinctio quibusdam impedit esse, iusto ratione sit sapiente facere repellendus nam.'
+    },
+]
 
 
 const peopleOpinions = [
@@ -111,12 +186,4 @@ const peopleOpinions = [
         name: "Reseña de Google",
         opinion: "Un espectáculo, muy atentas, muy cálidas. Te explican todo, me hice una limpieza y no me dolio nada. Se nota que hacen las cosas con amor <3 y que les gustan su trabajo. 100% recomendado."
     },
-    // {
-    //     name: "Joaquín López",
-    //     opinion: "Todo el proceso fue rápido y eficiente. Me gustó mucho el ambiente relajado y la dedicación del equipo."
-    // },
-    // {
-    //     name: "Valeria Sánchez",
-    //     opinion: "Los resultados superaron mis expectativas, y eso que soy bastante exigente. Sin duda volveré para mis controles."
-    // },
 ];
