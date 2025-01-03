@@ -3,9 +3,9 @@ import { Metadata } from "next";
 import { WorkContent } from "./WorkContent";
 
 export const metadata: Metadata = {
-    title: "Trabajo | Pinasco Odontología",
-    description: "En nuestro consultorio privado, nos especializamos en brindarte el mejor cuidado dental con un enfoque personalizado y profesional. Nuestro equipo de odontólogos altamente capacitados utiliza tecnología de vanguardia para garantizarte una experiencia cómoda, segura y efectiva.",
-  };
+    title: "Nuestro Trabajo | Pinasco Odontología - Tratamientos de Calidad",
+    description: "Descubre cómo en Pinasco Odontología transformamos sonrisas con tratamientos personalizados. Nuestro equipo utiliza tecnología avanzada para garantizar resultados efectivos, cómodos y seguros. ¡Explora nuestro trabajo y confía tu salud bucal a los mejores!",
+};
 
 export default function OurWork() {
     return (

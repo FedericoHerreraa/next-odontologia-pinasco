@@ -3,8 +3,8 @@ import { Metadata } from "next";
 import { HistoryContent } from "./HistoryContent";
 
 export const metadata: Metadata = {
-    title: "Historia | Pinasco Odontología",
-    description: "En este espacio te contamos acerca de nuestra historia, como llegamos hasta aqui, y que nos motiva a seguir adelante.",
+    title: "Nuestra Historia | Pinasco Odontología - Pasión por las Sonrisas",
+    description: "Conoce cómo comenzó nuestro camino en Pinasco Odontología. Descubre nuestra historia, los valores que nos inspiran y nuestra pasión por cuidar de tu sonrisa. ¡Un recorrido lleno de dedicación y compromiso con la salud bucal!",
 };
 
 export default function History() {

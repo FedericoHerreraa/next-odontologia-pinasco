@@ -9,8 +9,8 @@ import { CallToHistory } from "./components/CallToHistory";
 
 
 export const metadata: Metadata = {
-  title: "Inicio | Pinasco Odontología",
-  description: "En nuestro consultorio privado, nos especializamos en brindarte el mejor cuidado dental con un enfoque personalizado y profesional. Nuestro equipo de odontólogos altamente capacitados utiliza tecnología de vanguardia para garantizarte una experiencia cómoda, segura y efectiva.",
+  title: "Inicio | Pinasco Odontología - Cuidado Dental de Excelencia",
+  description: "Descubre el mejor cuidado dental en Pinasco Odontología. Ofrecemos tratamientos personalizados con tecnología avanzada y un equipo altamente capacitado para garantizar tu bienestar bucal. ¡Agenda tu cita hoy mismo y sonríe con confianza!",
 };
 
 
