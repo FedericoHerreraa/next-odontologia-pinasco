@@ -47,7 +47,7 @@ export const ImagesHomePage = () => {
                                 opacity-0 group-hover:opacity-100 transition-opacity duration-300
                             "
                         >
-                            <p>{item.title}</p>
+                            <p className={montserrat.className}>{item.title}</p>
                         </div>
                     </div>
                 ))}
