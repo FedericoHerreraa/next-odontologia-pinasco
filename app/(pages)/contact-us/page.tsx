@@ -2,9 +2,9 @@ import { Metadata } from "next";
 import { ContactContent } from "./ContactContent";
 
 export const metadata: Metadata = {
-    title: "Contactanos | Pincasco Odontología",
-    description: "En este aparatado puedes contactarnos para agendar una cita, o para cualquier duda o comentario que tengas.",
-}
+    title: "Contáctanos | Pinasco Odontología - Reserva tu Cita Hoy",
+    description: "¿Tienes preguntas, dudas o deseas agendar una cita? En Pinasco Odontología estamos aquí para ayudarte. Contáctanos fácilmente y permite que nuestro equipo cuide de tu sonrisa.",
+};
 
 export default function ContactUs() {
     return (
