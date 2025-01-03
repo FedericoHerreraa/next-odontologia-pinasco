@@ -11,7 +11,6 @@ import logoHorizontal from "@/app/img/LogoHorizontal@2x.png";
 import { VscListFlat } from "react-icons/vsc";
 import { AiFillInstagram } from "react-icons/ai";
 import { MdLocationPin } from "react-icons/md";
-// import { RiWhatsappFill } from "react-icons/ri";
 
 import {
     Breadcrumb,
