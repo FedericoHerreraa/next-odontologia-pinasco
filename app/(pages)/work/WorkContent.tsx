@@ -31,8 +31,8 @@ export const WorkContent = () => {
                 <div className="absolute top-0 left-0 w-10 h-full bg-gradient-to-r from-white via-white/80 to-transparent pointer-events-none z-10" />
                     <Marquee speed={80} gradient={false} direction="left">
                         {peopleOpinions.map((item, index) => (
-                            <div key={index} className="md:w-[500px] w-[250px] min-h-40 bg-zinc-100 rounded-xl mx-3 p-5">
-                                <div className="flex md:flex-row flex-col gap-4 items-center">
+                            <div key={index} className="md:w-[500px] w-[350px] min-h-52 bg-zinc-100 rounded-xl mx-3 p-5">
+                                <div className="flex md:flex-row flex-col md:gap-4 gap-1 md:mb-0 mb-5 items-center">
                                     <h2 className="font-semibold md:text-lg">{item.name}</h2>
                                     <div className="flex gap-1">
                                         {Array(5).fill(0).map((_, index) => (
@@ -50,12 +50,12 @@ export const WorkContent = () => {
             <section className="mb-20">
                 <div>
                     <TitleSection title={'Nuestros Tratamientos'}/>
-                    <div className="flex gap-16 items-center mx-auto w-[50%] justify-center mt-10 flex-wrap">
+                    <div className="flex md:gap-16 items-center mx-auto md:w-[50%] justify-center mt-10 flex-wrap">
                         {icons.map((item, index) => (
                             <div 
                                 onClick={() => scrollToSection(item.id)}
                                 key={index} 
-                                className="flex flex-col items-center hover:opacity-60 cursor-pointer w-1/2 md:w-auto"
+                                className="flex flex-col md:mb-0 mb-10 items-center hover:opacity-60 cursor-pointer w-1/2 md:w-auto"
                             >
                                 <Image 
                                     src={item.icon}
@@ -71,20 +71,21 @@ export const WorkContent = () => {
             </section>
 
 
-            <section className="flex flex-col gap-40 w-[80%] mx-auto mt-60 min-h-[60vh]">
+            <section className="flex flex-col gap-40 md:w-[80%] w-[90%] mx-auto mt-60 min-h-[60vh]">
                 {infoWork.map((item, index) => (
-                    <div id={item.id} key={index} className={`flex ${index%2 === 0 ? 'flex-row' : 'flex-row-reverse'} gap-10 h-[60vh]`}>
-                        <div className="w-1/3">
+                    <div id={item.id} key={index} className={`flex ${index%2 === 0 ? 'md:flex-row flex-col' : 'md:flex-row-reverse flex-col'} gap-10 h-[60vh]`}>
+                        <div className="md:w-1/3">
                             <h1 className="text-4xl mb-10">{item.title}</h1>
                             <p>{item.description}</p>
                         </div>
-                        <div className="w-2/3 bg-zinc-100 rounded-xl h-full shadow-lg"></div>
+                        <div className="md:w-2/3 bg-zinc-100 rounded-xl h-full shadow-lg"></div>
                     </div>
                 ))}
             </section>
         </div>
     )
 }
+
 
 const icons = [
     {
@@ -171,7 +172,6 @@ const infoWork = [
         description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis eum natus tempore cumque nostrum ipsum dignissimos, in aspernatur autem praesentium illum eveniet expedita omnis sed error! Vero deserunt magnam quae. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut nulla, illum reprehenderit cupiditate totam consequuntur, culpa consequatur quod nemo distinctio quibusdam impedit esse, iusto ratione sit sapiente facere repellendus nam.'
     },
 ]
-
 
 const peopleOpinions = [
     {
