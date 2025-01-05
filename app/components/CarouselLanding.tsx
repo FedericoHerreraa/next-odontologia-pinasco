@@ -1,5 +1,6 @@
 
 import Marquee from "react-fast-marquee"
+import { montserrat } from '@/app/fonts/fonts'
 
 
 export const CarouselLanding = () => {
@@ -8,7 +9,7 @@ export const CarouselLanding = () => {
             <Marquee speed={70} gradient={false}>
                 {treatmentNames.map((name, index) => (
                     <div key={index} className="flex items-center ">
-                        <p className="font-bold mx-5 bg-gradient-to-r from-blue-500 to-teal-400 bg-clip-text text-transparent">{name}</p>
+                        <p className={`font-bold mx-5 bg-gradient-to-r from-blue-500 to-teal-400 bg-clip-text text-transparent ${montserrat.className}`}>{name}</p>
                     </div>
                 ))}
             </Marquee>

@@ -90,7 +90,7 @@ export const Header = () => {
                         </SheetContent>
                     </Sheet>
                 ) : (
-                    <div className="flex gap-10 text-lg text-zinc-600">
+                    <div className="flex gap-10  text-zinc-600">
                         <Link href='/work' className={`hover:scale-105 duration-200 ${montserrat.className}`}>Nuestro Trabajo</Link>
                         <Link href='/history' className={`hover:scale-105 duration-200 ${montserrat.className}`}>Conoce Nuestra Historia</Link>
                         <Link href='/contact-us' className={`hover:scale-105 duration-200 ${montserrat.className}`}>Contactanos Ahora</Link>
