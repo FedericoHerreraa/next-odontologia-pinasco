@@ -7,7 +7,7 @@ import { montserrat } from "@/app/fonts/fonts";
 import Link from "next/link";
 import Image from "next/image";
 import logoHorizontal from '@/app/img/LogoHorizontal@2x.png'
-// import logoVertical from '@/app/img/LogoVertical@2x.png'
+import logoVertical from '@/app/img/LogoVertical@2x.png'
 
 export const LandingPage = () => {
   const { isMobile } = useMobileView();
@@ -23,12 +23,14 @@ export const LandingPage = () => {
           <h1 className={`text-4xl md:text-6xl font-semibold mb-5 text-center md:text-left text-zinc-800 ${bebas.className}`}>
             Pinasco Odontología.
           </h1> */}
-          <Image
-            src={logoHorizontal}
-            alt="logo"
-            width={isMobile ? 200 : 250}
-            height={isMobile ? 100 : 100}
-          />
+          <div className="flex md:justify-start justify-center">
+            <Image
+              src={isMobile ? logoVertical : logoHorizontal}
+              alt="logo"
+              width={isMobile ? 200 : 250}
+              height={isMobile ? 100 : 100}
+            />
+          </div>
           <p className={`"text-zinc-500 text-sm md:text-base mb-10 text-center md:text-left ${montserrat.className}`}>
             En nuestro consultorio privado, nos especializamos en brindarte el
             mejor cuidado dental con un enfoque personalizado y profesional.
