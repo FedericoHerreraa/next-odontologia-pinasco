@@ -6,6 +6,7 @@ import { PreviewContact } from "./components/PreviewContact";
 import { ImagesHomePage } from "./components/ImagesHomePage";
 import { Location } from "./components/Location";
 import { CallToHistory } from "./components/CallToHistory";
+import { CarouselLanding } from "./components/CarouselLanding";
 
 
 export const metadata: Metadata = {
@@ -18,7 +19,8 @@ export default function Home() {
   return (
     <>
       <LandingPage />
-      <CustomSeparator />
+      <CarouselLanding />
+      {/* <CustomSeparator /> */}
       <PreviewWork />
       <CallToHistory />
       <PreviewContact />
