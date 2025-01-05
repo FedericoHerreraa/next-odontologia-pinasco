@@ -5,7 +5,7 @@ import { IoIosArrowRoundForward } from "react-icons/io"
 
 export const PreviewContact = () => {
     return (
-        <div className="w-[80%] mx-auto my-52 border-l-4 border-l-[#00a2af] px-10 py-6  min-h-36 flex md:flex-row flex-col items-center md:justify-between md:gap-0 gap-10">
+        <div className="w-[80%] mx-auto my-40 border-l-4 border-l-[#00a2af] px-10 py-6  min-h-36 flex md:flex-row flex-col items-center md:justify-between md:gap-0 gap-10">
             <div>
                 <h1 className={`md:text-4xl md:text-left text-center text-3xl text-zinc-600 ${bebas.className}`}>Contactanos Ahora Mismo.</h1>
                 <p className="md:text-lg md:text-left text-center text-zinc-500 font-light">
