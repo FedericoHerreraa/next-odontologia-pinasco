@@ -63,8 +63,8 @@ export const Header = () => {
                     <Link href='/'>
                         {/* <Image src={logoHorizontal} alt="Logo" className="w-44 h-auto"/> */}
                         {/* <p className={`text-zinc-600 md:text-left text-center md:text-lg text-sm ${bebas.className}`}>Consultorio Privado.</p> */}
-                        <h1 className={`text-xl md:text-3xl font-semibold text-center md:text-left text-zinc-600 ${montserrat.className}`}>
-                            Pinasco Odontología.
+                        <h1 className={`text-xl md:text-2xl font-semibold text-center md:text-left text-zinc-600 ${montserrat.className}`}>
+                            Pinasco Odontología
                         </h1>
                     </Link>
                 </div>
