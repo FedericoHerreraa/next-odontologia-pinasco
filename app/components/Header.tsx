@@ -6,7 +6,7 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 
 import { useMobileView } from '@/app/context/MobileView';
-import { montserrat } from "@/app/fonts/fonts";
+import { montserrat, bebas } from "@/app/fonts/fonts";
 import logoHorizontal from "@/app/img/LogoHorizontal@2x.png";
 
 import { VscListFlat } from "react-icons/vsc";
@@ -61,7 +61,11 @@ export const Header = () => {
             <div className="flex items-center  text-zinc-800 text-base justify-between md:px-10 px-3 cursor-pointer border-b border-b-zinc-400 border-opacity-30 w-full h-20">
                 <div>
                     <Link href='/'>
-                        <Image src={logoHorizontal} alt="Logo" className="w-44 h-auto"/>
+                        {/* <Image src={logoHorizontal} alt="Logo" className="w-44 h-auto"/> */}
+                        <p className={`text-zinc-600 md:text-left text-center md:text-sm text-sm ${montserrat.className}`}>Consultorio Privado.</p>
+                        <h1 className={`text-4xl md:text-4xl font-semibold text-center md:text-left text-zinc-600 ${bebas.className}`}>
+                            Pinasco Odontología.
+                        </h1>
                     </Link>
                 </div>
                 {isMobile ? (
