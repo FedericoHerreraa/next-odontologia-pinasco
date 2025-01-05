@@ -19,7 +19,7 @@ export const PreviewWork = () => {
                 {info.map((item, index) => (
                     <div
                         key={index}
-                        className="bg-gradient-to-br from-white via-zinc-100 to-[#00a2af] flex flex-col items-center rounded-lg min-h-[32rem] h-auto w-full shadow-lg p-5"
+                        className="bg-gradient-to-br from-white via-zinc-100 to-[#00a2af] flex flex-col items-center rounded-lg md:min-h-[32rem] min-h-[25rem] h-auto w-full shadow-lg p-5"
                     >
                         <FaTooth size={40} className="text-[#a6a6a6] mb-5" />
 
