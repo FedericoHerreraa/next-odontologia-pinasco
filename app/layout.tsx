@@ -14,9 +14,9 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="es">
-      {/* <head>
-        <link rel="icon" href="/P.png" sizes="any" />
-      </head> */}
+      <head>
+        <link rel="icon" href="https://res.cloudinary.com/dikdtnj2b/image/upload/v1736119219/P_efhkut.png"/>
+      </head>
       <body>
         <MobileViewProvider>
           <Header />
