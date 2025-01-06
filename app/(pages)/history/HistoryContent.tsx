@@ -15,7 +15,7 @@ export const HistoryContent = () => {
     return (
         <div>
             <p className={`text-center mt-10 mb-3 text-zinc-500 md:text-lg text-base ${montserrat.className}`}>Como llegamos hasta donde estamos.</p>
-            <h1 className={`md:text-6xl text-3xl text-black  text-center ${bebas.className}`}>Conoce la Historia de <span className="bg-gradient-to-r to-[#00a2af] from-[#46bcc9] bg-clip-text text-transparent">Pinasco.</span></h1>
+            <h1 className={`md:text-6xl text-4xl text-black  text-center ${bebas.className}`}>Conoce la Historia de <span className="bg-gradient-to-r to-[#00a2af] from-[#46bcc9] bg-clip-text text-transparent">Pinasco.</span></h1>
             <section className="mt-40 mb-20 flex flex-col gap-56 md:w-[60%] w-[90%] mx-auto">
                 <div className="relative w-full">
                     <div className="absolute top-0 bottom-0 left-1/2 w-[1px] bg-zinc-300 -translate-x-1/2"></div>
