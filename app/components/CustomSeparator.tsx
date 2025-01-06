@@ -3,7 +3,7 @@
 
 import Marquee from "react-fast-marquee"
 import Image from "next/image"
-import p from '../img/P.png'
+import logo from '../img/logo.png'
 import { useMobileView } from "@/app/context/MobileView"
 
 export const CustomSeparator = () => {
@@ -16,7 +16,7 @@ export const CustomSeparator = () => {
                     {Array(10).fill("").map((_, index) => (
                         <div key={index} className="flex items-center">
                             <Image
-                                src={p}
+                                src={logo}
                                 alt="p logo"
                                 width={isMobile ? 30 : 40}
                                 height={40}
