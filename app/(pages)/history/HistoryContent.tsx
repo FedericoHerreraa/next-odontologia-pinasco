@@ -16,7 +16,7 @@ export const HistoryContent = () => {
         <div>
             <p className={`text-center mt-10 mb-3 text-zinc-500 md:text-lg text-base ${montserrat.className}`}>Como llegamos hasta donde estamos.</p>
             <h1 className={`md:text-6xl text-3xl text-black  text-center ${bebas.className}`}>Conoce la Historia de <span className="bg-gradient-to-r to-[#00a2af] from-[#46bcc9] bg-clip-text text-transparent">Pinasco.</span></h1>
-            <section className="mt-40 mb-20 flex flex-col gap-56 md:w-[60%] w-[95%] mx-auto">
+            <section className="mt-40 mb-20 flex flex-col gap-56 md:w-[60%] w-[90%] mx-auto">
                 <div className="relative w-full">
                     <div className="absolute top-0 bottom-0 left-1/2 w-[1px] bg-zinc-300 -translate-x-1/2"></div>
                     
@@ -26,7 +26,7 @@ export const HistoryContent = () => {
                             key={index} 
                             className={`flex ${item.id % 2 === 0 ? 'flex-row-reverse' : 'flex-row' } items-center md:gap-10 gap-5 relative mb-40`}
                         >
-                            <div className={`flex flex-col ${item.id % 2 === 0 ? 'items-end' : 'items-start'} w-1/2 gap-2`}>
+                            <div className={`flex flex-col ${item.id % 2 === 0 ? 'md:items-end items-center' : 'md:items-start items-center'} w-1/2 gap-2`}>
                                 <h1 className={`md:text-3xl text-xl font-semibold ${bebas.className} ${item.id % 2 === 0 && 'text-end'}`}>{item.title}.</h1>
                                 <p className={`text-zinc-900 mb-5 md:text-lg ${montserrat.className}`}>Año {item.date}.</p>
                                 <p className={`md:text-base text-sm ${montserrat.className} ${item.id % 2 === 0 && 'text-end'}`}>{item.description}.</p>
