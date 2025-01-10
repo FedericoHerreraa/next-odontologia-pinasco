@@ -14,8 +14,9 @@ import blanqueamiento from '@/app/img/blanqueamiento.png'
 import endodoncia from '@/app/img/endodoncia.png'
 import limpieza from '@/app/img/limpieza.png'
 import peridontal from '@/app/img/peridontal.png'
-import bucomaxilofacial from '@/app/img/bucomaxilofacial.png'
+import ortodoncia from '@/app/img/ortodoncia.png'
 import placa from '@/app/img/placa.png'
+import implantes from '@/app/img/implantes.png'
 
 // Images
 import esteticaDentalImg from '@/app/img/work/estetica-dental.jpg'
@@ -23,10 +24,10 @@ import protesisDental from '@/app/img/work/protesis-dental.jpg'
 import blanqueamientoDental from '@/app/img/work/blanqueamiento-dental.jpg'
 import endodonciaDental from '@/app/img/work/endodoncia.jpg'
 import limpiezaDental from '@/app/img/work/limpieza-dental.jpg'
-import peridontalImg from '@/app/img/work/peridontal.jpg'
-import bucomaxilofacialImg from '@/app/img/work/bucomaxilofacialImg.png'
 import placasDentales from '@/app/img/work/placas-dentales.webp'
-
+import ortodonciaImg from '@/app/img/work/ortodonciaImg.jpg'
+import implantesImg from '@/app/img/work/implantes.webp'
+import traumatismosImg from '@/app/img/work/traumatismos.jpg'
 
 export const WorkContent = () => {
     const scrollToSection = (sectionId: string) => {
@@ -63,39 +64,73 @@ export const WorkContent = () => {
                 <div>
                     <TitleSection title={'Nuestros Tratamientos'}/>
                     <div className="flex md:gap-16 items-center mx-auto md:w-[50%] justify-center mt-10 flex-wrap">
-                        {icons.map((item, index) => (
-                            <div 
-                                onClick={() => scrollToSection(item.id)}
-                                key={index} 
-                                className="flex flex-col md:mb-0 mb-10 items-center hover:opacity-60 cursor-pointer w-1/2 md:w-auto"
-                            >
-                                <Image 
-                                    src={item.icon}
-                                    width={80}
-                                    height={80}
-                                    alt={item.title}
-                                />
-                                <p className={`text-zinc-600 text-sm mt-2 ${montserrat.className}`}>{item.title}</p>
-                            </div>
-                        ))}
+                    {icons.map((item, index) => (
+                        <div 
+                            onClick={() => scrollToSection(item.id)}
+                            key={index} 
+                            className="flex flex-col items-center hover:opacity-60 m-3 cursor-pointer w-24 md:w-28"
+                        >
+                            <Image 
+                                src={item.icon}
+                                width={80}
+                                height={80}
+                                alt={item.title}
+                            />
+                            <p className={`text-zinc-600 text-sm mt-2 text-center ${montserrat.className}`}>
+                                {item.title}
+                            </p>
+                        </div>
+                    ))}
                     </div>
                 </div>
             </section>
 
 
-            <section className="flex flex-col gap-40 md:w-[80%] w-[90%] mx-auto mt-60 min-h-[60vh]">
+            <section className="flex flex-col gap-40 mt-60">
                 {infoWork.map((item, index) => (
-                    <div id={item.id} key={index} className={`flex ${index%2 === 0 ? 'md:flex-row flex-col' : 'md:flex-row-reverse flex-col'} gap-10 h-[60vh]`}>
-                        <div className="md:w-1/3">
-                            <h1 className={`md:text-5xl text-3xl mb-10 ${bebas.className}`}>{item.title}</h1>
-                            <p className={`${montserrat.className}`}>{item.description}</p>
-                        </div>
-                        <div className="md:w-2/3 ">
-                            <Image 
-                                src={item.img || ''}
-                                alt={item.title}
-                                className="rounded-xl shadow-lg"
-                            />
+                    <div key={index} className="bg-gradient-to-b from-white via-zinc-100 to-white w-full p-10">
+                        <div id={item.id} className={`flex ${index%2 === 0 ? 'md:flex-row flex-col' : 'md:flex-row-reverse flex-col'} gap-10 min-h-[80vh] md:w-[80%] w-[95%] mx-auto`}>
+                            <div className="md:w-1/2">
+                                <h1 className={`md:text-5xl text-3xl mb-10 ${bebas.className}`}>{item.title}</h1>
+                                <p className={`${montserrat.className}`}>{item.description}</p>
+                                {item.titleText1 && (
+                                    <div className="mt-10">
+                                        <h2 className="font-semibold md:text-xl text-lg">{item.titleText1}</h2>
+                                        <ol className="list-disc mt-3 pl-7">
+                                            {item.text1.map((text, index) => (
+                                                <li key={index} className={`${montserrat.className}`}>{text}</li>
+                                            ))}
+                                        </ol>
+                                    </div>
+                                )}
+                                {item.titleText2 && (
+                                    <div className="mt-10">
+                                        <h2 className="font-semibold md:text-xl text-lg">{item.titleText2}</h2>
+                                        <ul className="list-disc mt-3 pl-7">
+                                            {item.text2.map((text, index) => (
+                                                <li key={index} className={`${montserrat.className}`}>{text}</li>
+                                            ))}
+                                        </ul>
+                                    </div>
+                                )}
+                                {item.titleText3 && (
+                                    <div className="mt-10">
+                                        <h2 className="font-semibold md:text-xl text-lg">{item.titleText3}</h2>
+                                        <ul className="list-disc mt-3 pl-7">
+                                            {item.text3.map((text, index) => (
+                                                <li key={index} className={`${montserrat.className}`}>{text}</li>
+                                            ))}
+                                        </ul>
+                                    </div>
+                                )}
+                            </div>
+                            <div className="md:w-1/2 ">
+                                <Image 
+                                    src={item.img || ''}
+                                    alt={item.title}
+                                    className="rounded-xl shadow-lg"
+                                />
+                            </div>
                         </div>
                     </div>
                 ))}
@@ -108,12 +143,17 @@ export const WorkContent = () => {
 const icons = [
     {
         id: 'estetica',
-        title: "Estética Dental",
+        title: "Estetica y Diseño de Sonrisa",
         icon: esteticaDental
     },
     {
+        id: 'implantes',
+        title: "Implantes y Extracciones Dentales",
+        icon: implantes
+    },
+    {
         id: 'protesis',
-        title: "Prótesis",
+        title: "Rehabilitación Oral Integral",
         icon: protesis
     },
     {
@@ -128,75 +168,135 @@ const icons = [
     },
     {
         id: 'limpieza',
-        title: "Limpieza",
+        title: "Limpieza Periodontal",
         icon: limpieza
     },
     {
-        id: 'peridontal',
-        title: "Peridontal",
+        id: 'placa',
+        title: "Placa Miorrelajante",
+        icon: placa
+    },
+    {
+        id: 'traumatismos',
+        title: "Traumatismos Dentales",
         icon: peridontal
     },
     {
-        id: 'bucomaxilofacial',
-        title: "Bucomaxilofacial",
-        icon: bucomaxilofacial
-    },
-    {
-        id: 'placa',
-        title: "Placa",
-        icon: placa
+        id: 'ortodoncia',
+        title: "Ortodoncia",
+        icon: ortodoncia
     },
 ]
 
 const infoWork = [
     {
         id: 'estetica',
-        title: 'Estética Dental',
-        description: 'La estética dental busca mejorar la apariencia de los dientes y la sonrisa. Incluye tratamientos como carillas de porcelana, coronas, contorneado dental, y ortodoncia invisible. Estos procedimientos no solo mejoran la estética sino también pueden aumentar la confianza en uno mismo.',
+        title: 'Estetica y Diseño de Sonrisa',
+        description: 'El diseño de sonrisa es un tratamiento personalizado que combina técnicas de estética dental para mejorar la forma, el color y la alineación de tus dientes, logrando una sonrisa armónica y acorde a tus facciones. En Pinasco Odontología, utilizamos tecnología avanzada y un enfoque detallado para crear la sonrisa perfecta para ti.',
+        titleText1: '¿En que consiste el Diseño de Sonrisa?',
+        text1: [
+            'Evaluación inicial: Analizamos tu sonrisa, estructura facial y necesidades especificas.',
+            'Plan personalizado: Diseñamos una propuesta digital o física para visualizar el resultado antes del tratamiento.',
+            'Procedimientos personalizados: Incluye blanqueamiento, carillas, resinas, ortodoncia o contorneado dental según el caso.'
+        ],
+        text2: [
+            'Mejora la simetría y estética de tu sonrisa.',
+            'Incrementa tu confianza y autoestima.',
+            'Resultados naturales y duraderos.'
+        ],
         img: esteticaDentalImg
     },
     {
+        id: 'implantes',
+        title: 'Implantes y Extracciones Dentales',
+        description: 'Los implantes y extracciones dentales son procedimientos clave para mantener la funcionalidad y la salud bucal. Las extracciones dentales se realizan cuando un diente está dañado irreversiblemente, genera dolor o representa un riesgo para los dientes vecinos, incluyendo casos como muelas del juicio o caries severas. Por otro lado, los implantes dentales son una solución permanente para reemplazar dientes perdidos, mediante la colocación de tornillos de titanio que actúan como raíces artificiales, sobre los que se fijan coronas o prótesis.',
+        img: implantesImg
+    },
+    {
         id: 'protesis',
-        title: 'Prótesis',
-        description: 'La prótesis dental es una solución para reemplazar dientes perdidos o dañados. Puede ser fija (puentes y coronas) o removible (dentaduras parciales o completas). Estas restauraciones mejoran la funcionalidad al masticar y la estética de la boca.',
+        title: 'Rehabilitación Oral Integral',
+        description: 'La rehabilitación oral es un tratamiento integral que busca restaurar la funcionalidad, estética y salud de tu boca. En Pinasco Odontología, ofrecemos soluciones personalizadas para pacientes que han perdido piezas dentales, tienen desgaste severo o problemas funcionales en su sonrisa.',
+        titleText1: '¿Que Incluye la Rehabilitación Oral?',
+        text1: [
+            'Diagnóstico completo: Evaluamos dientes, encías y articulación temporomandibular (ATM).',
+            'Plan de tratamiento: Combinamos diversas especialidades para lograr un resultado óptimo.',
+            'Procedimientos comunes: Prótesis dentales (fijas o removibles), Coronas y puentes, Implantes dentales , Tratamientos de encias, Ajustes de mordidas.'
+        ],
+        titleText2: 'Beneficios:',
+        text2: [
+            'Recuperas la funcionalidad para masticar y hablar correctamente.',
+            'Mejora la estética de tu sonrisa.',
+            'Previene problemas futuros como el desgaste dental o el desplaz + into de dientes.'
+        ],
         img: protesisDental
     },
     {
         id: 'blanqueamiento',
         title: 'Blanqueamiento',
-        description: 'El blanqueamiento dental es un procedimiento estético que elimina manchas y aclara el tono de los dientes. Se realiza en el consultorio o con kits caseros supervisados por un odontólogo, utilizando agentes blanqueadores como el peróxido de hidrógeno.',
+        description: 'El blanqueamiento dental es un procedimiento estético que ayuda a aclarar el color de los dientes, eliminando manchas o decoloraciones causadas por alimentos, bebidas, tabaco o el paso del tiempo. En Pinasco Odontología, ofrecemos tratamientos seguros y efectivos para que logres una sonrisa más blanca y brillante.',
+        titleText1: 'Beneficios del Blanqueamiento Dental:',
+        text1: [
+            'Mejora la estética de tu sonrisa.',
+            'Incrementa la confianza y seguridad personal.',
+            'Es un procedimiento rápido y no invasivo.'
+        ],
+        titleText2: 'Tipos de Blanqueamiento:',
+        text2: [
+            'En consultorio: Utilizamos agentes blanqueadores de alta calidad y tecnología avanzada para resultados inmediatos.',
+            'En casa: Con férulas personalizadas y geles profesionales, ideal para quienes prefieren mayor comodidad.'
+        ],
         img: blanqueamientoDental
     },
     {
         id: 'endodoncia',
         title: 'Endodoncia',
-        description: 'La endodoncia, también conocida como tratamiento de conducto, consiste en eliminar la pulpa infectada o dañada del diente para salvarlo. Es un procedimiento común para tratar caries profundas o traumatismos dentales que afectan la raíz.',
+        description: 'La endodoncia, también conocida como tratamiento de conducto, es un procedimiento dental especializado que tiene como objetivo salvar dientes gravemente afectados por caries profundas, infecciones o traumatismos. Este tratamiento consiste en la eliminación de la pulpa dental, que es el tejido blando que se encuentra en el interior del diente, y que puede infectarse debido a bacterias que llegan a través de cavidades o fisuras. Después de limpiar el conducto radicular, se procede a sellarlo para evitar futuras infecciones y se coloca una corona para restaurar la forma y funcionalidad del diente.\n\nEste procedimiento es esencial para mantener los dientes naturales en la boca y evitar su extracción. En Pinasco Odontología, nuestro equipo altamente capacitado utiliza tecnologías de vanguardia para realizar la endodoncia de forma indolora y efectiva, garantizando que el diente afectado pueda seguir cumpliendo su función sin comprometer la salud general de tu boca.',
         img: endodonciaDental
     },
     {
         id: 'limpieza',
-        title: 'Limpieza',
-        description: 'La limpieza dental profesional elimina la placa y el sarro acumulados en los dientes y debajo de las encías. Ayuda a prevenir enfermedades como la gingivitis y mejora la salud bucal en general.',
+        title: 'Limpieza Periodontal',
+        description: 'La limpieza periodontal es un tratamiento especializado que se lleva a cabo para eliminar la placa y el sarro que se acumulan tanto sobre como debajo de las encías. Si bien una limpieza dental regular puede ser suficiente para mantener una buena higiene, en casos de enfermedades periodontales, como la gingivitis o la periodontitis, se requiere un procedimiento más profundo. Este tratamiento implica no solo la limpieza de la superficie dental, sino también el raspado y alisado de las raíces para eliminar las bacterias y las toxinas que afectan las encías y el hueso que soporta los dientes.\n\nEn casos más avanzados, la limpieza periodontal también puede incluir procedimientos quirúrgicos para restaurar la salud gingival. El tratamiento previene la pérdida de dientes y otros problemas bucales graves, mejorando la salud general de las encías y reduciendo el riesgo de complicaciones futuras. Con la limpieza periodontal, se busca recuperar la salud oral y evitar que las infecciones avancen hacia niveles más críticos.',
         img: limpiezaDental
     },
     {
-        id: 'peridontal',
-        title: 'Periodontal',
-        description: 'El tratamiento periodontal aborda enfermedades de las encías, como la gingivitis y la periodontitis. Incluye limpiezas profundas, raspado y alisado radicular, y en casos graves, procedimientos quirúrgicos para restaurar la salud gingival.',
-        img: peridontalImg
-    },
-    {
-        id: 'bucomaxilofacial',
-        title: 'Bucomaxilofacial',
-        description: 'La cirugía bucomaxilofacial trata problemas relacionados con los huesos, tejidos y estructuras de la cara, boca y mandíbula. Incluye tratamientos para fracturas faciales, deformidades óseas y extracción de muelas del juicio.',
-        img: bucomaxilofacialImg
-    },
-    {
         id: 'placa',
-        title: 'Placa',
-        description: 'El tratamiento con placas dentales incluye dispositivos personalizados, como férulas de descarga, para tratar el bruxismo, proteger los dientes durante el sueño y aliviar dolores en la articulación temporomandibular (ATM).',
+        title: 'Placa Miorrelajante',
+        description: 'Las placas miorrelajantes son dispositivos dentales personalizados que se utilizan para tratar diversos trastornos relacionados con la articulación temporomandibular (ATM) y para aliviar los efectos del bruxismo. El bruxismo es una condición en la que las personas rechinan o aprietan los dientes involuntariamente, lo que puede causar desgaste dental, dolor en los músculos faciales y en las articulaciones, y molestias en el cuello y la cabeza. La placa miorrelajante se coloca generalmente durante el sueño para evitar el contacto excesivo entre los dientes y prevenir los efectos del bruxismo.\n\nEste tratamiento también es muy efectivo para aliviar los dolores relacionados con la disfunción de la ATM, que es cuando la mandíbula no se mueve correctamente, causando dolor o rigidez. Las placas dentales ayudan a realinear la mandíbula y a reducir la presión en los músculos de la cara, lo que puede proporcionar un alivio significativo. En Pinasco Odontología, ofrecemos placas miorrelajantes personalizadas que se ajustan perfectamente a la estructura dental de cada paciente, asegurando una solución cómoda y eficaz para el alivio del dolor y la mejora de la salud bucal.',
         img: placasDentales
     },
+    {
+        id: 'traumatismos',
+        title: 'Traumatismos Dentales',
+        description: 'Los traumatismos dentales son lesiones ocasionadas por golpes o accidentes que pueden afectar los dientes, encías, labios o estructuras óseas. En Pinasco Odontología, ofrecemos atención inmediata y especializada para tratar este tipo de emergencias y preservar la salud y estética de tu sonrisa.',
+        titleText1: 'Tipos de traumatismos mas comunes:',
+        text1: [
+            'Fracturas dentales: Roturas parciales o completas de los dientes.',
+            'Avulsión dental: Pérdida total de un diente debido a un impacto.',
+            'Luxación dental: Movimiento o desplazamiento de un diente fuera de su posición normal.',
+            'Lesiones en tejidos blandos: Cortes o heridas en labios, encías o lengua.'
+        ],
+        titleText2: '¿Que hacer en caso de traumatismo dental?',
+        text2: [
+            'Diente fracturado: Enjuaga la boca con agua tibia y guarda el fragmento en leche o solución salina para llevarlo al consultorio.',
+            'Diente avulsionado: Si es posible, colócalo en su lugar sin tocar la raíz o consérvalo en leche y acude de inmediato al dentista.',
+            'Dolor o sangrado: Aplica compresas frías en la zona afectada y busca atención profesional.'
+        ],
+        titleText3: 'Tratamientos disponibles:',
+        text3: [
+            'Restauraciones con resinas o coronas.',
+            'Reimplante dental en casos de avulsión.',
+            'Tratamiento de conducto si hay daño en la raíz.',
+            'Cirugía oferente si el hueso o tejidos blandos están comprometidos.'
+        ],
+        img: traumatismosImg
+    },
+    {
+        id: 'ortodoncia',
+        title: 'Ortodoncia',
+        description: 'La ortodoncia es una especialidad de la odontología que se encarga de corregir la posición de los dientes y las estructuras óseas de la mandíbula para mejorar la funcionalidad y la estética de la sonrisa. Utilizando dispositivos como brackets, alineadores invisibles o retenedores, el tratamiento ortodóntico ayuda a resolver problemas como dientes torcidos, sobremordidas, maloclusión y espacios entre dientes. En Pinasco Odontología, ofrecemos soluciones personalizadas que se adaptan a las necesidades de cada paciente, garantizando una sonrisa más saludable y armoniosa.',
+        img: ortodonciaImg
+      }
 ];
 
 const peopleOpinions = [
