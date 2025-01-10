@@ -88,7 +88,7 @@ export const WorkContent = () => {
 
             <section className="flex flex-col gap-40 mt-60">
                 {infoWork.map((item, index) => (
-                    <div key={index} className="bg-gradient-to-b from-white via-zinc-100 to-white w-full p-10">
+                    <div key={index} className="bg-gradient-to-b from-white via-zinc-100 to-white w-full md:p-10 p-3">
                         <div id={item.id} className={`flex ${index%2 === 0 ? 'md:flex-row flex-col' : 'md:flex-row-reverse flex-col'} gap-10 min-h-[80vh] md:w-[80%] w-[95%] mx-auto`}>
                             <div className="md:w-1/2">
                                 <h1 className={`md:text-5xl text-3xl mb-10 ${bebas.className}`}>{item.title}</h1>
