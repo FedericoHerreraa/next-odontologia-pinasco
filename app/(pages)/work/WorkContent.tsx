@@ -5,7 +5,9 @@ import { bebas, montserrat } from "@/app/fonts/fonts"
 import { TitleSection } from "./TitleSection"
 import Marquee from "react-fast-marquee"
 import Image from "next/image"
+
 import { RiStarSFill } from "react-icons/ri";
+import { FcGoogle } from "react-icons/fc";
 
 // Icons
 import esteticaDental from '@/app/img/estetica.png'
@@ -44,16 +46,16 @@ export const WorkContent = () => {
                 <div className="absolute top-0 left-0 w-10 h-full bg-gradient-to-r from-white via-white/80 to-transparent pointer-events-none z-10" />
                     <Marquee speed={80} gradient={false} direction="left">
                         {peopleOpinions.map((item, index) => (
-                            <div key={index} className="md:w-[500px] w-[350px] min-h-52 bg-zinc-100 rounded-xl mx-3 md:p-5 p-3">
+                            <div key={index} className="md:w-[500px] w-[350px] md:min-h-40 min-h-52 bg-zinc-50 rounded-xl mx-3 md:p-5 p-3">
                                 <div className="flex md:flex-row flex-col md:gap-4 gap-1 md:mb-0 mb-5 items-center">
-                                    <h2 className="font-semibold md:text-lg">{item.name}</h2>
+                                    <h2 className={`font-semibold md:text-lg flex items-center gap-2 ${montserrat.className}`}>Reseña de Google <FcGoogle /> </h2>
                                     <div className="flex gap-1">
                                         {Array(5).fill(0).map((_, index) => (
                                             <RiStarSFill key={index} size={20} className="text-yellow-500"/>
                                         ))}
                                     </div>
                                 </div>
-                                <p className="text-zinc-600 md:text-base text-sm">{item.opinion}</p>
+                                <p className={`text-zinc-600 text-sm ${montserrat.className}`}>{item.opinion}</p>
                             </div>
                         ))}
                     </Marquee>
@@ -68,7 +70,7 @@ export const WorkContent = () => {
                         <div 
                             onClick={() => scrollToSection(item.id)}
                             key={index} 
-                            className="flex flex-col items-center hover:opacity-60 m-3 cursor-pointer w-24 md:w-28"
+                            className="flex flex-col items-center hover:opacity-60 md:m-0 m-5 cursor-pointer w-24 md:w-28"
                         >
                             <Image 
                                 src={item.icon}
