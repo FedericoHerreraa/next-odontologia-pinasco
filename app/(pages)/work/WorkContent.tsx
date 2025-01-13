@@ -21,15 +21,17 @@ import placa from '@/app/img/placa.png'
 import implantes from '@/app/img/implantes.png'
 
 // Images
-import esteticaDentalImg from '@/app/img/work/estetica-dental.jpg'
 import protesisDental from '@/app/img/work/protesis-dental.jpg'
-import blanqueamientoDental from '@/app/img/work/blanqueamiento-dental.jpg'
 import endodonciaDental from '@/app/img/work/endodoncia.jpg'
 import limpiezaDental from '@/app/img/work/limpieza-dental.jpg'
 import placasDentales from '@/app/img/work/placas-dentales.webp'
 import ortodonciaImg from '@/app/img/work/ortodonciaImg.jpg'
-import implantesImg from '@/app/img/work/implantes.webp'
 import traumatismosImg from '@/app/img/work/traumatismos.jpg'
+
+// Real Images
+import disenoSonrisaImg from '@/app/img/work/DiseñoSonrisa.png'
+import blanqueamientoImg from '@/app/img/work/blanqueamiento.jpg'
+import implantesImg from '@/app/img/work/implantes.jpg'
 
 export const WorkContent = () => {
     const scrollToSection = (sectionId: string) => {
@@ -206,7 +208,7 @@ const infoWork = [
             'Incrementa tu confianza y autoestima.',
             'Resultados naturales y duraderos.'
         ],
-        img: esteticaDentalImg
+        img: disenoSonrisaImg
     },
     {
         id: 'implantes',
@@ -247,7 +249,7 @@ const infoWork = [
             'En consultorio: Utilizamos agentes blanqueadores de alta calidad y tecnología avanzada para resultados inmediatos.',
             'En casa: Con férulas personalizadas y geles profesionales, ideal para quienes prefieren mayor comodidad.'
         ],
-        img: blanqueamientoDental
+        img: blanqueamientoImg
     },
     {
         id: 'endodoncia',
