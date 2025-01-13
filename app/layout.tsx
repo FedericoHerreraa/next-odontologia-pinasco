@@ -15,7 +15,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="es">
       <head>
-        <link rel="icon" href="https://res.cloudinary.com/dikdtnj2b/image/upload/v1736119219/P_efhkut.png"/>
+        <link rel="icon" href="https://res.cloudinary.com/dikdtnj2b/image/upload/v1736784215/logo-light_tk9ppw.png"/>
       </head>
       <body>
         <MobileViewProvider>
