@@ -97,7 +97,7 @@ export const WorkContent = () => {
                                 <p className={`${montserrat.className}`}>{item.description}</p>
                                 {item.titleText1 && (
                                     <div className="mt-10">
-                                        <h2 className="font-semibold md:text-xl text-lg">{item.titleText1}</h2>
+                                        <h2 className={`font-semibold md:text-xl text-lg ${montserrat.className}`}>{item.titleText1}</h2>
                                         <ol className="list-disc mt-3 pl-7">
                                             {item.text1.map((text, index) => (
                                                 <li key={index} className={`${montserrat.className}`}>{text}</li>
@@ -107,7 +107,7 @@ export const WorkContent = () => {
                                 )}
                                 {item.titleText2 && (
                                     <div className="mt-10">
-                                        <h2 className="font-semibold md:text-xl text-lg">{item.titleText2}</h2>
+                                        <h2 className={`font-semibold md:text-xl text-lg ${montserrat.className}`}>{item.titleText2}</h2>
                                         <ul className="list-disc mt-3 pl-7">
                                             {item.text2.map((text, index) => (
                                                 <li key={index} className={`${montserrat.className}`}>{text}</li>
@@ -117,7 +117,7 @@ export const WorkContent = () => {
                                 )}
                                 {item.titleText3 && (
                                     <div className="mt-10">
-                                        <h2 className="font-semibold md:text-xl text-lg">{item.titleText3}</h2>
+                                        <h2 className={`font-semibold md:text-xl text-lg ${montserrat.className}`}>{item.titleText3}</h2>
                                         <ul className="list-disc mt-3 pl-7">
                                             {item.text3.map((text, index) => (
                                                 <li key={index} className={`${montserrat.className}`}>{text}</li>
