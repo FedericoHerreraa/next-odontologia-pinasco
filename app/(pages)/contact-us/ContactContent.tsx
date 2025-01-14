@@ -117,7 +117,7 @@ export const ContactContent = () => {
                             className="w-full border border-gray-300 rounded-lg px-4 py-1 text-gray-700 h-28 resize-none focus:outline-none focus:ring-2 focus:ring-[#00A2AF]"
                         ></textarea>
                     </div>
-                    <p className={`mb-2 text-zinc-500 md:text-base text-sm ${montserrat.className}`}>***Este mensaje se enviara al WhatsApp de Pinasco***</p>
+                    <p className={`mb-2 text-zinc-500 md:text-base text-sm ${montserrat.className}`}>***Este mensaje se enviara al <span className="text-green-600">WhatsApp</span> de Pinasco***</p>
                     <div className="md:text-left text-center">    
                         <button
                             type="submit"

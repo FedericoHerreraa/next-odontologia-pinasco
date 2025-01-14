@@ -6,7 +6,7 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 
 import { useMobileView } from '@/app/context/MobileView';
-import { montserrat } from "@/app/fonts/fonts";
+import { montserrat, bebas } from "@/app/fonts/fonts";
 import logoHorizontal from "@/app/img/LogoHorizontal@2x.png";
 
 import { VscListFlat } from "react-icons/vsc";
@@ -53,7 +53,7 @@ export const Header = () => {
                 </Link>
                 <Link
                     href='/' 
-                    className={`border border-zinc-600 mt-2  text-zinc-700 px-2 py-1 rounded-lg mb-2 text-sm ${montserrat.className}`}
+                    className={`border border-zinc-600 mt-2  text-zinc-700 px-2 py-1 rounded-lg mb-2 md:text-sm text-xs ${montserrat.className}`}
                 >
                     Pinasco
                 </Link>
@@ -61,9 +61,8 @@ export const Header = () => {
             <div className="flex items-center  text-zinc-800 text-base justify-between md:px-10 px-3 cursor-pointer border-b border-b-zinc-400 border-opacity-30 w-full h-20">
                 <div>
                     <Link href='/'>
-                        {/* <Image src={logoHorizontal} alt="Logo" className="w-44 h-auto"/> */}
-                        {/* <p className={`text-zinc-600 md:text-left text-center md:text-lg text-sm ${bebas.className}`}>Consultorio Privado.</p> */}
-                        <h1 className={`text-xl md:text-2xl font-semibold text-center md:text-left text-zinc-600 ${montserrat.className}`}>
+                        <p className={`${montserrat.className} text-zinc-500 md:text-sm text-xs`}>Consultorio Privado</p>
+                        <h1 className={`text-2xl md:text-3xl font-semibold text-center md:text-left text-zinc-600 ${bebas.className}`}>
                             Pinasco Odontología
                         </h1>
                     </Link>

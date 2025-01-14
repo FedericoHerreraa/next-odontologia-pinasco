@@ -31,12 +31,12 @@ export const LandingPage = () => {
               height={isMobile ? 100 : 100}
             />
           </div>
-          <p className={`"text-zinc-500 text-sm md:text-base mb-10 text-center md:text-left ${montserrat.className}`}>
+          <p className={`text-zinc-500 text-sm md:text-base mb-10 text-center md:text-left ${montserrat.className}`}>
             En nuestro consultorio privado, nos especializamos en brindarte el
-            mejor cuidado dental con un enfoque personalizado y profesional.
+            <span className="font-bold"> mejor cuidado dental</span> con un enfoque personalizado y profesional.
             Nuestro equipo de odontólogos altamente capacitados utiliza
-            tecnología de vanguardia para garantizarte una experiencia cómoda,
-            segura y efectiva.
+            tecnología de vanguardia para garantizarte una experiencia 
+            <span className="font-bold"> cómoda, segura y efectiva</span>.
           </p>
           <Link href='/contact-us' className="bg-[#00a2af] text-white md:w-[60%] w-[70%] md:px-5 px-1 md:py-4 py-2 mt-2 rounded-xl hover:scale-105 duration-200 flex justify-center items-center md:gap-3 gap-1 mx-auto md:mx-0">
             <p className={`text-sm md:text-lg ${montserrat.className}`}>Haz tu Consulta Acá</p>

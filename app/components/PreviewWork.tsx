@@ -37,7 +37,7 @@ export const PreviewWork = () => {
 
                         <Link
                             href="/work"
-                            className={`flex items-center justify-center w-[135px] md:w-[145px] gap-2 hover:gap-5 mt-auto md:pl-4 pl-2 md:py-2 py-1 border border-[#00a2af] bg-zinc-100 text-zinc-800 font-semibold text-sm md:text-base rounded-lg shadow-md transition-all duration-150 ${montserrat.className}`}
+                            className={`flex items-center justify-center w-[135px] md:w-[145px] gap-2 hover:gap-5 mt-3 md:pl-4 pl-2 md:py-2 py-1 border border-[#00a2af] bg-zinc-100 text-zinc-800 font-semibold text-sm md:text-base rounded-lg shadow-md transition-all duration-150 ${montserrat.className}`}
                         >
                             <p>Ver Más</p>
                             <IoIosArrowRoundForward size={30} />
@@ -50,10 +50,6 @@ export const PreviewWork = () => {
 };
 
 const info = [
-    // {
-    //     title: "Prevención y diagnóstico",
-    //     description: "Incluye especialidades enfocadas en evitar problemas dentales y detectarlos de forma temprana, como limpiezas, chequeos rutinarios, aplicación de flúor, selladores y cuidado dental especializado para niños."
-    // },
     {
         title: "Odontología digital",
         description: "La odontología digital combina tecnologías avanzadas como escáneres intraorales, impresión 3D y radiografías digitales para mejorar la precisión en diagnósticos y tratamientos. Ofrece mayor comodidad al paciente, resultados estéticos más predecibles y diagnósticos más precisos, reduciendo tiempos de laboratorio y mejorando la comunicación mediante la visualización de resultados."
