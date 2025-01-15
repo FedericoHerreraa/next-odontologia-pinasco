@@ -42,7 +42,7 @@ export const Header = () => {
     
     return (
         <header className="bg-gradient-to-b from-[#58c8d0] via-zinc-200 to-white  flex flex-col items-center ">
-            <div className="flex items-center justify-end gap-2 border-b md:pr-10 pr-2 border-zinc-500 border-opacity-20 w-full">
+            <section className="flex items-center justify-end gap-2 border-b md:pr-10 pr-2 border-zinc-500 border-opacity-20 w-full">
                 <div onClick={() => scrollToSection("location")}>
                     <MdLocationPin size={20} className="cursor-pointer text-red-800 opacity-65"/>
                 </div>
@@ -57,8 +57,8 @@ export const Header = () => {
                 >
                     Pinasco
                 </Link>
-            </div>
-            <div className="flex items-center  text-zinc-800 text-base justify-between md:px-10 px-3 cursor-pointer border-b border-b-zinc-400 border-opacity-30 w-full h-20">
+            </section>
+            <section className="flex items-center  text-zinc-800 text-base justify-between md:px-10 px-3 cursor-pointer border-b border-b-zinc-400 border-opacity-30 w-full h-20">
                 <div>
                     <Link href='/'>
                         <p className={`${montserrat.className} text-zinc-500 md:text-sm text-xs`}>Consultorio Privado</p>
@@ -95,8 +95,8 @@ export const Header = () => {
                         <Link href='/contact-us' className={`hover:scale-105 duration-200 ${montserrat.className}`}>Contactanos Ahora</Link>
                     </div>
                 )}
-            </div>
-            <div className="flex justify-start w-full items-center md:px-10 px-4 py-5">
+            </section>
+            <section className="flex justify-start w-full items-center md:px-10 px-4 py-5">
                 <Breadcrumb>
                     <BreadcrumbList className={`${montserrat.className}`}>
                         <BreadcrumbItem>
@@ -129,7 +129,7 @@ export const Header = () => {
                         )}
                     </BreadcrumbList>
                 </Breadcrumb>
-            </div>
+            </section>
         </header>
     )
 }

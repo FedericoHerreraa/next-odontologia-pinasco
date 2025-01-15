@@ -20,7 +20,6 @@ export default function Home() {
     <>
       <LandingPage />
       <CarouselLanding />
-      {/* <CustomSeparator /> */}
       <PreviewWork />
       <CallToHistory />
       <PreviewContact />
