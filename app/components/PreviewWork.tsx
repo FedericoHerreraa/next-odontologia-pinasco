@@ -23,11 +23,11 @@ export const PreviewWork = () => {
                     >
                         <FaTooth size={40} className="text-[#a6a6a6] mb-5" />
 
-                        <h1
+                        <h2
                             className={`text-center text-2xl md:text-4xl font-semibold text-[#a6a6a6] mx-5 md:mx-10 ${bebas.className}`}
                         >
                             {item.title}
-                        </h1>
+                        </h2>
 
                         <p
                             className={`mt-5 text-center text-zinc-600 text-sm md:text-base flex-grow ${montserrat.className}`}

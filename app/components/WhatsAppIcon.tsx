@@ -1,8 +1,8 @@
 'use client'
 
 import { useMobileView } from "@/app/context/MobileView";
-
 import whatsappLogo from "@/app/img/wspLogo.png"
+
 import Image from "next/image";
 
 import {

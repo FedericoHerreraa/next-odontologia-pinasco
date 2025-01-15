@@ -44,7 +44,7 @@ export const WorkContent = () => {
             <p className={`text-center mt-10 mb-3 text-zinc-500 md:text-lg text-base ${montserrat.className}`}>Descubre lo que hacemos cada día.</p>
             <h1 className={`md:text-6xl text-4xl text-black text-center md:mx-0 mx-2 ${bebas.className}`}>Explora Nuestro <span className="bg-gradient-to-r to-[#00a2af] from-[#46bcc9] bg-clip-text text-transparent">Trabajo Diario.</span></h1>
 
-            <div className="relative md:w-[80%] mx-auto mt-20">
+            <article className="relative md:w-[80%] mx-auto mt-20">
                 <div className="absolute top-0 left-0 w-10 h-full bg-gradient-to-r from-white via-white/80 to-transparent pointer-events-none z-10" />
                     <Marquee speed={80} gradient={false} direction="left">
                         {peopleOpinions.map((item, index) => (
@@ -62,9 +62,9 @@ export const WorkContent = () => {
                         ))}
                     </Marquee>
                 <div className="absolute top-0 right-0 w-10 h-full bg-gradient-to-l from-white via-white/80 to-transparent pointer-events-none z-10" />
-            </div>
+            </article>
 
-            <section className="mb-20">
+            <article className="mb-20">
                 <div>
                     <TitleSection title={'Nuestros Tratamientos'}/>
                     <div className="flex md:gap-16 items-center mx-auto md:w-[50%] justify-center mt-10 flex-wrap">
@@ -87,19 +87,19 @@ export const WorkContent = () => {
                     ))}
                     </div>
                 </div>
-            </section>
+            </article>
 
 
-            <section className="flex flex-col gap-40 mt-60">
+            <article className="flex flex-col gap-40 mt-60">
                 {infoWork.map((item, index) => (
                     <div key={index} className="bg-gradient-to-b from-white via-cyan-100 to-white w-full md:p-10 p-3">
                         <div id={item.id} className={`flex ${index%2 === 0 ? 'md:flex-row flex-col' : 'md:flex-row-reverse flex-col'} gap-10 min-h-[80vh] md:w-[80%] w-[95%] mx-auto`}>
                             <div className="md:w-1/2">
-                                <h1 className={`md:text-5xl text-3xl mb-10 ${bebas.className}`}>{item.title}</h1>
+                                <h2 className={`md:text-5xl text-3xl mb-10 ${bebas.className}`}>{item.title}</h2>
                                 <p className={`${montserrat.className}`}>{item.description}</p>
                                 {item.titleText1 && (
                                     <div className="mt-10">
-                                        <h2 className={`font-semibold md:text-xl text-lg ${montserrat.className}`}>{item.titleText1}</h2>
+                                        <h3 className={`font-semibold md:text-xl text-lg ${montserrat.className}`}>{item.titleText1}</h3>
                                         <ol className="list-disc mt-3 pl-7">
                                             {item.text1.map((text, index) => (
                                                 <li key={index} className={`${montserrat.className}`}>{text}</li>
@@ -109,7 +109,7 @@ export const WorkContent = () => {
                                 )}
                                 {item.titleText2 && (
                                     <div className="mt-10">
-                                        <h2 className={`font-semibold md:text-xl text-lg ${montserrat.className}`}>{item.titleText2}</h2>
+                                        <h3 className={`font-semibold md:text-xl text-lg ${montserrat.className}`}>{item.titleText2}</h3>
                                         <ul className="list-disc mt-3 pl-7">
                                             {item.text2.map((text, index) => (
                                                 <li key={index} className={`${montserrat.className}`}>{text}</li>
@@ -119,7 +119,7 @@ export const WorkContent = () => {
                                 )}
                                 {item.titleText3 && (
                                     <div className="mt-10">
-                                        <h2 className={`font-semibold md:text-xl text-lg ${montserrat.className}`}>{item.titleText3}</h2>
+                                        <h3 className={`font-semibold md:text-xl text-lg ${montserrat.className}`}>{item.titleText3}</h3>
                                         <ul className="list-disc mt-3 pl-7">
                                             {item.text3.map((text, index) => (
                                                 <li key={index} className={`${montserrat.className}`}>{text}</li>
@@ -138,7 +138,7 @@ export const WorkContent = () => {
                         </div>
                     </div>
                 ))}
-            </section>
+            </article>
         </div>
     )
 }
