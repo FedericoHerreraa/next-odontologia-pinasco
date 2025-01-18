@@ -24,14 +24,16 @@ import implantes from '@/app/img/implantes.png'
 import endodonciaDental from '@/app/img/work/endodoncia.jpg'
 import limpiezaDental from '@/app/img/work/limpieza-dental.jpg'
 import placasDentales from '@/app/img/work/placas-dentales.webp'
-import ortodonciaImg from '@/app/img/work/ortodonciaImg.jpg'
-import traumatismosImg from '@/app/img/work/traumatismos.jpg'
+
+
 
 // Real Images
 import disenoSonrisaImg from '@/app/img/work/DiseñoSonrisa.png'
 import blanqueamientoImg from '@/app/img/work/blanqueamiento.jpg'
 import implantesImg from '@/app/img/work/implantes.jpg'
 import rehabilitacion from '@/app/img/work/rehabilitacion.png'
+import traumatismo from '@/app/img/work/traumatismo.png'
+import ortodonciaImg from '@/app/img/work/ortodoncia.png'
 
 export const WorkContent = () => {
     const scrollToSection = (sectionId: string) => {
@@ -293,12 +295,17 @@ const infoWork = [
             'Tratamiento de conducto si hay daño en la raíz.',
             'Cirugía oferente si el hueso o tejidos blandos están comprometidos.'
         ],
-        img: traumatismosImg
+        img: traumatismo
     },
     {
         id: 'ortodoncia',
         title: 'Ortodoncia',
         description: 'La ortodoncia es una especialidad de la odontología que se encarga de corregir la posición de los dientes y las estructuras óseas de la mandíbula para mejorar la funcionalidad y la estética de la sonrisa. Utilizando dispositivos como brackets, alineadores invisibles o retenedores, el tratamiento ortodóntico ayuda a resolver problemas como dientes torcidos, sobremordidas, maloclusión y espacios entre dientes. En Pinasco Odontología, ofrecemos soluciones personalizadas que se adaptan a las necesidades de cada paciente, garantizando una sonrisa más saludable y armoniosa.',
+        titleText1: 'Tratamientos con los que trabajamos:',
+        text1: [
+            'Ortodoncia convencional',
+            'Alineadores invisibles'
+        ],
         img: ortodonciaImg
       }
 ];
