@@ -313,7 +313,7 @@ const infoWork = [
 const peopleOpinions = [
     {
         name: "Reseña de Google",
-        opinion: "Excelente atención y calidez humana, son lo más! 👌"
+        opinion: "Excelente atención y calidez humana, son lo más!👌"
     },
     {
         name: "Reseña de Google",
