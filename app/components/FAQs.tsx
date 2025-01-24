@@ -41,6 +41,18 @@ export const FAQs = () => {
                     <p className="font-semibold">No, el consultorio es 100% privado.</p>
                 </AccordionContent>
             </AccordionItem>
+            <AccordionItem value="item-4">
+                <AccordionTrigger className={`${montserrat.className}`}>¿Qué estudios necesito para hacerme un implante?</AccordionTrigger>
+                <AccordionContent className={`${montserrat.className}`}>
+                    <p className="font-semibold">Tomografía cone bean solicitada por un odontólogo.</p>
+                </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-5">
+                <AccordionTrigger className={`${montserrat.className}`}>¿Cada cuanto debo realizarme una limpieza?</AccordionTrigger>
+                <AccordionContent className={`${montserrat.className}`}>
+                    <p className="font-semibold">Entre 6 meses y un año dependiendo de lo que te recomiende tu odontólogo.</p>
+                </AccordionContent>
+            </AccordionItem>
         </Accordion>
 
     )
