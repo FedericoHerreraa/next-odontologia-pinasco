@@ -44,7 +44,7 @@ export const WorkContent = () => {
     return (
         <div className="min-h-[100vh]">
             <p className={`text-center mt-10 mb-3 text-zinc-500 md:text-lg text-base ${montserrat.className}`}>Descubre lo que hacemos cada día.</p>
-            <h1 className={`md:text-6xl text-4xl text-black text-center md:mx-0 mx-2 ${bebas.className}`}>Explora Nuestro <span className="bg-gradient-to-r to-[#00a2af] from-[#46bcc9] bg-clip-text text-transparent">Trabajo Diario.</span></h1>
+            <h1 className={`md:text-6xl text-4xl text-black text-center md:mx-0 mx-2 ${bebas.className}`}>Explorá Nuestro <span className="bg-gradient-to-r to-[#00a2af] from-[#46bcc9] bg-clip-text text-transparent">Trabajo Díario.</span></h1>
 
             <article className="relative md:w-[80%] mx-auto mt-20">
                 <div className="absolute top-0 left-0 w-10 h-full bg-gradient-to-r from-white via-white/80 to-transparent pointer-events-none z-10" />
@@ -149,7 +149,7 @@ export const WorkContent = () => {
 const icons = [
     {
         id: 'estetica',
-        title: "Estetica y Diseño de Sonrisa",
+        title: "Estética y Diseño de Sonrisa",
         icon: esteticaDental
     },
     {
@@ -199,7 +199,7 @@ const infoWork = [
         id: 'estetica',
         title: 'Estetica y Diseño de Sonrisa',
         description: 'El diseño de sonrisa es un tratamiento personalizado que combina técnicas de estética dental para mejorar la forma, el color y la alineación de tus dientes, logrando una sonrisa armónica y acorde a tus facciones. En Pinasco Odontología, utilizamos tecnología avanzada y un enfoque detallado para crear la sonrisa perfecta para ti.',
-        titleText1: '¿En que consiste el Diseño de Sonrisa?',
+        titleText1: '¿En qué consiste el Diseño de Sonrisa?',
         text1: [
             'Evaluación inicial: Analizamos tu sonrisa, estructura facial y necesidades especificas.',
             'Plan personalizado: Diseñamos una propuesta digital o física para visualizar el resultado antes del tratamiento.',
@@ -222,7 +222,7 @@ const infoWork = [
         id: 'protesis',
         title: 'Rehabilitación Oral Integral',
         description: 'La rehabilitación oral es un tratamiento integral que busca restaurar la funcionalidad, estética y salud de tu boca. En Pinasco Odontología, ofrecemos soluciones personalizadas para pacientes que han perdido piezas dentales, tienen desgaste severo o problemas funcionales en su sonrisa.',
-        titleText1: '¿Que Incluye la Rehabilitación Oral?',
+        titleText1: '¿Qué Incluye la Rehabilitación Oral?',
         text1: [
             'Diagnóstico completo: Evaluamos dientes, encías y articulación temporomandibular (ATM).',
             'Plan de tratamiento: Combinamos diversas especialidades para lograr un resultado óptimo.',
@@ -232,7 +232,7 @@ const infoWork = [
         text2: [
             'Recuperas la funcionalidad para masticar y hablar correctamente.',
             'Mejora la estética de tu sonrisa.',
-            'Previene problemas futuros como el desgaste dental o el desplaz + into de dientes.'
+            'Previene problemas futuros como el desgaste dental o el desplazamiento de dientes.'
         ],
         img: rehabilitacion
     },
@@ -282,7 +282,7 @@ const infoWork = [
             'Luxación dental: Movimiento o desplazamiento de un diente fuera de su posición normal.',
             'Lesiones en tejidos blandos: Cortes o heridas en labios, encías o lengua.'
         ],
-        titleText2: '¿Que hacer en caso de traumatismo dental?',
+        titleText2: '¿Qué hacer en caso de traumatismo dental?',
         text2: [
             'Diente fracturado: Enjuaga la boca con agua tibia y guarda el fragmento en leche o solución salina para llevarlo al consultorio.',
             'Diente avulsionado: Si es posible, colócalo en su lugar sin tocar la raíz o consérvalo en leche y acude de inmediato al dentista.',
