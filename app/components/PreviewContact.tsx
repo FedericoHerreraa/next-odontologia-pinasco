@@ -9,7 +9,7 @@ export const PreviewContact = () => {
             <div>
                 <h1 className={`md:text-4xl md:text-left text-center text-3xl text-zinc-600 ${bebas.className}`}>Contactanos Ahora Mismo.</h1>
                 <p className="md:text-lg md:text-left text-center text-zinc-500 font-light">
-                    Cuidar tu sonrisa es nuestra prioridad. Contáctanos ahora y agenda tu consulta con nosotros.
+                    Cuidar tu sonrisa es nuestra prioridad. Contactanos ahora y agenda tu consulta con nosotros.
                 </p>
             </div>
             <Link

@@ -35,7 +35,7 @@ export const LandingPage = () => {
             <span className="font-bold"> cómoda, segura y efectiva</span>.
           </p>
           <Link href='/contact-us' className="bg-[#00a2af] text-white md:w-[60%] w-[70%] md:px-5 px-1 md:py-4 py-2 mt-2 rounded-xl hover:scale-105 duration-200 flex justify-center items-center md:gap-3 gap-1 mx-auto md:mx-0">
-            <p className={`text-sm md:text-lg ${montserrat.className}`}>Haz tu Consulta Acá</p>
+            <p className={`text-sm md:text-lg ${montserrat.className}`}>Hacé tu Consulta Acá</p>
             <CiMemoPad size={isMobile ? 20 : 25} />
           </Link>
         </div>

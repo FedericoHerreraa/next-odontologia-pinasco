@@ -19,7 +19,7 @@ export const CarouselLanding = () => {
 
 
 const treatmentNames = [
-    'Estetica Dental',
+    'Estética Dental',
     'Prótesis',
     'Blanqueamiento',
     'Endodoncia',

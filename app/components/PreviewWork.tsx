@@ -9,7 +9,7 @@ export const PreviewWork = () => {
     return (
         <div className="w-[90%] md:w-[80%] mx-auto mt-10">
             <p className={`text-center mb-3 text-zinc-600 text-base md:text-lg ${montserrat.className}`}>
-                Conoce nuestro trabajo que nos lleva a la perfección.
+                Conocé nuestro trabajo que nos lleva a la perfección.
             </p>
             <h1 className={`text-4xl md:text-6xl text-center text-zinc-700 ${bebas.className}`}>
                 Te Contamos un Poco de <span className="bg-gradient-to-r to-[#00a2af] from-[#46bcc9] bg-clip-text text-transparent">lo que Hacemos.</span>
