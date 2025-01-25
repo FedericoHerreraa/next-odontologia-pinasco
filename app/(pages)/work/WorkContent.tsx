@@ -16,6 +16,7 @@ import blanqueamiento from '@/app/img/blanqueamiento.png'
 import endodoncia from '@/app/img/endodoncia.png'
 import limpieza from '@/app/img/limpieza.png'
 import traumatismos from '@/app/img/traumatismodental.png'
+
 import ortodoncia from '@/app/img/ortodoncia.png'
 import placa from '@/app/img/placa.png'
 import implantes from '@/app/img/implantes.png'
