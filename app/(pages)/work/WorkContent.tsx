@@ -225,11 +225,11 @@ const infoWork = [
         text1: [
             'Diagnóstico completo: Evaluamos dientes, encías y articulación temporomandibular (ATM).',
             'Plan de tratamiento: Combinamos diversas especialidades para lograr un resultado óptimo.',
-            'Procedimientos comunes: Prótesis dentales (fijas o removibles), Coronas y puentes, Implantes dentales , Tratamientos de encias, Ajustes de mordidas.'
+            'Procedimientos comunes: Prótesis dentales (fijas o removibles), Coronas y puentes, Implantes dentales , Tratamientos de encías, Ajustes de mordidas.'
         ],
         titleText2: 'Beneficios:',
         text2: [
-            'Recuperas la funcionalidad para masticar y hablar correctamente.',
+            'Recuperás la funcionalidad para masticar y hablar correctamente.',
             'Mejora la estética de tu sonrisa.',
             'Previene problemas futuros como el desgaste dental o el desplazamiento de dientes.'
         ],
@@ -274,7 +274,7 @@ const infoWork = [
         id: 'traumatismos',
         title: 'Traumatismos Dentales',
         description: 'Los traumatismos dentales son lesiones ocasionadas por golpes o accidentes que pueden afectar los dientes, encías, labios o estructuras óseas. En Pinasco Odontología, ofrecemos atención inmediata y especializada para tratar este tipo de emergencias y preservar la salud y estética de tu sonrisa.',
-        titleText1: 'Tipos de traumatismos mas comunes:',
+        titleText1: 'Tipos de traumatismos más comunes:',
         text1: [
             'Fracturas de piezas dentarias: Roturas parciales o completas de los dientes.',
             'Avulsión dental: Pérdida total de un diente debido a un impacto.',
@@ -284,7 +284,7 @@ const infoWork = [
         titleText2: '¿Qué hacer en caso de traumatismo dental?',
         text2: [
             'Diente fracturado: Enjuaga la boca con agua tibia y guarda el fragmento en leche o solución salina para llevarlo al consultorio.',
-            'Diente avulsionado: Si es posible, tomar la pieza dentaria por la corona, enjuagarlo bajo chorro de agua y sin tocar la raiz colocarlo en su posicion.',
+            'Diente avulsionado: Si es posible, tomar la pieza dentaria por la corona, enjuagarlo bajo chorro de agua y sin tocar la raíz colocarlo en su posición.',
             'Dolor o sangrado: Aplica compresas frías en la zona afectada y busca atención profesional.'
         ],
         titleText3: 'Tratamientos disponibles:',
@@ -299,7 +299,7 @@ const infoWork = [
     {
         id: 'ortodoncia',
         title: 'Ortodoncia',
-        description: 'La ortodoncia es una especialidad de la odontología que se encarga de corregir la posición de los dientes y las estructuras óseas de la mandíbula para mejorar la funcionalidad y la estética de la sonrisa. Utilizando dispositivos como brackets, alineadores invisibles o retenedores, el tratamiento ortodóntico ayuda a resolver problemas como dientes en mal posicion, sobremordidas, maloclusión y espacios entre dientes. En Pinasco Odontología, ofrecemos soluciones personalizadas que se adaptan a las necesidades de cada paciente, garantizando una sonrisa más saludable y armoniosa.',
+        description: 'La ortodoncia es una especialidad de la odontología que se encarga de corregir la posición de los dientes y las estructuras óseas de la mandíbula para mejorar la funcionalidad y la estética de la sonrisa. Utilizando dispositivos como brackets, alineadores invisibles o retenedores, el tratamiento ortodóntico ayuda a resolver problemas como dientes en mala posicion, sobremordidas, maloclusión y espacios entre dientes. En Pinasco Odontología, ofrecemos soluciones personalizadas que se adaptan a las necesidades de cada paciente, garantizando una sonrisa más saludable y armoniosa.',
         titleText1: 'Tratamientos con los que trabajamos:',
         text1: [
             'Ortodoncia convencional',
