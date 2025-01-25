@@ -256,7 +256,7 @@ const infoWork = [
     {
         id: 'endodoncia',
         title: 'Endodoncia',
-        description: 'La endodoncia, también conocida como tratamiento de conducto, es un procedimiento dental especializado que tiene como objetivo salvar dientes gravemente afectados por caries profundas, infecciones o traumatismos. Este tratamiento consiste en la eliminación de la pulpa dental, que es el tejido blando que se encuentra en el interior del diente, y que puede infectarse debido a bacterias que llegan a través de cavidades o fisuras. Después de limpiar el conducto radicular, se procede a sellarlo para evitar futuras infecciones y se coloca una corona para restaurar la forma y funcionalidad del diente.\n\nEste procedimiento es esencial para mantener los dientes naturales en la boca y evitar su extracción. En Pinasco Odontología, nuestro equipo altamente capacitado utiliza tecnologías de vanguardia para realizar la endodoncia de forma indolora y efectiva, garantizando que el diente afectado pueda seguir cumpliendo su función sin comprometer la salud general de tu boca.',
+        description: 'La endodoncia, también conocida como tratamiento de conducto, es un procedimiento dental especializado que tiene como objetivo salvar dientes gravemente afectados por caries profundas, infecciones o traumatismos. Este tratamiento consiste en la eliminación de la pulpa dental, que es el tejido blando que se encuentra en el interior del diente, y que puede infectarse o inflamarse de manera irreversible debido a bacterias que llegan a través de cavidades o fisuras. Después de conformar el conducto radicular, se procede a sellarlo para evitar futuras infecciones y se restaura la forma y funcionalidad del diente.\n\nEste procedimiento es esencial para mantener las piezas dentarias en boca y evitar su extracción. En Pinasco Odontología, nuestro equipo altamente capacitado utiliza tecnologías de vanguardia para realizar la endodoncia de forma indolora y efectiva, garantizando que el diente afectado pueda seguir cumpliendo su función sin comprometer la salud general de tu boca.',
         img: endodonciaDental
     },
     {
@@ -277,7 +277,7 @@ const infoWork = [
         description: 'Los traumatismos dentales son lesiones ocasionadas por golpes o accidentes que pueden afectar los dientes, encías, labios o estructuras óseas. En Pinasco Odontología, ofrecemos atención inmediata y especializada para tratar este tipo de emergencias y preservar la salud y estética de tu sonrisa.',
         titleText1: 'Tipos de traumatismos mas comunes:',
         text1: [
-            'Fracturas dentales: Roturas parciales o completas de los dientes.',
+            'Fracturas de piezas dentarias: Roturas parciales o completas de los dientes.',
             'Avulsión dental: Pérdida total de un diente debido a un impacto.',
             'Luxación dental: Movimiento o desplazamiento de un diente fuera de su posición normal.',
             'Lesiones en tejidos blandos: Cortes o heridas en labios, encías o lengua.'
@@ -285,7 +285,7 @@ const infoWork = [
         titleText2: '¿Qué hacer en caso de traumatismo dental?',
         text2: [
             'Diente fracturado: Enjuaga la boca con agua tibia y guarda el fragmento en leche o solución salina para llevarlo al consultorio.',
-            'Diente avulsionado: Si es posible, colócalo en su lugar sin tocar la raíz o consérvalo en leche y acude de inmediato al dentista.',
+            'Diente avulsionado: Si es posible, tomar la pieza dentaria por la corona, enjuagarlo bajo chorro de agua y sin tocar la raiz colocarlo en su posicion.',
             'Dolor o sangrado: Aplica compresas frías en la zona afectada y busca atención profesional.'
         ],
         titleText3: 'Tratamientos disponibles:',
@@ -300,7 +300,7 @@ const infoWork = [
     {
         id: 'ortodoncia',
         title: 'Ortodoncia',
-        description: 'La ortodoncia es una especialidad de la odontología que se encarga de corregir la posición de los dientes y las estructuras óseas de la mandíbula para mejorar la funcionalidad y la estética de la sonrisa. Utilizando dispositivos como brackets, alineadores invisibles o retenedores, el tratamiento ortodóntico ayuda a resolver problemas como dientes torcidos, sobremordidas, maloclusión y espacios entre dientes. En Pinasco Odontología, ofrecemos soluciones personalizadas que se adaptan a las necesidades de cada paciente, garantizando una sonrisa más saludable y armoniosa.',
+        description: 'La ortodoncia es una especialidad de la odontología que se encarga de corregir la posición de los dientes y las estructuras óseas de la mandíbula para mejorar la funcionalidad y la estética de la sonrisa. Utilizando dispositivos como brackets, alineadores invisibles o retenedores, el tratamiento ortodóntico ayuda a resolver problemas como dientes en mal posicion, sobremordidas, maloclusión y espacios entre dientes. En Pinasco Odontología, ofrecemos soluciones personalizadas que se adaptan a las necesidades de cada paciente, garantizando una sonrisa más saludable y armoniosa.',
         titleText1: 'Tratamientos con los que trabajamos:',
         text1: [
             'Ortodoncia convencional',
