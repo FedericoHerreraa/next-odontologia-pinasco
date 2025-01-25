@@ -316,7 +316,7 @@ const peopleOpinions = [
     },
     {
         name: "Reseña de Google",
-        opinion: "Muy buena atención y dedicación!! Prolijos y detallistas. Excelente!! Muy recomendable."
+        opinion: "Muy buena atención y dedicación! Prolijos y detallistas. Excelente!! Muy recomendable."
     },
     {
         name: "Reseña de Google",
