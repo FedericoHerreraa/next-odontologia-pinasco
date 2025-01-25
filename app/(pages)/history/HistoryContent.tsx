@@ -1,11 +1,19 @@
-'use client';
+'use client'
+
 import { CustomSeparator } from "@/app/components/CustomSeparator";
 import { FAQs } from "@/app/components/FAQs";
 import { bebas, montserrat } from "@/app/fonts/fonts"
+import Image from "next/image";
+
+// Images
+
+import camilla2 from '@/app/img/camilla2.jpeg'
+import camilla3 from '@/app/img/camilla3.jpeg'
+import consulta from '@/app/img/consulta.jpeg'
+import salaEspera2 from '@/app/img/salaEspera2.jpeg'
 
 
 export const HistoryContent = () => {
-
     return (
         <>
             <section className="container mx-auto px-4  h-full">
@@ -38,7 +46,6 @@ export const HistoryContent = () => {
                         <video
                             className="w-full h-full"
                             controls
-                            autoPlay
                             muted
                             loop
                             >
@@ -64,7 +71,48 @@ export const HistoryContent = () => {
                     </div>
                 </div>
             </section>
+
+            <section className="flex flex-col md:gap-4 gap-1 w-[80%] md:w-[50%] mx-auto my-20">
+                <div className="flex flex-wrap md:gap-4 gap-1">
+                    <div className="flex-1">
+                        <Image
+                            src={salaEspera2}
+                            alt="Sala de espera"
+                            layout="responsive"
+                            className="md:rounded-lg rounded-md shadow-md hover:scale-105 transition-transform duration-300"
+                        />
+                    </div>
+                    <div className="flex-1">
+                        <Image
+                            src={camilla2}
+                            alt="Camilla"
+                            layout="responsive"
+                            className="md:rounded-lg rounded-md shadow-md hover:scale-105 transition-transform duration-300"
+                        />
+                    </div>
+                </div>
+                <div className="flex flex-wrap md:gap-4 gap-1">
+                    <div className="flex-1">
+                        <Image
+                            src={camilla3}
+                            alt="Camilla 3"
+                            layout="responsive"
+                            className="md:rounded-lg rounded-md shadow-md hover:scale-105 transition-transform duration-300"
+                        />
+                    </div>
+                    <div className="flex-1">
+                        <Image
+                            src={consulta}
+                            alt="Consulta"
+                            layout="responsive"
+                            className="md:rounded-lg rounded-md shadow-md hover:scale-105 transition-transform duration-300"
+                        />
+                    </div>
+                </div>
+            </section>
+            
             <CustomSeparator />
+            
             <section>
                 <div className="text-center mb-8">
                     <p className={`text-center mt-10 mb-3 text-zinc-500 md:text-lg text-base ${montserrat.className}`}>Te aclaramos algunas dudas</p>
