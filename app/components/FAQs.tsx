@@ -21,7 +21,7 @@ export const FAQs = () => {
                     <p className={`font-semibold`}>Horarios de atención:</p>  
                     <ul className="ml-1">
                         <li>Lunes: 13:00 a 20:00 hs</li>
-                        <li>Martes: 12:00 a 20:00 hs</li>
+                        <li>Martes: 10:00 a 20:00 hs</li>
                         <li>Miércoles: 10:00 a 15:00 hs</li>
                         <li>Jueves: 12:00 a 20:00 hs</li>
                     </ul>
