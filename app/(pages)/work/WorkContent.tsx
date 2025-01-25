@@ -15,25 +15,23 @@ import protesis from '@/app/img/protesis.png'
 import blanqueamiento from '@/app/img/blanqueamiento.png'
 import endodoncia from '@/app/img/endodoncia.png'
 import limpieza from '@/app/img/limpieza.png'
-import peridontal from '@/app/img/peridontal.png'
+import traumatismos from '@/app/img/traumatismodental.png'
 import ortodoncia from '@/app/img/ortodoncia.png'
 import placa from '@/app/img/placa.png'
 import implantes from '@/app/img/implantes.png'
 
 // Images
-import endodonciaDental from '@/app/img/work/endodoncia.jpg'
-import limpiezaDental from '@/app/img/work/limpieza-dental.jpg'
 import placasDentales from '@/app/img/work/placas-dentales.webp'
 
-
-
 // Real Images
+import endodonciaDental from '@/app/img/work/endodoncia.jpg'
 import disenoSonrisaImg from '@/app/img/work/DiseñoSonrisa.png'
 import blanqueamientoImg from '@/app/img/work/blanqueamiento.jpg'
 import implantesImg from '@/app/img/work/implantes.jpg'
 import rehabilitacion from '@/app/img/work/rehabilitacion.png'
 import traumatismo from '@/app/img/work/traumatismo.png'
 import ortodonciaImg from '@/app/img/work/ortodoncia.png'
+import limpiezaPeriodontal from '@/app/img/work/limpiezaPeriodontal.jpg'
 
 export const WorkContent = () => {
     const scrollToSection = (sectionId: string) => {
@@ -185,7 +183,7 @@ const icons = [
     {
         id: 'traumatismos',
         title: "Traumatismos Dentales",
-        icon: peridontal
+        icon: traumatismos
     },
     {
         id: 'ortodoncia',
@@ -263,7 +261,7 @@ const infoWork = [
         id: 'limpieza',
         title: 'Limpieza Periodontal',
         description: 'La limpieza periodontal es un tratamiento especializado que se lleva a cabo para eliminar la placa y el sarro que se acumulan tanto sobre como debajo de las encías. Si bien una limpieza dental regular puede ser suficiente para mantener una buena higiene, en casos de enfermedades periodontales, como la gingivitis o la periodontitis, se requiere un procedimiento más profundo. Este tratamiento implica no solo la limpieza de la superficie dental, sino también el raspado y alisado de las raíces para eliminar las bacterias y las toxinas que afectan las encías y el hueso que soporta los dientes.\n\nEn casos más avanzados, la limpieza periodontal también puede incluir procedimientos quirúrgicos para restaurar la salud gingival. El tratamiento previene la pérdida de dientes y otros problemas bucales graves, mejorando la salud general de las encías y reduciendo el riesgo de complicaciones futuras. Con la limpieza periodontal, se busca recuperar la salud oral y evitar que las infecciones avancen hacia niveles más críticos.',
-        img: limpiezaDental
+        img: limpiezaPeriodontal
     },
     {
         id: 'placa',
