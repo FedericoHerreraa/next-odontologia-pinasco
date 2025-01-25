@@ -14,7 +14,7 @@ import { montserrat } from "@/app/fonts/fonts"
 
 export const FAQs = () => {
     return (
-        <Accordion type="single" collapsible className="md:w-[30%] w-[80%] mx-auto mb-40 mt-10">
+        <Accordion type="single" collapsible className="md:w-[40%] w-[80%] mx-auto mb-40 mt-10">
             <AccordionItem value="item-1">
                 <AccordionTrigger className={`${montserrat.className}`}>¿Cuáles son los horarios de atención?</AccordionTrigger>
                 <AccordionContent className={`font-semibold ${montserrat.className}`}>
@@ -38,7 +38,7 @@ export const FAQs = () => {
             <AccordionItem value="item-3">
                 <AccordionTrigger className={`${montserrat.className}`}>¿Trabajan con seguros o prepagas?</AccordionTrigger>
                 <AccordionContent className={`${montserrat.className}`}>
-                    <p className="font-semibold">No, el consultorio es 100% privado.</p>
+                    <p className="font-semibold">Trabajamos de forma particular realizando facturas para reintegro de obras sociales.</p>
                 </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-4">
@@ -51,6 +51,12 @@ export const FAQs = () => {
                 <AccordionTrigger className={`${montserrat.className}`}>¿Cada cuanto debo realizarme una limpieza?</AccordionTrigger>
                 <AccordionContent className={`${montserrat.className}`}>
                     <p className="font-semibold">Entre 6 meses y un año dependiendo de lo que te recomiende tu odontólogo.</p>
+                </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-6">
+                <AccordionTrigger className={`${montserrat.className}`}>¿Como hago para pedir presupuesto de un tratamiento?</AccordionTrigger>
+                <AccordionContent className={`${montserrat.className}`}>
+                    <p className="font-semibold">Para pasar presupuesto, es necesario solicitar una consulta clínica y el profesional solicitará los estudios radiográficos necesarios para poder realizar un diagnóstico preciso y por lo tanto, un tratamiento acorde.</p>
                 </AccordionContent>
             </AccordionItem>
         </Accordion>
