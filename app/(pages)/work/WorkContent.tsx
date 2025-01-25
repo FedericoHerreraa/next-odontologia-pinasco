@@ -197,7 +197,7 @@ const infoWork = [
     {
         id: 'estetica',
         title: 'Estetica y Diseño de Sonrisa',
-        description: 'El diseño de sonrisa es un tratamiento personalizado que combina técnicas de estética dental para mejorar la forma, el color y la alineación de tus dientes, logrando una sonrisa armónica y acorde a tus facciones. En Pinasco Odontología, utilizamos tecnología avanzada y un enfoque detallado para crear la sonrisa perfecta para ti.',
+        description: 'El diseño de sonrisa es un tratamiento personalizado que combina técnicas de estética dental para mejorar la forma, el color y la alineación de tus piezas dentarias, logrando una sonrisa armónica y acorde a tus facciones. En Pinasco Odontología, utilizamos tecnología avanzada y un enfoque detallado para crear la sonrisa perfecta para ti.',
         titleText1: '¿En qué consiste el Diseño de Sonrisa?',
         text1: [
             'Evaluación inicial: Analizamos tu sonrisa, estructura facial y necesidades especificas.',
@@ -214,7 +214,7 @@ const infoWork = [
     {
         id: 'implantes',
         title: 'Implantes y Extracciones Dentales',
-        description: 'Los implantes y extracciones dentales son procedimientos clave para mantener la funcionalidad y la salud bucal. Las extracciones dentales se realizan cuando un diente está dañado irreversiblemente, genera dolor o representa un riesgo para los dientes vecinos, incluyendo casos como muelas del juicio o caries severas. Por otro lado, los implantes dentales son una solución permanente para reemplazar dientes perdidos, mediante la colocación de tornillos de titanio que actúan como raíces artificiales, sobre los que se fijan coronas o prótesis.',
+        description: 'Los implantes y extracciones dentales son procedimientos clave para mantener la funcionalidad y la salud bucal. Las extracciones dentales se realizan cuando un pieza dentaria está dañada irreversiblemente, genera dolor o representa un riesgo para las piezas dentarias vecinas, incluyendo casos como muelas del juicio o caries severas. Por otro lado, los implantes dentales son una solución permanente para reemplazar las piezas dentarias perdidas, mediante la colocación de tornillos de titanio que actúan como raíces artificiales, sobre los que se fijan coronas o prótesis.',
         img: implantesImg
     },
     {
@@ -223,7 +223,7 @@ const infoWork = [
         description: 'La rehabilitación oral es un tratamiento integral que busca restaurar la funcionalidad, estética y salud de tu boca. En Pinasco Odontología, ofrecemos soluciones personalizadas para pacientes que han perdido piezas dentales, tienen desgaste severo o problemas funcionales en su sonrisa.',
         titleText1: '¿Qué Incluye la Rehabilitación Oral?',
         text1: [
-            'Diagnóstico completo: Evaluamos dientes, encías y articulación temporomandibular (ATM).',
+            'Diagnóstico completo: Evaluamos piezas dentarias, encías y articulación temporomandibular (ATM).',
             'Plan de tratamiento: Combinamos diversas especialidades para lograr un resultado óptimo.',
             'Procedimientos comunes: Prótesis dentales (fijas o removibles), Coronas y puentes, Implantes dentales , Tratamientos de encías, Ajustes de mordidas.'
         ],
@@ -231,14 +231,14 @@ const infoWork = [
         text2: [
             'Recuperás la funcionalidad para masticar y hablar correctamente.',
             'Mejora la estética de tu sonrisa.',
-            'Previene problemas futuros como el desgaste dental o el desplazamiento de dientes.'
+            'Previene problemas futuros como el desgaste dental o el desplazamiento de piezas dentarias.'
         ],
         img: rehabilitacion
     },
     {
         id: 'blanqueamiento',
         title: 'Blanqueamiento',
-        description: 'El blanqueamiento dental es un procedimiento estético que ayuda a aclarar el color de los dientes, eliminando manchas o decoloraciones causadas por alimentos, bebidas, tabaco o el paso del tiempo. En Pinasco Odontología, ofrecemos tratamientos seguros y efectivos para que logres una sonrisa más blanca y brillante.',
+        description: 'El blanqueamiento dental es un procedimiento estético que ayuda a aclarar el color de las piezas dentarias, eliminando manchas o decoloraciones causadas por alimentos, bebidas, tabaco o el paso del tiempo. En Pinasco Odontología, ofrecemos tratamientos seguros y efectivos para que logres una sonrisa más blanca y brillante.',
         titleText1: 'Beneficios del Blanqueamiento Dental:',
         text1: [
             'Mejora la estética de tu sonrisa.',
@@ -255,30 +255,30 @@ const infoWork = [
     {
         id: 'endodoncia',
         title: 'Endodoncia',
-        description: 'La endodoncia, también conocida como tratamiento de conducto, es un procedimiento dental especializado que tiene como objetivo salvar dientes gravemente afectados por caries profundas, infecciones o traumatismos. Este tratamiento consiste en la eliminación de la pulpa dental, que es el tejido blando que se encuentra en el interior del diente, y que puede infectarse o inflamarse de manera irreversible debido a bacterias que llegan a través de cavidades o fisuras. Después de conformar el conducto radicular, se procede a sellarlo para evitar futuras infecciones y se restaura la forma y funcionalidad del diente.\n\nEste procedimiento es esencial para mantener las piezas dentarias en boca y evitar su extracción. En Pinasco Odontología, nuestro equipo altamente capacitado utiliza tecnologías de vanguardia para realizar la endodoncia de forma indolora y efectiva, garantizando que el diente afectado pueda seguir cumpliendo su función sin comprometer la salud general de tu boca.',
+        description: 'La endodoncia, también conocida como tratamiento de conducto, es un procedimiento dental especializado que tiene como objetivo salvar piezas dentarias gravemente afectados por caries profundas, infecciones o traumatismos. Este tratamiento consiste en la eliminación de la pulpa dental, que es el tejido blando que se encuentra en el interior de la pieza dentaria, y que puede infectarse o inflamarse de manera irreversible debido a bacterias que llegan a través de cavidades o fisuras. Después de conformar el conducto radicular, se procede a sellarlo para evitar futuras infecciones y se restaura la forma y funcionalidad del pieza dentaria.\n\nEste procedimiento es esencial para mantener las piezas dentarias en boca y evitar su extracción. En Pinasco Odontología, nuestro equipo altamente capacitado utiliza tecnologías de vanguardia para realizar la endodoncia de forma indolora y efectiva, garantizando que la pieza dentaria afectada pueda seguir cumpliendo su función sin comprometer la salud general de tu boca.',
         img: endodonciaDental
     },
     {
         id: 'limpieza',
         title: 'Limpieza Periodontal',
-        description: 'La limpieza periodontal es un tratamiento especializado que se lleva a cabo para eliminar la placa y el sarro que se acumulan tanto sobre como debajo de las encías. Si bien una limpieza dental regular puede ser suficiente para mantener una buena higiene, en casos de enfermedades periodontales, como la gingivitis o la periodontitis, se requiere un procedimiento más profundo. Este tratamiento implica no solo la limpieza de la superficie dental, sino también el raspado y alisado de las raíces para eliminar las bacterias y las toxinas que afectan las encías y el hueso que soporta los dientes.\n\nEn casos más avanzados, la limpieza periodontal también puede incluir procedimientos quirúrgicos para restaurar la salud gingival. El tratamiento previene la pérdida de dientes y otros problemas bucales graves, mejorando la salud general de las encías y reduciendo el riesgo de complicaciones futuras. Con la limpieza periodontal, se busca recuperar la salud oral y evitar que las infecciones avancen hacia niveles más críticos.',
+        description: 'La limpieza periodontal es un tratamiento especializado que se lleva a cabo para eliminar la placa y el sarro que se acumulan tanto sobre como debajo de las encías. Si bien una limpieza dental regular puede ser suficiente para mantener una buena higiene, en casos de enfermedades periodontales, como la gingivitis o la periodontitis, se requiere un procedimiento más profundo. Este tratamiento implica no solo la limpieza de la superficie dental, sino también el raspado y alisado de las raíces para eliminar las bacterias y las toxinas que afectan las encías y el hueso que soporta las piezas dentarias.\n\nEn casos más avanzados, la limpieza periodontal también puede incluir procedimientos quirúrgicos para restaurar la salud gingival. El tratamiento previene la pérdida de piezas dentarias y otros problemas bucales graves, mejorando la salud general de las encías y reduciendo el riesgo de complicaciones futuras. Con la limpieza periodontal, se busca recuperar la salud oral y evitar que las infecciones avancen hacia niveles más críticos.',
         img: limpiezaPeriodontal
     },
     {
         id: 'placa',
         title: 'Placa Miorrelajante',
-        description: 'Las placas miorrelajantes son dispositivos dentales personalizados que se utilizan para tratar diversos trastornos relacionados con la articulación temporomandibular (ATM) y para aliviar los efectos del bruxismo. El bruxismo es una condición en la que las personas rechinan o aprietan los dientes involuntariamente, lo que puede causar desgaste dental, dolor en los músculos faciales y en las articulaciones, y molestias en el cuello y la cabeza. La placa miorrelajante se coloca generalmente durante el sueño para evitar el contacto excesivo entre los dientes y prevenir los efectos del bruxismo.\n\nEste tratamiento también es muy efectivo para aliviar los dolores relacionados con la disfunción de la ATM, que es cuando la mandíbula no se mueve correctamente, causando dolor o rigidez. Las placas dentales ayudan a realinear la mandíbula y a reducir la presión en los músculos de la cara, lo que puede proporcionar un alivio significativo. En Pinasco Odontología, ofrecemos placas miorrelajantes personalizadas que se ajustan perfectamente a la estructura dental de cada paciente, asegurando una solución cómoda y eficaz para el alivio del dolor y la mejora de la salud bucal.',
+        description: 'Las placas miorrelajantes son dispositivos dentales personalizados que se utilizan para tratar diversos trastornos relacionados con la articulación temporomandibular (ATM) y para aliviar los efectos del bruxismo. El bruxismo es una condición en la que las personas rechinan o aprietan las piezas dentarias involuntariamente, lo que puede causar desgaste dental, dolor en los músculos faciales y en las articulaciones, y molestias en el cuello y la cabeza. La placa miorrelajante se coloca generalmente durante el sueño para evitar el contacto excesivo entre las piezas dentarias y prevenir los efectos del bruxismo.\n\nEste tratamiento también es muy efectivo para aliviar los dolores relacionados con la disfunción de la ATM, que es cuando la mandíbula no se mueve correctamente, causando dolor o rigidez. Las placas dentales ayudan a realinear la mandíbula y a reducir la presión en los músculos de la cara, lo que puede proporcionar un alivio significativo. En Pinasco Odontología, ofrecemos placas miorrelajantes personalizadas que se ajustan perfectamente a la estructura dental de cada paciente, asegurando una solución cómoda y eficaz para el alivio del dolor y la mejora de la salud bucal.',
         img: placasDentales
     },
     {
         id: 'traumatismos',
         title: 'Traumatismos Dentales',
-        description: 'Los traumatismos dentales son lesiones ocasionadas por golpes o accidentes que pueden afectar los dientes, encías, labios o estructuras óseas. En Pinasco Odontología, ofrecemos atención inmediata y especializada para tratar este tipo de emergencias y preservar la salud y estética de tu sonrisa.',
+        description: 'Los traumatismos dentales son lesiones ocasionadas por golpes o accidentes que pueden afectar las piezas dentarias, encías, labios o estructuras óseas. En Pinasco Odontología, ofrecemos atención inmediata y especializada para tratar este tipo de emergencias y preservar la salud y estética de tu sonrisa.',
         titleText1: 'Tipos de traumatismos más comunes:',
         text1: [
-            'Fracturas de piezas dentarias: Roturas parciales o completas de los dientes.',
-            'Avulsión dental: Pérdida total de un diente debido a un impacto.',
-            'Luxación dental: Movimiento o desplazamiento de un diente fuera de su posición normal.',
+            'Fracturas de piezas dentarias: Roturas parciales o completas de las piezas dentarias.',
+            'Avulsión dental: Pérdida total de una pieza dentaria debido a un impacto.',
+            'Luxación dental: Movimiento o desplazamiento de una pieza dentaria fuera de su posición normal.',
             'Lesiones en tejidos blandos: Cortes o heridas en labios, encías o lengua.'
         ],
         titleText2: '¿Qué hacer en caso de traumatismo dental?',
@@ -299,7 +299,7 @@ const infoWork = [
     {
         id: 'ortodoncia',
         title: 'Ortodoncia',
-        description: 'La ortodoncia es una especialidad de la odontología que se encarga de corregir la posición de los dientes y las estructuras óseas de la mandíbula para mejorar la funcionalidad y la estética de la sonrisa. Utilizando dispositivos como brackets, alineadores invisibles o retenedores, el tratamiento ortodóntico ayuda a resolver problemas como dientes en mala posicion, sobremordidas, maloclusión y espacios entre dientes. En Pinasco Odontología, ofrecemos soluciones personalizadas que se adaptan a las necesidades de cada paciente, garantizando una sonrisa más saludable y armoniosa.',
+        description: 'La ortodoncia es una especialidad de la odontología que se encarga de corregir la posición de las piezas dentarias y las estructuras óseas de la mandíbula para mejorar la funcionalidad y la estética de la sonrisa. Utilizando dispositivos como brackets, alineadores invisibles o retenedores, el tratamiento ortodóntico ayuda a resolver problemas como piezas dentarias en mala posicion, sobremordidas, maloclusión y espacios entre piezas. En Pinasco Odontología, ofrecemos soluciones personalizadas que se adaptan a las necesidades de cada paciente, garantizando una sonrisa más saludable y armoniosa.',
         titleText1: 'Tratamientos con los que trabajamos:',
         text1: [
             'Ortodoncia convencional',
