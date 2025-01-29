@@ -6,7 +6,7 @@ import { useMobileView } from "@/app/context/MobileView";
 import { montserrat } from "@/app/fonts/fonts";
 import Link from "next/link";
 import Image from "next/image";
-import logoHorizontal from '@/app/img/LogoHorizontal@2x.png'
+// import logoHorizontal from '@/app/img/LogoHorizontal@2x.png'
 import logoVertical from '@/app/img/LogoVertical@2x.png'
 
 export const LandingPage = () => {
@@ -21,7 +21,7 @@ export const LandingPage = () => {
           <div className="md:w-1/2 flex flex-col gap-5">
             <div className="flex md:justify-start justify-center">
               <Image
-                src={isMobile ? logoVertical : logoHorizontal}
+                src={logoVertical}
                 alt="logo"
                 width={isMobile ? 200 : 250}
                 height={isMobile ? 100 : 100}
