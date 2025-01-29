@@ -27,5 +27,6 @@ const treatmentNames = [
     'Peridontal',
     'Bucomaxilofacial',
     'Placa',
-    'Traumatismos Dentarios'
+    'Traumatismos Dentarios',
+    'Odontopediatría'
 ];

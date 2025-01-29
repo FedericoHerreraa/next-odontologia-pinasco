@@ -5,12 +5,24 @@ import { FAQs } from "@/app/components/FAQs";
 import { bebas, montserrat } from "@/app/fonts/fonts"
 import Image from "next/image";
 
+import {
+    Carousel,
+    CarouselContent,
+    CarouselItem
+  } from "@/components/ui/carousel"
+
+  
+  
+
 // Images
 
 import camilla2 from '@/app/img/camilla2.jpeg'
 import camilla3 from '@/app/img/camilla3.jpeg'
 import consulta from '@/app/img/consulta.jpeg'
 import salaEspera2 from '@/app/img/salaEspera2.jpeg'
+import odontopediatria from '@/app/img/odontopediatria.jpg'
+import trabajando from '@/app/img/trabajando.jpg'
+import trabajando2 from '@/app/img/trabajando2.jpg'
 
 
 export const HistoryContent = () => {
@@ -71,46 +83,73 @@ export const HistoryContent = () => {
                     </div>
                 </div>
             </section>
-
-            <section className="flex flex-col md:gap-4 gap-1 w-[80%] md:w-[50%] mx-auto my-20">
-                <div className="flex flex-wrap md:gap-4 gap-1">
-                    <div className="flex-1">
-                        <Image
-                            src={salaEspera2}
-                            alt="Sala de espera"
-                            layout="responsive"
-                            className="md:rounded-lg rounded-md shadow-md hover:scale-105 transition-transform duration-300"
-                        />
-                    </div>
-                    <div className="flex-1">
-                        <Image
-                            src={camilla2}
-                            alt="Camilla"
-                            layout="responsive"
-                            className="md:rounded-lg rounded-md shadow-md hover:scale-105 transition-transform duration-300"
-                        />
-                    </div>
-                </div>
-                <div className="flex flex-wrap md:gap-4 gap-1">
-                    <div className="flex-1">
-                        <Image
-                            src={camilla3}
-                            alt="Camilla 3"
-                            layout="responsive"
-                            className="md:rounded-lg rounded-md shadow-md hover:scale-105 transition-transform duration-300"
-                        />
-                    </div>
-                    <div className="flex-1">
-                        <Image
-                            src={consulta}
-                            alt="Consulta"
-                            layout="responsive"
-                            className="md:rounded-lg rounded-md shadow-md hover:scale-105 transition-transform duration-300"
-                        />
-                    </div>
-                </div>
-            </section>
             
+            <section className="flex flex-col md:gap-4 gap-1 w-[80%] md:w-[70%] mx-auto my-20">
+            
+                <Carousel >
+                    <CarouselContent>
+                        <CarouselItem className="md:basis-1/2 lg:basis-1/3">
+                            <Image
+                                src={salaEspera2}
+                                alt="Sala de espera"
+                                layout="responsive"
+                                className="md:rounded-lg rounded-md shadow-md hover:scale-105 transition-transform duration-300"
+                            />
+                        </CarouselItem>
+                        <CarouselItem className="md:basis-1/2 lg:basis-1/3">
+                            <Image
+                                src={camilla2}
+                                alt="Camilla"
+                                layout="responsive"
+                                className="md:rounded-lg rounded-md shadow-md hover:scale-105 transition-transform duration-300"
+                            />
+                        </CarouselItem>
+                        <CarouselItem className="md:basis-1/2 lg:basis-1/3">
+                            <Image
+                                src={camilla3}
+                                alt="Camilla 3"
+                                layout="responsive"
+                                className="md:rounded-lg rounded-md shadow-md hover:scale-105 transition-transform duration-300"
+                            />
+                        </CarouselItem>
+                        <CarouselItem className="md:basis-1/2 lg:basis-1/3">
+                            <Image
+                                src={consulta}
+                                alt="Consulta"
+                                layout="responsive"
+                                className="md:rounded-lg rounded-md shadow-md hover:scale-105 transition-transform duration-300"
+                            />
+                        </CarouselItem>
+                        <CarouselItem className="md:basis-1/2 lg:basis-1/3">
+                            <Image
+                                src={odontopediatria}
+                                alt="odontopediatria"
+                                layout="responsive"
+                                className="md:rounded-lg rounded-md shadow-md hover:scale-105 transition-transform duration-300"
+                            />
+                        </CarouselItem>
+                        <CarouselItem className="md:basis-1/2 lg:basis-1/3">
+                            <Image
+                                src={trabajando}
+                                alt="Consulta"
+                                layout="responsive"
+                                className="md:rounded-lg rounded-md shadow-md hover:scale-105 transition-transform duration-300"
+                            />
+                        </CarouselItem>
+                        <CarouselItem className="md:basis-1/2 lg:basis-1/3">
+                            <Image
+                                src={trabajando2}
+                                alt="Consulta"
+                                layout="responsive"
+                                className="md:rounded-lg rounded-md shadow-md hover:scale-105 transition-transform duration-300"
+                            />
+                        </CarouselItem>
+                        
+                    </CarouselContent>
+                </Carousel>
+            </section>
+
+
             <CustomSeparator />
             
             <section>

@@ -32,7 +32,8 @@ export const LandingPage = () => {
             <span className="font-bold"> mejor cuidado dental</span> con un enfoque personalizado y profesional.
             Nuestro equipo de odontólogos altamente capacitados utiliza
             tecnología de vanguardia para garantizarte una experiencia 
-            <span className="font-bold"> cómoda, segura y efectiva</span>.
+            <span className="font-bold"> cómoda, segura y efectiva</span>. <br />
+            ¡Tené en cuenta que también realizamos Odontopediatría!
           </p>
           <Link href='/contact-us' className="bg-[#00a2af] text-white md:w-[60%] w-[70%] md:px-5 px-1 md:py-4 py-2 mt-2 rounded-xl hover:scale-105 duration-200 flex justify-center items-center md:gap-3 gap-1 mx-auto md:mx-0">
             <p className={`text-sm md:text-lg ${montserrat.className}`}>Hacé tu Consulta Acá</p>
