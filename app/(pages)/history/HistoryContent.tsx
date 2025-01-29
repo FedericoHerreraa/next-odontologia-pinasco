@@ -4,16 +4,10 @@ import { CustomSeparator } from "@/app/components/CustomSeparator";
 import { FAQs } from "@/app/components/FAQs";
 import { bebas, montserrat } from "@/app/fonts/fonts"
 import Image from "next/image";
+import Marquee from "react-fast-marquee"
 
-import {
-    Carousel,
-    CarouselContent,
-    CarouselItem
-  } from "@/components/ui/carousel"
 
-  
-  
-
+    
 // Images
 
 import camilla2 from '@/app/img/camilla2.jpeg'
@@ -84,70 +78,23 @@ export const HistoryContent = () => {
                 </div>
             </section>
             
-            <section className="flex flex-col md:gap-4 gap-1 w-[80%] md:w-[70%] mx-auto my-20">
-            
-                <Carousel >
-                    <CarouselContent>
-                        <CarouselItem className="md:basis-1/2 lg:basis-1/3">
+            <section className="flex flex-col md:gap-4 gap-1 w-[80%] md:w-[80%] mx-auto my-20">
+                <Marquee speed={60} gradient={false} className="flex items-center">
+                    {images.map((image, index) => (
+                        <div key={index} className="flex-shrink-0 mx-2">
                             <Image
-                                src={salaEspera2}
-                                alt="Sala de espera"
-                                layout="responsive"
-                                className="md:rounded-lg rounded-md shadow-md hover:scale-105 transition-transform duration-300"
+                                src={image.src}
+                                alt={image.alt}
+                                layout="intrinsic"
+                                width={220} 
+                                height={150}
+                                className="md:rounded-lg rounded-md shadow-md transition-transform duration-300"
                             />
-                        </CarouselItem>
-                        <CarouselItem className="md:basis-1/2 lg:basis-1/3">
-                            <Image
-                                src={camilla2}
-                                alt="Camilla"
-                                layout="responsive"
-                                className="md:rounded-lg rounded-md shadow-md hover:scale-105 transition-transform duration-300"
-                            />
-                        </CarouselItem>
-                        <CarouselItem className="md:basis-1/2 lg:basis-1/3">
-                            <Image
-                                src={camilla3}
-                                alt="Camilla 3"
-                                layout="responsive"
-                                className="md:rounded-lg rounded-md shadow-md hover:scale-105 transition-transform duration-300"
-                            />
-                        </CarouselItem>
-                        <CarouselItem className="md:basis-1/2 lg:basis-1/3">
-                            <Image
-                                src={consulta}
-                                alt="Consulta"
-                                layout="responsive"
-                                className="md:rounded-lg rounded-md shadow-md hover:scale-105 transition-transform duration-300"
-                            />
-                        </CarouselItem>
-                        <CarouselItem className="md:basis-1/2 lg:basis-1/3">
-                            <Image
-                                src={odontopediatria}
-                                alt="odontopediatria"
-                                layout="responsive"
-                                className="md:rounded-lg rounded-md shadow-md hover:scale-105 transition-transform duration-300"
-                            />
-                        </CarouselItem>
-                        <CarouselItem className="md:basis-1/2 lg:basis-1/3">
-                            <Image
-                                src={trabajando}
-                                alt="Consulta"
-                                layout="responsive"
-                                className="md:rounded-lg rounded-md shadow-md hover:scale-105 transition-transform duration-300"
-                            />
-                        </CarouselItem>
-                        <CarouselItem className="md:basis-1/2 lg:basis-1/3">
-                            <Image
-                                src={trabajando2}
-                                alt="Consulta"
-                                layout="responsive"
-                                className="md:rounded-lg rounded-md shadow-md hover:scale-105 transition-transform duration-300"
-                            />
-                        </CarouselItem>
-                        
-                    </CarouselContent>
-                </Carousel>
+                        </div>
+                    ))}
+                </Marquee>
             </section>
+
 
 
             <CustomSeparator />
@@ -163,4 +110,14 @@ export const HistoryContent = () => {
         
     );
 };
+
+const images = [
+    { id:1, src: salaEspera2, alt: "Sala de espera" },
+    { id:2, src: camilla2, alt: "Camilla" },
+    { id:3, src: camilla3, alt: "Camilla 3" },
+    { id:4, src: consulta, alt: "Consulta" },
+    { id:5, src: odontopediatria, alt: "Odontopediatría" },
+    { id:6, src: trabajando, alt: "Consulta" },
+    { id:7, src: trabajando2, alt: "Consulta" },
+];
 
