@@ -23,11 +23,11 @@ export const LandingPage = () => {
               <Image
                 src={logoVertical}
                 alt="logo"
-                width={isMobile ? 200 : 250}
-                height={isMobile ? 100 : 100}
+                width={isMobile ? 200 : 270}
+                height={isMobile ? 100 : 130}
               />
             </div>
-            <p className={`text-zinc-500 text-sm md:text-base mb-10 text-center md:text-left ${montserrat.className}`}>
+            <p className={`text-zinc-500 text-sm md:text-lg mb-10 text-center md:text-left ${montserrat.className}`}>
               En nuestro consultorio privado, nos especializamos en brindarte el
               <span className="font-bold"> mejor cuidado dental</span> con un enfoque personalizado y profesional.
               Nuestro equipo de odontólogos altamente capacitados utiliza
