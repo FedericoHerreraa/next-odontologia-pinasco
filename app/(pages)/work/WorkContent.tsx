@@ -8,6 +8,8 @@ import Image from "next/image"
 
 import { RiStarSFill } from "react-icons/ri";
 import { FcGoogle } from "react-icons/fc";
+import { GoArrowRight } from "react-icons/go";
+
 
 // Icons
 import esteticaDental from '@/app/img/estetica.png'
@@ -39,6 +41,13 @@ export const WorkContent = () => {
         const element = document.getElementById(sectionId);
         if (element) element.scrollIntoView({ behavior: "smooth" });
     };
+
+    const navigateToWhatsApp = () => {
+        const phoneNumber = process.env.NEXT_PUBLIC_PHONE_NUMBER
+        const message = encodeURIComponent("Hola, me gustaria hacer una consulta...")
+
+        window.open(`https://wa.me/${phoneNumber}?text=${message}`, "_blank");
+    }
 
     return (
         <div className="min-h-[100vh]">
@@ -128,6 +137,14 @@ export const WorkContent = () => {
                                         </ul>
                                     </div>
                                 )}
+                                <div className="mt-10">
+                                    <button
+                                        onClick={() => navigateToWhatsApp()} 
+                                        className="border-l-2 border-l-[#46bcc9] bg-cyan-50 p-2 pl-3 flex items-center gap-2">
+                                        <p className={`${montserrat.className} hover:pr-2 transition-all duration-150`}>{item.btnContent}</p>
+                                        <GoArrowRight size={25} className="text-[#46bcc9]"/>
+                                    </button>
+                                </div>
                             </div>
                             <div className="md:w-1/2 ">
                                 <Image 
@@ -209,13 +226,16 @@ const infoWork = [
             'Incrementa tu confianza y autoestima.',
             'Resultados naturales y duraderos.'
         ],
-        img: disenoSonrisaImg
+        img: disenoSonrisaImg,
+        btnContent: 'Quiero mi Diseño de Sonrisa'
     },
     {
         id: 'implantes',
         title: 'Implantes y Extracciones Dentales',
         description: 'Los implantes y extracciones dentales son procedimientos clave para mantener la funcionalidad y la salud bucal. Las extracciones dentales se realizan cuando un pieza dentaria está dañada irreversiblemente, genera dolor o representa un riesgo para las piezas dentarias vecinas, incluyendo casos como muelas del juicio o caries severas. Por otro lado, los implantes dentales son una solución permanente para reemplazar las piezas dentarias perdidas, mediante la colocación de tornillos de titanio que actúan como raíces artificiales, sobre los que se fijan coronas o prótesis.',
-        img: implantesImg
+        img: implantesImg,
+        btnContent: 'Quiero mi Implante Dental'
+        
     },
     {
         id: 'protesis',
@@ -233,7 +253,8 @@ const infoWork = [
             'Mejora la estética de tu sonrisa.',
             'Previene problemas futuros como el desgaste dental o el desplazamiento de piezas dentarias.'
         ],
-        img: rehabilitacion
+        img: rehabilitacion,
+        btnContent: 'Quiero una Rehabilitación Oral'
     },
     {
         id: 'blanqueamiento',
@@ -250,25 +271,29 @@ const infoWork = [
             'En consultorio: Utilizamos agentes blanqueadores de alta calidad y tecnología avanzada para resultados inmediatos.',
             'En casa: Con férulas personalizadas y geles profesionales, ideal para quienes prefieren mayor comodidad.'
         ],
-        img: blanqueamientoImg
+        img: blanqueamientoImg,
+        btnContent: 'Quiero mi Blanqueamiento Dental'
     },
     {
         id: 'endodoncia',
         title: 'Endodoncia',
         description: 'La endodoncia, también conocida como tratamiento de conducto, es un procedimiento dental especializado que tiene como objetivo salvar piezas dentarias gravemente afectados por caries profundas, infecciones o traumatismos. Este tratamiento consiste en la eliminación de la pulpa dental, que es el tejido blando que se encuentra en el interior de la pieza dentaria, y que puede infectarse o inflamarse de manera irreversible debido a bacterias que llegan a través de cavidades o fisuras. Después de conformar el conducto radicular, se procede a sellarlo para evitar futuras infecciones y se restaura la forma y funcionalidad del pieza dentaria.\n\nEste procedimiento es esencial para mantener las piezas dentarias en boca y evitar su extracción. En Pinasco Odontología, nuestro equipo altamente capacitado utiliza tecnologías de vanguardia para realizar la endodoncia de forma indolora y efectiva, garantizando que la pieza dentaria afectada pueda seguir cumpliendo su función sin comprometer la salud general de tu boca.',
-        img: endodonciaDental
+        img: endodonciaDental,
+        btnContent: 'Necesito una Endodoncia'
     },
     {
         id: 'limpieza',
         title: 'Limpieza Periodontal',
         description: 'La limpieza periodontal es un tratamiento especializado que se lleva a cabo para eliminar la placa y el sarro que se acumulan tanto sobre como debajo de las encías. Si bien una limpieza dental regular puede ser suficiente para mantener una buena higiene, en casos de enfermedades periodontales, como la gingivitis o la periodontitis, se requiere un procedimiento más profundo. Este tratamiento implica no solo la limpieza de la superficie dental, sino también el raspado y alisado de las raíces para eliminar las bacterias y las toxinas que afectan las encías y el hueso que soporta las piezas dentarias.\n\nEn casos más avanzados, la limpieza periodontal también puede incluir procedimientos quirúrgicos para restaurar la salud gingival. El tratamiento previene la pérdida de piezas dentarias y otros problemas bucales graves, mejorando la salud general de las encías y reduciendo el riesgo de complicaciones futuras. Con la limpieza periodontal, se busca recuperar la salud oral y evitar que las infecciones avancen hacia niveles más críticos.',
-        img: limpiezaPeriodontal
+        img: limpiezaPeriodontal,
+        btnContent: 'Necesito una Limpieza Periodontal'
     },
     {
         id: 'placa',
         title: 'Placa Miorrelajante',
         description: 'Las placas miorrelajantes son dispositivos dentales personalizados que se utilizan para tratar diversos trastornos relacionados con la articulación temporomandibular (ATM) y para aliviar los efectos del bruxismo. El bruxismo es una condición en la que las personas rechinan o aprietan las piezas dentarias involuntariamente, lo que puede causar desgaste dental, dolor en los músculos faciales y en las articulaciones, y molestias en el cuello y la cabeza. La placa miorrelajante se coloca generalmente durante el sueño para evitar el contacto excesivo entre las piezas dentarias y prevenir los efectos del bruxismo.\n\nEste tratamiento también es muy efectivo para aliviar los dolores relacionados con la disfunción de la ATM, que es cuando la mandíbula no se mueve correctamente, causando dolor o rigidez. Las placas dentales ayudan a realinear la mandíbula y a reducir la presión en los músculos de la cara, lo que puede proporcionar un alivio significativo. En Pinasco Odontología, ofrecemos placas miorrelajantes personalizadas que se ajustan perfectamente a la estructura dental de cada paciente, asegurando una solución cómoda y eficaz para el alivio del dolor y la mejora de la salud bucal.',
-        img: placasDentales
+        img: placasDentales,
+        btnContent: 'Necesito una Placa Miorrelajante'
     },
     {
         id: 'traumatismos',
@@ -294,7 +319,8 @@ const infoWork = [
             'Tratamiento de conducto si hay daño en la raíz.',
             'Cirugía oferente si el hueso o tejidos blandos están comprometidos.'
         ],
-        img: traumatismo
+        img: traumatismo,
+        btnContent: 'Tengo un Traumatismo Dental'
     },
     {
         id: 'ortodoncia',
@@ -305,7 +331,8 @@ const infoWork = [
             'Ortodoncia convencional',
             'Alineadores invisibles'
         ],
-        img: ortodonciaImg
+        img: ortodonciaImg,
+        btnContent: 'Necesito Ortodoncia'
       }
 ];
 
