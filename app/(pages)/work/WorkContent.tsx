@@ -5,6 +5,7 @@ import { bebas, montserrat } from "@/app/fonts/fonts"
 import { TitleSection } from "./TitleSection"
 import Marquee from "react-fast-marquee"
 import Image from "next/image"
+import Link from "next/link"
 
 import { RiStarSFill } from "react-icons/ri";
 import { FcGoogle } from "react-icons/fc";
@@ -72,6 +73,17 @@ export const WorkContent = () => {
                         ))}
                     </Marquee>
                 <div className="absolute top-0 right-0 w-10 h-full bg-gradient-to-l from-white via-white/80 to-transparent pointer-events-none z-10" />
+
+                <div className="flex justify-center mt-10">
+                    <Link
+                        target="_blank" 
+                        href='https://www.google.com.ar/maps/place/Odontología+Pinasco/@-34.5500287,-58.4725496,17z/data=!3m1!4b1!4m6!3m5!1s0x95bcb7e749d648e9:0xb3390ff77985fc94!8m2!3d-34.5500331!4d-58.4699747!16s%2Fg%2F11j1js7njm?entry=ttu&g_ep=EgoyMDI1MDEyNy4wIKXMDSoASAFQAw%3D%3D' 
+                        className="flex items-center gap-3 border border-[#46bcc9] px-5 py-1 rounded-3xl hover:bg-zinc-100 transition-all duration-75"
+                    >
+                        <p className={`text-center text-zinc-800 text-sm ${montserrat.className}`}>Ver más reseñas</p>
+                        <GoArrowRight size={25} className="text-[#46bcc9]"/>
+                    </Link>
+                </div>
             </article>
 
             <article className="mb-20">
