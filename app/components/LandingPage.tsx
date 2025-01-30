@@ -35,7 +35,7 @@ export const LandingPage = () => {
               <span className="font-bold"> cómoda, segura y efectiva</span>.
               ¡Tené en cuenta que también realizamos Odontopediatría!
             </p>
-            <h1 className={`text-zinc-500 md:text-base text-sm font-bold mb-3 ${montserrat.className}`}>Od. Laura B Pinasco, Od. Micaela Gonzales Pinasco y Equipo Profesional</h1>
+            <p className={`text-zinc-500 md:text-left text-center md:text-base text-xs font-bold mb-3 ${montserrat.className}`}>Od. Laura B Pinasco, Od. Micaela Gonzales Pinasco y Equipo Profesional</p>
             <Link href='/contact-us' className="bg-[#00a2af] text-white md:w-[60%] w-[70%] md:px-5 px-1 md:py-4 py-2 mt-2 rounded-xl hover:scale-105 duration-200 flex justify-center items-center md:gap-3 gap-1 mx-auto md:mx-0">
               <p className={`text-sm md:text-lg ${montserrat.className}`}>Hacé tu Consulta Acá</p>
               <CiMemoPad size={isMobile ? 20 : 25} />
