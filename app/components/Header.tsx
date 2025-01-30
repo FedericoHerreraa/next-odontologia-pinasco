@@ -62,7 +62,7 @@ export const Header = () => {
                 <div>
                     <Link href='/'>
                         <p className={`${montserrat.className} text-zinc-900 md:text-sm text-xs`}>Consultorio Privado</p>
-                        <h1 className={`text-2xl md:text-3xl font-semibold text-center md:text-left text-black ${bebas.className}`}>
+                        <h1 className={`text-2xl md:text-3xl font-bold text-center md:text-left text-black ${bebas.className}`}>
                             Pinasco Odontología
                         </h1>
                     </Link>
