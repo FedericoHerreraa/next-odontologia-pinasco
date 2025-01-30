@@ -41,8 +41,8 @@ export const Header = () => {
     };
     
     return (
-        <header className="bg-gradient-to-b from-[#58c8d0] via-zinc-200 to-white  flex flex-col items-center ">
-            <section className="flex items-center justify-end gap-2 border-b md:pr-10 pr-2 border-zinc-500 border-opacity-20 w-full">
+        <header className="flex flex-col items-center ">
+            <section className="flex items-center justify-end gap-2 border-b md:pr-10 pr-2 border-zinc-100 border-opacity-20 w-full">
                 <div onClick={() => scrollToSection("location")}>
                     <MdLocationPin size={20} className="cursor-pointer text-red-800 opacity-65"/>
                 </div>
@@ -58,11 +58,11 @@ export const Header = () => {
                     Pinasco
                 </Link>
             </section>
-            <section className="flex items-center  text-zinc-800 text-base justify-between md:px-10 px-3 cursor-pointer border-b border-b-zinc-400 border-opacity-30 w-full h-20">
+            <section className="flex items-center  text-zinc-800 text-base justify-between md:px-10 px-3 cursor-pointer border-b border-b-zinc-100 border-opacity-30 w-full h-20">
                 <div>
                     <Link href='/'>
-                        <p className={`${montserrat.className} text-zinc-500 md:text-sm text-xs`}>Consultorio Privado</p>
-                        <h1 className={`text-2xl md:text-3xl font-semibold text-center md:text-left text-zinc-600 ${bebas.className}`}>
+                        <p className={`${montserrat.className} text-zinc-200 md:text-sm text-xs`}>Consultorio Privado</p>
+                        <h1 className={`text-2xl md:text-3xl font-semibold text-center md:text-left text-zinc-100 ${bebas.className}`}>
                             Pinasco Odontología
                         </h1>
                     </Link>
@@ -89,7 +89,7 @@ export const Header = () => {
                         </SheetContent>
                     </Sheet>
                 ) : (
-                    <div className="flex gap-10  text-zinc-600">
+                    <div className="flex gap-10  text-zinc-100">
                         <Link href='/work' className={`hover:scale-105 duration-200 ${montserrat.className}`}>Nuestro Trabajo</Link>
                         <Link href='/history' className={`hover:scale-105 duration-200 ${montserrat.className}`}>Conoce Quiénes Somos</Link>
                         <Link href='/contact-us' className={`hover:scale-105 duration-200 ${montserrat.className}`}>Contactanos Ahora</Link>

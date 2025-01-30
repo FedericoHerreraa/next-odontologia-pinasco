@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Header } from "./components/Header";
+// import { Header } from "./components/Header";
 import { WhatsAppIcon } from "./components/WhatsAppIcon";
 import { MobileViewProvider } from "./context/MobileView";
 import { Footer } from "./components/Footer";
@@ -19,7 +19,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       </head>
       <body>
         <MobileViewProvider>
-          <Header />
+          {/* <Header /> */}
           {children}
           <WhatsAppIcon />
           <Footer />
