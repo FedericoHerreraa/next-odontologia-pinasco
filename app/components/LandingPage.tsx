@@ -16,7 +16,7 @@ export const LandingPage = () => {
 
   return (
       <div
-        className="bg-cover opacity-80 bg-fixed bg-center md:h-[100vh] h-[80vh] mb-10"
+        className="bg-cover opacity-80 md:bg-fixed bg-center md:h-[100vh] h-[80vh] mb-10"
         style={{ backgroundImage: `url(${bgLanding.src})` }}
       >
         <Header />
