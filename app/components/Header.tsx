@@ -41,28 +41,28 @@ export const Header = () => {
     };
     
     return (
-        <header className="flex flex-col items-center ">
-            <section className="flex items-center justify-end gap-2 border-b md:pr-10 pr-2 border-zinc-100 border-opacity-20 w-full">
+        <header className="flex flex-col items-center">
+            <section className="flex items-center justify-end gap-2 border-b md:pr-10 pr-2 border-zinc-900 border-opacity-20 w-full bg-zinc-200 bg-opacity-60">
                 <div onClick={() => scrollToSection("location")}>
-                    <MdLocationPin size={20} className="cursor-pointer text-red-800 opacity-65"/>
+                    <MdLocationPin size={20} className="cursor-pointer text-red-900 "/>
                 </div>
                 <Link 
                     href="https://www.instagram.com/odontologiapinasco/?hl=es" 
                     target="_blank">
-                        <AiFillInstagram size={20} className="cursor-pointer text-violet-600 opacity-65"/>
+                        <AiFillInstagram size={20} className="cursor-pointer text-violet-900 "/>
                 </Link>
                 <Link
                     href='/' 
-                    className={`border border-zinc-600 mt-2  text-zinc-700 px-2 py-1 rounded-lg mb-2 md:text-sm text-xs ${montserrat.className}`}
+                    className={`border border-zinc-800 mt-2  text-zinc-900 px-2 py-1 rounded-lg mb-2 md:text-sm text-xs ${montserrat.className}`}
                 >
                     Pinasco
                 </Link>
             </section>
-            <section className="flex items-center  text-zinc-800 text-base justify-between md:px-10 px-3 cursor-pointer border-b border-b-zinc-100 border-opacity-30 w-full h-20">
+            <section className="flex items-center bg-zinc-200 bg-opacity-60  text-zinc-800 text-base justify-between md:px-10 px-3 cursor-pointer border-b border-b-zinc-900 border-opacity-30 w-full h-20">
                 <div>
                     <Link href='/'>
-                        <p className={`${montserrat.className} text-zinc-200 md:text-sm text-xs`}>Consultorio Privado</p>
-                        <h1 className={`text-2xl md:text-3xl font-semibold text-center md:text-left text-zinc-100 ${bebas.className}`}>
+                        <p className={`${montserrat.className} text-zinc-900 md:text-sm text-xs`}>Consultorio Privado</p>
+                        <h1 className={`text-2xl md:text-3xl font-semibold text-center md:text-left text-black ${bebas.className}`}>
                             Pinasco Odontología
                         </h1>
                     </Link>
@@ -89,7 +89,7 @@ export const Header = () => {
                         </SheetContent>
                     </Sheet>
                 ) : (
-                    <div className="flex gap-10  text-zinc-100">
+                    <div className="flex gap-10  text-zinc-900">
                         <Link href='/work' className={`hover:scale-105 duration-200 ${montserrat.className}`}>Nuestro Trabajo</Link>
                         <Link href='/history' className={`hover:scale-105 duration-200 ${montserrat.className}`}>Conoce Quiénes Somos</Link>
                         <Link href='/contact-us' className={`hover:scale-105 duration-200 ${montserrat.className}`}>Contactanos Ahora</Link>
@@ -100,9 +100,9 @@ export const Header = () => {
                 <Breadcrumb>
                     <BreadcrumbList className={`${montserrat.className}`}>
                         <BreadcrumbItem>
-                            <Link href="/" className={`${pathname != '/' ? 'text-blue-800 hover:underline' : 'text-zinc-600'}`}>Home</Link>
+                            <Link href="/" className={`${pathname != '/' ? 'text-blue-800 hover:underline' : 'text-zinc-950'}`}>Home</Link>
                         </BreadcrumbItem>
-                        <BreadcrumbSeparator className="text-zinc-600"/>
+                        <BreadcrumbSeparator className="text-zinc-950"/>
                         {pathname === '/' && (
                             <BreadcrumbItem>
                                 <BreadcrumbEllipsis />
@@ -110,20 +110,20 @@ export const Header = () => {
                         )}
                         {pathname === '/work' && (
                             <BreadcrumbItem>
-                                <Link href="/work" className="text-zinc-600">Nuestro Trabajo</Link>
+                                <Link href="/work" className="text-zinc-950">Nuestro Trabajo</Link>
                             </BreadcrumbItem>
                         )}
                         {pathname === '/contact-us' && (
                             <>
                                 <BreadcrumbItem>
-                                    <Link href="/contact-us" className="text-zinc-600">Contactanos</Link>
+                                    <Link href="/contact-us" className="text-zinc-950">Contactanos</Link>
                                 </BreadcrumbItem>
                             </>
                         )}
                         {pathname === '/history' && (
                             <>
                                 <BreadcrumbItem>
-                                    <Link href="/history" className="text-zinc-600">Conoce Nuestra Historia</Link>
+                                    <Link href="/history" className="text-zinc-950">Conoce Nuestra Historia</Link>
                                 </BreadcrumbItem>
                             </>
                         )}
