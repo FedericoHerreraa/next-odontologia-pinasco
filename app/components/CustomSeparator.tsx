@@ -3,7 +3,7 @@
 
 import Marquee from "react-fast-marquee"
 import Image from "next/image"
-import logo from '../img/logo.png'
+import logo from '@/app/img/logos/logo.png'
 import { useMobileView } from "@/app/context/MobileView"
 
 export const CustomSeparator = () => {

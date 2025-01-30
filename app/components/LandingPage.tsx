@@ -1,14 +1,12 @@
 'use client'
 
 import { CiMemoPad } from "react-icons/ci";
-// import img from "@/app/img/landingBackground.png";
-import bgLanding from '@/app/img/bg-landing.png'
+import bgLanding from '@/app/img/background/bg-landing.png'
 import { useMobileView } from "@/app/context/MobileView";
 import { montserrat } from "@/app/fonts/fonts";
 import Link from "next/link";
 import Image from "next/image";
-// import logoHorizontal from '@/app/img/LogoHorizontal@2x.png'
-import logoVertical from '@/app/img/LogoVertical@2x.png'
+import logoVertical from '@/app/img/logos/LogoVertical@2x.png'
 import { Header } from "./Header";
 
 export const LandingPage = () => {
