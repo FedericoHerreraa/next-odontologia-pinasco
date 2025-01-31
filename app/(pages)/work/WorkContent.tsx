@@ -11,7 +11,6 @@ import { RiStarSFill } from "react-icons/ri";
 import { FcGoogle } from "react-icons/fc";
 import { GoArrowRight } from "react-icons/go";
 
-
 // Icons
 import esteticaDental from '@/app/img/icons/estetica.png'
 import protesis from '@/app/img/icons/protesis.png'
@@ -19,7 +18,6 @@ import blanqueamiento from '@/app/img/icons/blanqueamiento.png'
 import endodoncia from '@/app/img/icons/endodoncia.png'
 import limpieza from '@/app/img/icons/limpieza.png'
 import traumatismos from '@/app/img/icons/traumatismodental.png'
-
 import ortodoncia from '@/app/img/icons/ortodoncia.png'
 import placa from '@/app/img/icons/placa.png'
 import implantes from '@/app/img/icons/implantes.png'
@@ -36,6 +34,8 @@ import rehabilitacion from '@/app/img/work/rehabilitacion.png'
 import traumatismo from '@/app/img/work/traumatismo.png'
 import ortodonciaImg from '@/app/img/work/ortodoncia.png'
 import limpiezaPeriodontal from '@/app/img/work/limpiezaPeriodontal.jpg'
+import odontopediatria from '@/app/img/work/odontopediatria.jpg'
+
 
 export const WorkContent = () => {
     const scrollToSection = (sectionId: string) => {
@@ -52,7 +52,7 @@ export const WorkContent = () => {
 
     return (
         <div className="min-h-[100vh]">
-            <p className={`text-center mt-10 mb-3 text-zinc-500 md:text-lg text-base ${montserrat.className}`}>Descubre lo que hacemos cada día.</p>
+            <p className={`text-center mt-10 mb-3 text-zinc-500 md:text-lg text-base ${montserrat.className}`}>Descubrí lo que hacemos cada día.</p>
             <h1 className={`md:text-6xl text-4xl text-black text-center md:mx-0 mx-2 ${bebas.className}`}>Explorá Nuestro <span className="bg-gradient-to-r to-[#00a2af] from-[#46bcc9] bg-clip-text text-transparent">Trabajo Díario.</span></h1>
 
             <article className="relative md:w-[80%] mx-auto mt-20">
@@ -220,6 +220,11 @@ const icons = [
         title: "Ortodoncia",
         icon: ortodoncia
     },
+    {
+        id: 'odontopediatria',
+        title: "Odontopediatría",
+        icon: ortodoncia
+    },
 ]
 
 const infoWork = [
@@ -345,7 +350,24 @@ const infoWork = [
         ],
         img: ortodonciaImg,
         btnContent: 'Necesito Ortodoncia'
-      }
+    },
+    {
+        id: 'odontopediatria',
+        title: 'Odontopediatría',
+        description: 'En Pinasco Odontología, sabemos lo importante que es generar una experiencia positiva en los más pequeños. Nuestro enfoque en odontopediatría está basado en la paciencia, el cuidado y la prevención, para que cada visita sea una experiencia agradable y libre de miedo.',
+        titleText1: '¿Cómo trabajamos con los niños?',
+        text1: [
+            '✅ Adaptación y confianza: Nos tomamos el tiempo necesario para que los niños se sientan cómodos y seguros.',
+            '✅ Prevención y educación: Enseñamos hábitos saludables desde la infancia para evitar problemas futuros.',
+            '✅ Tratamientos sin miedo: Aplicamos técnicas amigables y minimizamos la incomodidad en cada procedimiento.',
+            '✅ Cuidado integral: Desde la primera consulta hasta el recambio dentario, acompañamos cada etapa del crecimiento.'
+        ],
+        text2: [
+            '🌟 Cuidar la sonrisa de los más pequeños es nuestra misión. Si querés que tu hijo tenga una experiencia positiva en el dentista, en Pinasco Odontología estamos para ayudar.'
+        ],
+        img: odontopediatria,
+        btnContent: 'Agendar Consulta'
+    }
 ];
 
 const peopleOpinions = [
