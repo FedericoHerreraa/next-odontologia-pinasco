@@ -5,11 +5,11 @@ import Laura from '@/app/img/history/Laura.png';
 
 export const ProfesionalHistory = () => {
     return (
-        <section className="w-full flex flex-col items-center py-16 bg-gray-100">
+        <section className="w-full flex flex-col items-center py-16 bg-gradient-to-b from-white via-cyan-100 to-white">
             <div className="text-center mb-12">
                 <p className={`text-zinc-500 text-lg ${montserrat.className}`}>Conocé a nuestras profesionales</p>
-                <h1 className={`text-5xl font-bold text-black ${bebas.className}`}>
-                    Nuestro <span className="text-[#00a2af]">Equipo</span>
+                <h1 className={`text-6xl font-bold text-black ${bebas.className}`}>
+                    Nuestro <span className="text-[#00a2af]">Equipo Profesional</span>
                 </h1>
             </div>
 
