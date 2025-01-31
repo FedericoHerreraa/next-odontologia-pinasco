@@ -29,12 +29,12 @@ import placasDentales from '@/app/img/work/placas-dentales.webp'
 import endodonciaDental from '@/app/img/work/endodoncia.jpg'
 import disenoSonrisaImg from '@/app/img/work/DiseñoSonrisa.png'
 import blanqueamientoImg from '@/app/img/work/blanqueamiento.jpg'
-import implantesImg from '@/app/img/work/implantes.jpg'
+import implantesImg from '@/app/img/work/implantes.png'
 import rehabilitacion from '@/app/img/work/rehabilitacion.png'
 import traumatismo from '@/app/img/work/traumatismo.png'
 import ortodonciaImg from '@/app/img/work/ortodoncia.png'
 import limpiezaPeriodontal from '@/app/img/work/limpiezaPeriodontal.jpg'
-import odontopediatria from '@/app/img/work/odontopediatria.jpg'
+import odontopediatria from '@/app/img/work/odontopediatria.png'
 
 
 export const WorkContent = () => {
@@ -249,10 +249,23 @@ const infoWork = [
     {
         id: 'implantes',
         title: 'Implantes y Extracciones Dentales',
-        description: 'Los implantes y extracciones dentales son procedimientos clave para mantener la funcionalidad y la salud bucal. Las extracciones dentales se realizan cuando un pieza dentaria está dañada irreversiblemente, genera dolor o representa un riesgo para las piezas dentarias vecinas, incluyendo casos como muelas del juicio o caries severas. Por otro lado, los implantes dentales son una solución permanente para reemplazar las piezas dentarias perdidas, mediante la colocación de tornillos de titanio que actúan como raíces artificiales, sobre los que se fijan coronas o prótesis.',
+        description: 'Si perdiste una pieza dental y querés recuperar la estética y funcionalidad de tu sonrisa, los implantes dentales son la mejor solución. En Pinasco Odontología, trabajamos con tecnología avanzada y materiales de alta calidad para garantizar resultados seguros y duraderos.',
+        titleText1: '¿Cómo es el procedimiento?',
+        text1: [
+            'Evaluación y planificación personalizada: Analizamos tu caso con estudios específicos para diseñar un plan de tratamiento adaptado a tus necesidades.',
+            'Colocación del implante: Se inserta quirúrgicamente un tornillo de titanio en el hueso, que actuará como la raíz del diente.',
+            'Cicatrización y osteointegración: Esperamos el tiempo necesario para que el implante se fije correctamente al hueso.',
+            'Colocación de la corona definitiva: Diseñamos una prótesis personalizada para que tu nueva pieza luzca y funcione como un diente natural.'
+        ],
+        titleText2: 'Beneficios de los implantes dentales',
+        text2: [
+            'Recuperás la funcionalidad y estética de tu sonrisa.',
+            'Evitás la pérdida ósea y el desplazamiento de los dientes vecinos.',
+            'Son una solución fija y duradera, sin necesidad de adhesivos.',
+            'Brindan comodidad y confianza para hablar y masticar con naturalidad.'
+        ],
         img: implantesImg,
         btnContent: 'Quiero mi Implante Dental'
-        
     },
     {
         id: 'protesis',
