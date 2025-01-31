@@ -12,8 +12,8 @@ export const ProfesionalHistory = () => {
                 <h1 className={`md:text-6xl text-4xl text-black text-center md:mx-0 mx-2 ${bebas.className}`}>Nuestra historia <span className="bg-gradient-to-r to-[#00a2af] from-[#46bcc9] bg-clip-text text-transparent">Profesional</span></h1>
             </div>
 
-            <section className="flex items-center flex-col justify-center gap-10 w-[80%] mx-auto mt-20">
-                <div className="flex items-center gap-3 bg-zinc-100 p-5 rounded-lg">
+            <section className="flex items-center flex-col justify-center gap-10 md:w-[80%] w-[90%] mx-auto mt-20">
+                <div className="flex items-center md:flex-row flex-col-reverse md:gap-3 gap-7 bg-[#46bcc9] bg-opacity-20 shadow-xl p-5 rounded-lg">
                     <Image
                         src={Micaela}
                         alt="Micaela"
@@ -28,7 +28,7 @@ export const ProfesionalHistory = () => {
                         Obcaecati.
                     </p>
                 </div>
-                <div className="flex items-center gap-3 text-sm bg-zinc-100 p-5 rounded-lg">
+                <div className="flex items-center md:flex-row flex-col md:gap-3 gap-7 text-sm bg-[#46bcc9] bg-opacity-20 shadow-xl p-5 rounded-lg">
                     <p>
                         <strong className='text-2xl'>Laura Pinasco</strong>
                         <br />
