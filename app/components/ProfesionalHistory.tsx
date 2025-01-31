@@ -20,10 +20,10 @@ export const ProfesionalHistory = () => {
                     alt="Micaela Pinasco" 
                     width={350} 
                     height={350} 
-                    className="w-full h-[500px] object-cover rounded-t-[200px]" 
+                    className="w-full object-cover rounded-t-[200px]" 
                 />
-                <div className="p-8 ">
-                    <h2 className="text-3xl font-bold text-[#00a2af] text-center">Micaela Pinasco</h2>
+                <div className="md:p-8 p-5">
+                    <h2 className={`text-3xl font-bold text-[#00a2af] text-center ${montserrat.className}`}>Micaela Pinasco</h2>
                     <p className="text-gray-600 mt-4 text-base">
                             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro eius
                             impedit iusto, labore eveniet officia ad delectus magnam sequi at
@@ -37,12 +37,12 @@ export const ProfesionalHistory = () => {
                 <Image 
                     src={Laura} 
                     alt="Laura Pinasco" 
-                    width={350} 
-                    height={350} 
-                    className="w-full h-[500px] object-cover rounded-t-[200px]" 
+                    width={300} 
+                    height={300} 
+                    className="w-full h-auto object-cover rounded-t-[200px]" 
                 />
-                <div className="p-8 ">
-                    <h2 className="text-3xl font-bold text-[#00a2af] text-center">Laura Pinasco</h2>
+                <div className="md:p-8 p-5">
+                    <h2 className={`text-3xl font-bold text-[#00a2af] text-center ${montserrat.className}`}>Laura Pinasco</h2>
                     <p className="text-gray-600 mt-4 text-base">
                             ▪ Odontóloga graduada de la Facultad de Odontología de la Universidad de Buenos Aires, Argentina<br />
                             ▪ Especialista en Endodoncia, título otorgado por Ministério de Salud<br />
