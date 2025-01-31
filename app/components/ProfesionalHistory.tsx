@@ -7,8 +7,8 @@ export const ProfesionalHistory = () => {
     return (
         <section className="w-full flex flex-col items-center py-16 bg-gradient-to-b from-white via-cyan-100 to-white">
             <div className="text-center mb-12">
-                <p className={`text-zinc-500 text-lg ${montserrat.className}`}>Conocé a nuestras profesionales</p>
-                <h1 className={`text-6xl font-bold text-black ${bebas.className}`}>
+                <p className={`text-zinc-500 md:text-lg text-base ${montserrat.className}`}>Conocé a nuestras profesionales</p>
+                <h1 className={`md:text-6xl text-4xl font-bold text-black ${bebas.className}`}>
                     Nuestro <span className="text-[#00a2af]">Equipo Profesional</span>
                 </h1>
             </div>
