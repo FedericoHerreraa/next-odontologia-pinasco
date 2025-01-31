@@ -33,7 +33,7 @@ export const HistoryContent = () => {
                         <div className="text-center p-4 rounded-lg">
                             <h3 className={`text-2xl font-semibold text-[#00a2af] ${bebas.className}`}>Cómo trabajamos</h3>
                             <p className={`text-gray-600 ${montserrat.className}`}>
-                                En Odontología Pinasco, combinamos más de 50 años de experiencia con la última tecnología en equipamiento y materiales. Nos capacitamos continuamente para garantizar un servicio de calidad, priorizando la prevención y detección temprana de lesiones para ofrecer tratamientos menos invasivos y más efectivos.
+                                En Pinasco Odontología, nuestro enfoque se basa en confianza, calidad y bienestar del paciente. Evaluamos cada caso de manera personalizada, utilizando tecnología avanzada y materiales de alta calidad. Nos especializamos en brindar un ambiente tranquilo, ideal para quienes sienten miedo al dentista. Además, combinamos estética y funcionalidad en nuestros tratamientos, promoviendo la prevención y el cuidado continuo para mantener sonrisas saludables a lo largo del tiempo.
                             </p>
                         </div>
                         <div className="text-center p-4 rounded-lg">
@@ -68,7 +68,7 @@ export const HistoryContent = () => {
                         <div className="text-center p-4 rounded-lg">
                             <h3 className={`text-2xl font-semibold text-[#00a2af] ${bebas.className}`}>Enfoque en el cliente</h3>
                             <p className={`text-gray-600 ${montserrat.className}`}>
-                                Tu sonrisa es nuestra motivación. Trabajamos para ayudarte a alcanzar la sonrisa que buscas y necesitas, siempre priorizando tu comodidad y salud en cada etapa del tratamiento.
+                                Tu salud bucal es nuestra motivación. Trabajamos en equipo para lograr la sonrisa que buscas y necesitas.
                             </p>
                         </div>
                     </div>

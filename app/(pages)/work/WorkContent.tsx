@@ -52,7 +52,7 @@ export const WorkContent = () => {
 
     return (
         <div className="min-h-[100vh]">
-            <p className={`text-center mt-10 mb-3 text-zinc-500 md:text-lg text-base ${montserrat.className}`}>Descubre lo que hacemos cada día.</p>
+            <p className={`text-center mt-10 mb-3 text-zinc-500 md:text-lg text-base ${montserrat.className}`}>Descubrí lo que hacemos cada día.</p>
             <h1 className={`md:text-6xl text-4xl text-black text-center md:mx-0 mx-2 ${bebas.className}`}>Explorá Nuestro <span className="bg-gradient-to-r to-[#00a2af] from-[#46bcc9] bg-clip-text text-transparent">Trabajo Díario.</span></h1>
 
             <article className="relative md:w-[80%] mx-auto mt-20">
