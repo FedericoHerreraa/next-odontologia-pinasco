@@ -83,9 +83,9 @@ export const HistoryContent = () => {
                                 src={image.src}
                                 alt={image.alt}
                                 layout="intrinsic"
-                                width={220} 
+                                width={250} 
                                 height={150}
-                                className="md:rounded-lg rounded-md shadow-xl transition-transform duration-300"
+                                className="md:rounded-md rounded-md shadow-xl transition-transform duration-300"
                             />
                         </div>
                     ))}
@@ -113,9 +113,9 @@ export const HistoryContent = () => {
 const images = [
     { id:1, src: camilla2, alt: "Camilla" },
     // { id:2, src: camilla3, alt: "Camilla 3" },
-    { id:3, src: consulta, alt: "Consulta" },
-    // { id:4, src: odontopediatria, alt: "Odontopediatría" },
-    { id:5, src: trabajando, alt: "Consulta" },
-    { id:6, src: trabajando2, alt: "Consulta" },
+    { id:2, src: consulta, alt: "Consulta" },
+    { id:3, src: camilla2, alt: "Camilla" },
+    { id:4, src: trabajando, alt: "Consulta" },
+    { id:5, src: trabajando2, alt: "Consulta" },
 ];
 
