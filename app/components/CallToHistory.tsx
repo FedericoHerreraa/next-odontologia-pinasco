@@ -1,5 +1,5 @@
 import Link from "next/link"
-import img from "@/app/img/equipo.jpg"
+import img from "@/app/img/history/equipo.jpg"
 import {bebas } from "@/app/fonts/fonts";
 
 export const CallToHistory = () => {

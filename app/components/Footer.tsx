@@ -1,7 +1,7 @@
 
 import { montserrat } from "@/app/fonts/fonts"
 import Image from "next/image"
-import logoVertical from "@/app/img/LogoVertical@2x.png"
+import logoVertical from "@/app/img/logos/LogoVertical@2x.png"
 
 export const Footer = () => {
     return (

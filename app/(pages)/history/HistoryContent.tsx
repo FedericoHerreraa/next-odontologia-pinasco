@@ -2,21 +2,20 @@
 
 import { CustomSeparator } from "@/app/components/CustomSeparator";
 import { FAQs } from "@/app/components/FAQs";
+import { ProfesionalHistory } from "@/app/components/ProfesionalHistory";
+
 import { bebas, montserrat } from "@/app/fonts/fonts"
 import Image from "next/image";
 import Marquee from "react-fast-marquee"
 
-
-    
 // Images
-
-import camilla2 from '@/app/img/camilla2.jpeg'
-import camilla3 from '@/app/img/camilla3.jpeg'
-import consulta from '@/app/img/consulta.jpeg'
-import salaEspera2 from '@/app/img/salaEspera2.jpeg'
-import odontopediatria from '@/app/img/odontopediatria.jpg'
-import trabajando from '@/app/img/trabajando.jpg'
-import trabajando2 from '@/app/img/trabajando2.jpg'
+import camilla2 from '@/app/img/history/camilla2.jpeg'
+import camilla3 from '@/app/img/history/camilla3.jpeg'
+import consulta from '@/app/img/history/consulta.jpeg'
+import salaEspera2 from '@/app/img/history/salaEspera2.jpeg'
+import odontopediatria from '@/app/img/history/odontopediatria.jpg'
+import trabajando from '@/app/img/history/trabajando.jpg'
+import trabajando2 from '@/app/img/history/trabajando2.jpg'
 
 
 export const HistoryContent = () => {
@@ -78,7 +77,7 @@ export const HistoryContent = () => {
                 </div>
             </section>
             
-            <section className="flex flex-col md:gap-4 gap-1 w-[80%] md:w-[80%] mx-auto my-20">
+            <section className="flex flex-col md:gap-4 gap-1 w-[80%] md:w-[80%] mx-auto mt-20 mb-40">
                 <Marquee speed={60} gradient={false} className="flex items-center">
                     {images.map((image, index) => (
                         <div key={index} className="flex-shrink-0 mx-2">
@@ -95,11 +94,13 @@ export const HistoryContent = () => {
                 </Marquee>
             </section>
 
-
-
             <CustomSeparator />
+
+            <section className="mt-40">
+                <ProfesionalHistory />
+            </section>
             
-            <section>
+            <section className="mt-40">
                 <div className="text-center mb-8">
                     <p className={`text-center mt-10 mb-3 text-zinc-500 md:text-lg text-base ${montserrat.className}`}>Te aclaramos algunas dudas</p>
                     <h1 className={`md:text-6xl text-4xl text-black text-center md:mx-0 mx-2 ${bebas.className}`}>Preguntas <span className="bg-gradient-to-r to-[#00a2af] from-[#46bcc9] bg-clip-text text-transparent">Frecuentes</span></h1>

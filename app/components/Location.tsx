@@ -2,7 +2,7 @@
 import { bebas, montserrat } from "@/app/fonts/fonts"
 import { MdLocationPin } from "react-icons/md";
 import Image from "next/image";
-import LocationImg from "@/app/img/location.png"
+import LocationImg from "@/app/img/others/location.png"
 
 export const Location = () => {
     return (

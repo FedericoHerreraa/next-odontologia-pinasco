@@ -13,16 +13,16 @@ import { GoArrowRight } from "react-icons/go";
 
 
 // Icons
-import esteticaDental from '@/app/img/estetica.png'
-import protesis from '@/app/img/protesis.png'
-import blanqueamiento from '@/app/img/blanqueamiento.png'
-import endodoncia from '@/app/img/endodoncia.png'
-import limpieza from '@/app/img/limpieza.png'
-import traumatismos from '@/app/img/traumatismodental.png'
+import esteticaDental from '@/app/img/icons/estetica.png'
+import protesis from '@/app/img/icons/protesis.png'
+import blanqueamiento from '@/app/img/icons/blanqueamiento.png'
+import endodoncia from '@/app/img/icons/endodoncia.png'
+import limpieza from '@/app/img/icons/limpieza.png'
+import traumatismos from '@/app/img/icons/traumatismodental.png'
 
-import ortodoncia from '@/app/img/ortodoncia.png'
-import placa from '@/app/img/placa.png'
-import implantes from '@/app/img/implantes.png'
+import ortodoncia from '@/app/img/icons/ortodoncia.png'
+import placa from '@/app/img/icons/placa.png'
+import implantes from '@/app/img/icons/implantes.png'
 
 // Images
 import placasDentales from '@/app/img/work/placas-dentales.webp'
