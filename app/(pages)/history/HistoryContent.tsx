@@ -10,9 +10,8 @@ import Marquee from "react-fast-marquee"
 
 // Images
 import camilla2 from '@/app/img/history/camilla2.jpeg'
-import camilla3 from '@/app/img/history/camilla3.jpeg'
+// import camilla3 from '@/app/img/history/camilla3.png'
 import consulta from '@/app/img/history/consulta.jpeg'
-import salaEspera2 from '@/app/img/history/salaEspera2.jpeg'
 import odontopediatria from '@/app/img/history/odontopediatria.jpg'
 import trabajando from '@/app/img/history/trabajando.jpg'
 import trabajando2 from '@/app/img/history/trabajando2.jpg'
@@ -80,14 +79,14 @@ export const HistoryContent = () => {
             <section className="flex flex-col md:gap-4 gap-1 w-[80%] md:w-[80%] mx-auto mt-20 mb-40">
                 <Marquee speed={60} gradient={false} className="flex items-center">
                     {images.map((image, index) => (
-                        <div key={index} className="flex-shrink-0 mx-2">
+                        <div key={index} className="flex-shrink-0 mx-5">
                             <Image
                                 src={image.src}
                                 alt={image.alt}
                                 layout="intrinsic"
                                 width={220} 
                                 height={150}
-                                className="md:rounded-lg rounded-md shadow-md transition-transform duration-300"
+                                className="md:rounded-lg rounded-md shadow-xl transition-transform duration-300"
                             />
                         </div>
                     ))}
@@ -113,12 +112,11 @@ export const HistoryContent = () => {
 };
 
 const images = [
-    { id:1, src: salaEspera2, alt: "Sala de espera" },
-    { id:2, src: camilla2, alt: "Camilla" },
-    { id:3, src: camilla3, alt: "Camilla 3" },
-    { id:4, src: consulta, alt: "Consulta" },
-    { id:5, src: odontopediatria, alt: "Odontopediatría" },
-    { id:6, src: trabajando, alt: "Consulta" },
-    { id:7, src: trabajando2, alt: "Consulta" },
+    { id:1, src: camilla2, alt: "Camilla" },
+    // { id:2, src: camilla3, alt: "Camilla 3" },
+    { id:3, src: consulta, alt: "Consulta" },
+    { id:4, src: odontopediatria, alt: "Odontopediatría" },
+    { id:5, src: trabajando, alt: "Consulta" },
+    { id:6, src: trabajando2, alt: "Consulta" },
 ];
 
