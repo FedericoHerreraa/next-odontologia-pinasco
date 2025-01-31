@@ -22,6 +22,7 @@ export const WhatsAppIcon = () => {
 
         window.open(`https://wa.me/${phoneNumber}?text=${message}`, "_blank");
     }
+    
 
     return (
         <div className="fixed md:bottom-5 bottom-1 md:right-5 right-1 rounded-full cursor-pointer z-50">
