@@ -18,15 +18,14 @@ export const ProfesionalHistory = () => {
                     <Image 
                         src={Micaela} 
                         alt="Micaela Pinasco" 
-                        width={350} 
-                        height={350} 
-                        className="w-full object-cover rounded-t-[200px]" 
+                        width={300}  
+                        className="w-full rounded-t-[200px]" 
                     />
                     <div className="md:p-8 p-5">
-                        <h2 className={`text-3xl font-bold text-[#00a2af] text-center ${montserrat.className}`}>Od. Micaela Pinasco</h2>
+                        <h2 className={`text-3xl font-bold text-[#00a2af] text-center ${montserrat.className}`}>Od. Micaela González Pinasco</h2>
                         <p className="text-gray-600 mt-4 text-base">
                             ▪ Odontóloga graduada en la Facultad de Odontología de la Universidad de Buenos Aires (2014).<br />
-                            ▪ Especialización en Implantología Oral con el Dr. Mariano Amer.<br />
+                            ▪ Formación en Implantología Oral con el Dr. Mariano Amer.<br />
                             ▪ Formación en Estética y Rehabilitación Oral en UBA, dirigida por el Dr. Carlos Zanotto.<br />
                             ▪ Ex ayudante de cátedra en Operatoria Dental en la Universidad de Buenos Aires.<br />
                             ▪ Capacitación en odontología restauradora indirecta en el Porcelain Workshop dictado por el Dr. Fernando Marcos Soto.<br />
