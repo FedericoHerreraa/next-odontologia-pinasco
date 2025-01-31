@@ -12,7 +12,6 @@ import Marquee from "react-fast-marquee"
 import camilla2 from '@/app/img/history/camilla2.jpeg'
 // import camilla3 from '@/app/img/history/camilla3.png'
 import consulta from '@/app/img/history/consulta.jpeg'
-import odontopediatria from '@/app/img/history/odontopediatria.jpg'
 import trabajando from '@/app/img/history/trabajando.jpg'
 import trabajando2 from '@/app/img/history/trabajando2.jpg'
 
@@ -115,7 +114,7 @@ const images = [
     { id:1, src: camilla2, alt: "Camilla" },
     // { id:2, src: camilla3, alt: "Camilla 3" },
     { id:3, src: consulta, alt: "Consulta" },
-    { id:4, src: odontopediatria, alt: "Odontopediatría" },
+    // { id:4, src: odontopediatria, alt: "Odontopediatría" },
     { id:5, src: trabajando, alt: "Consulta" },
     { id:6, src: trabajando2, alt: "Consulta" },
 ];
