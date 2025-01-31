@@ -9,6 +9,8 @@ import Image from "next/image";
 import logoVertical from '@/app/img/logos/LogoVertical@2x.png'
 import { Header } from "./Header";
 
+
+
 export const LandingPage = () => {
   const { isMobile } = useMobileView();
 

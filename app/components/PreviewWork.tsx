@@ -4,6 +4,18 @@ import { FaTooth } from "react-icons/fa";
 import { IoIosArrowRoundForward } from "react-icons/io";
 
 import { bebas, montserrat } from "@/app/fonts/fonts";
+import {
+    AlertDialog,
+    AlertDialogAction,
+    AlertDialogCancel,
+    AlertDialogContent,
+    AlertDialogDescription,
+    AlertDialogFooter,
+    AlertDialogHeader,
+    AlertDialogTitle,
+    AlertDialogTrigger,
+  } from "@/app/components/ui/alert-dialog"
+  
 
 export const PreviewWork = () => {
     return (
@@ -42,6 +54,21 @@ export const PreviewWork = () => {
                             <p>Ver Más</p>
                             <IoIosArrowRoundForward size={30} />
                         </Link>
+                        <AlertDialog>
+                            <AlertDialogTrigger>Open</AlertDialogTrigger>
+                            <AlertDialogContent>
+                                <AlertDialogHeader>
+                                    <AlertDialogTitle>Dialog Title</AlertDialogTitle>
+                                </AlertDialogHeader>
+                                <AlertDialogDescription>
+                                    This is the content area of the dialog. You can put any content here.
+                                </AlertDialogDescription>
+                                <AlertDialogFooter>
+                                    <AlertDialogCancel>Cancel</AlertDialogCancel>
+                                    <AlertDialogAction>Accept</AlertDialogAction>
+                                </AlertDialogFooter>
+                            </AlertDialogContent>
+                        </AlertDialog>
                     </div>
                 ))}
             </section>
@@ -51,15 +78,20 @@ export const PreviewWork = () => {
 
 const info = [
     {
+        title: "Tratamientos preventivos",
+        description: "La odontología preventiva busca mantener una boca sana e incluye exámenes orales regulares, limpieza dental y radiografías de rutina y estimular  el desarrollo de hábitos de higiene bucal. A su vez se centra en el diagnóstico de problemas de salud antes de que se manifiesten los síntomas o surjan complicaciones."
+    },
+    {
+        title: "Odontología restauradora",
+        description: "La odontología restauradora se centra en abordar problemas dentales existentes con el objetivo de devolver la funcionalidad y la estética a la sonrisa del paciente. Esta disciplina abarca una variedad de tratamientos especializados, que incluyen: tratamientos de conductos, cuidado de encías, prótesis dentales, implantes y cirugías correctivas."
+    },
+    {
+        title: "Estética y diseño de sonrisa",
+        description: "Agrupa procedimientos para mejorar la alineación y apariencia de los dientes, como ortodoncia, blanqueamientos, carillas y reconstrucciones dentales para lograr una sonrisa más atractiva."
+    },
+    {
         title: "Odontología digital",
         description: "La odontología digital combina tecnologías avanzadas como escáneres intraorales, impresión 3D y radiografías digitales para mejorar la precisión en diagnósticos y tratamientos. Ofrece mayor comodidad al paciente, resultados estéticos más predecibles y diagnósticos más precisos, reduciendo tiempos de laboratorio y mejorando la comunicación mediante la visualización de resultados."
     },
-    {
-        title: "Tratamientos correctivos y restauradores",
-        description: "Se centra en tratar problemas existentes para restaurar la funcionalidad y estética dental. Esto incluye tratamientos de conductos, cuidado de encías, prótesis dentales, implantes y cirugías correctivas."
-    },
-    {
-        title: "Corrección y estética",
-        description: "Agrupa procedimientos para mejorar la alineación y apariencia de los dientes, como ortodoncia, blanqueamientos, carillas y reconstrucciones dentales para lograr una sonrisa más atractiva."
-    },
+    
 ];
