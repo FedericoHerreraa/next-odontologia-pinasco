@@ -20,10 +20,10 @@ export const FAQs = () => {
                 <AccordionContent className={`font-semibold ${montserrat.className}`}>
                     <p className={`font-semibold`}>Horarios de atención:</p>  
                     <ul className="ml-1">
-                        <li>Lunes: 13:00 a 20:00 hs</li>
+                        <li>Lunes: 10:00 a 20:00 hs</li>
                         <li>Martes: 10:00 a 19:00 hs</li>
                         <li>Miércoles: 10:00 a 15:00 hs</li>
-                        <li>Jueves: 12:00 a 20:00 hs</li>
+                        <li>Jueves: 10:00 a 20:00 hs</li>
                     </ul>
                 </AccordionContent>
             </AccordionItem>
