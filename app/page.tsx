@@ -11,7 +11,7 @@ import { CarouselLanding } from "./components/CarouselLanding";
 
 export const metadata: Metadata = {
   title: "Inicio | Pinasco Odontología - Cuidado Dental de Excelencia",
-  description: "Descubre el mejor cuidado dental en Pinasco Odontología. Ofrecemos tratamientos personalizados con tecnología avanzada y un equipo altamente capacitado para garantizar tu bienestar bucal. ¡Agenda tu cita hoy mismo y sonríe con confianza!",
+  description: "Descubrí el mejor cuidado dental en Pinasco Odontología. Ofrecemos tratamientos personalizados con tecnología avanzada y un equipo altamente capacitado para garantizar tu bienestar bucal. ¡Agenda tu cita hoy mismo y sonríe con confianza!",
 };
 
 

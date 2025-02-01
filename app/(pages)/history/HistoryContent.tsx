@@ -10,10 +10,7 @@ import Marquee from "react-fast-marquee"
 
 // Images
 import camilla2 from '@/app/img/history/camilla2.jpeg'
-import camilla3 from '@/app/img/history/camilla3.jpeg'
 import consulta from '@/app/img/history/consulta.jpeg'
-import salaEspera2 from '@/app/img/history/salaEspera2.jpeg'
-import odontopediatria from '@/app/img/history/odontopediatria.jpg'
 import trabajando from '@/app/img/history/trabajando.jpg'
 import trabajando2 from '@/app/img/history/trabajando2.jpg'
 
@@ -35,7 +32,7 @@ export const HistoryContent = () => {
                         <div className="text-center p-4 rounded-lg">
                             <h3 className={`text-2xl font-semibold text-[#00a2af] ${bebas.className}`}>Cómo trabajamos</h3>
                             <p className={`text-gray-600 ${montserrat.className}`}>
-                                En Odontología Pinasco, combinamos más de 50 años de experiencia con la última tecnología en equipamiento y materiales. Nos capacitamos continuamente para garantizar un servicio de calidad, priorizando la prevención y detección temprana de lesiones para ofrecer tratamientos menos invasivos y más efectivos.
+                                En Pinasco Odontología, nuestro enfoque se basa en confianza, calidad y bienestar del paciente. Evaluamos cada caso de manera personalizada, utilizando tecnología avanzada y materiales de alta calidad. Nos especializamos en brindar un ambiente tranquilo, ideal para quienes sienten miedo al dentista. Además, combinamos estética y funcionalidad en nuestros tratamientos, promoviendo la prevención y el cuidado continuo para mantener sonrisas saludables a lo largo del tiempo.
                             </p>
                         </div>
                         <div className="text-center p-4 rounded-lg">
@@ -68,9 +65,9 @@ export const HistoryContent = () => {
                             </p>
                         </div>
                         <div className="text-center p-4 rounded-lg">
-                            <h3 className={`text-2xl font-semibold text-[#00a2af] ${bebas.className}`}>Enfoque en el cliente</h3>
+                            <h3 className={`text-2xl font-semibold text-[#00a2af] ${bebas.className}`}>Enfoque en el paciente</h3>
                             <p className={`text-gray-600 ${montserrat.className}`}>
-                                Tu sonrisa es nuestra motivación. Trabajamos para ayudarte a alcanzar la sonrisa que buscas y necesitas, siempre priorizando tu comodidad y salud en cada etapa del tratamiento.
+                                Tu salud bucal es nuestra motivación. Trabajamos en equipo para lograr la sonrisa que buscas y necesitas.
                             </p>
                         </div>
                     </div>
@@ -80,14 +77,14 @@ export const HistoryContent = () => {
             <section className="flex flex-col md:gap-4 gap-1 w-[80%] md:w-[80%] mx-auto mt-20 mb-40">
                 <Marquee speed={60} gradient={false} className="flex items-center">
                     {images.map((image, index) => (
-                        <div key={index} className="flex-shrink-0 mx-2">
+                        <div key={index} className="flex-shrink-0 mx-5">
                             <Image
                                 src={image.src}
                                 alt={image.alt}
                                 layout="intrinsic"
-                                width={220} 
+                                width={250} 
                                 height={150}
-                                className="md:rounded-lg rounded-md shadow-md transition-transform duration-300"
+                                className="md:rounded-md rounded-md shadow-xl transition-transform duration-300"
                             />
                         </div>
                     ))}
@@ -113,12 +110,11 @@ export const HistoryContent = () => {
 };
 
 const images = [
-    { id:1, src: salaEspera2, alt: "Sala de espera" },
-    { id:2, src: camilla2, alt: "Camilla" },
-    { id:3, src: camilla3, alt: "Camilla 3" },
-    { id:4, src: consulta, alt: "Consulta" },
-    { id:5, src: odontopediatria, alt: "Odontopediatría" },
-    { id:6, src: trabajando, alt: "Consulta" },
-    { id:7, src: trabajando2, alt: "Consulta" },
+    { id:1, src: camilla2, alt: "Camilla" },
+    // { id:2, src: camilla3, alt: "Camilla 3" },
+    { id:2, src: consulta, alt: "Consulta" },
+    { id:3, src: camilla2, alt: "Camilla" },
+    { id:4, src: trabajando, alt: "Consulta" },
+    { id:5, src: trabajando2, alt: "Consulta" },
 ];
 

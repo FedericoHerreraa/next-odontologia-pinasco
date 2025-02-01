@@ -9,7 +9,7 @@ import consultorio from "@/app/img/history/consultorio.jpg"
 export const ImagesHomePage = () => {
     return (
         <div className="min-h-[80vh]">
-            <p className={`text-center mt-10 mb-3 text-zinc-500 md:text-lg text-base ${montserrat.className}`}>Descubre quiénes somos.</p>
+            <p className={`text-center mt-10 mb-3 text-zinc-500 md:text-lg text-base ${montserrat.className}`}>Descubrí quiénes somos.</p>
             <h1 className={`md:text-6xl text-4xl text-zinc-700  text-center ${bebas.className}`}>Explorá Nuestro Espacio <span className="bg-gradient-to-r to-[#00a2af] from-[#46bcc9] bg-clip-text text-transparent">Odontológico.</span></h1>
 
             <section className="flex md:flex-row flex-col gap-4 items-center mt-32 md:w-[90%] w-[90%] mx-auto mb-20">

@@ -11,7 +11,6 @@ import { RiStarSFill } from "react-icons/ri";
 import { FcGoogle } from "react-icons/fc";
 import { GoArrowRight } from "react-icons/go";
 
-
 // Icons
 import esteticaDental from '@/app/img/icons/estetica.png'
 import protesis from '@/app/img/icons/protesis.png'
@@ -19,7 +18,6 @@ import blanqueamiento from '@/app/img/icons/blanqueamiento.png'
 import endodoncia from '@/app/img/icons/endodoncia.png'
 import limpieza from '@/app/img/icons/limpieza.png'
 import traumatismos from '@/app/img/icons/traumatismodental.png'
-
 import ortodoncia from '@/app/img/icons/ortodoncia.png'
 import placa from '@/app/img/icons/placa.png'
 import implantes from '@/app/img/icons/implantes.png'
@@ -31,11 +29,13 @@ import placasDentales from '@/app/img/work/placas-dentales.webp'
 import endodonciaDental from '@/app/img/work/endodoncia.jpg'
 import disenoSonrisaImg from '@/app/img/work/DiseñoSonrisa.png'
 import blanqueamientoImg from '@/app/img/work/blanqueamiento.jpg'
-import implantesImg from '@/app/img/work/implantes.jpg'
+import implantesImg from '@/app/img/work/implantes.png'
 import rehabilitacion from '@/app/img/work/rehabilitacion.png'
 import traumatismo from '@/app/img/work/traumatismo.png'
 import ortodonciaImg from '@/app/img/work/ortodoncia.png'
 import limpiezaPeriodontal from '@/app/img/work/limpiezaPeriodontal.jpg'
+import odontopediatria from '@/app/img/work/odontopediatria.png'
+
 
 export const WorkContent = () => {
     const scrollToSection = (sectionId: string) => {
@@ -52,7 +52,7 @@ export const WorkContent = () => {
 
     return (
         <div className="min-h-[100vh]">
-            <p className={`text-center mt-10 mb-3 text-zinc-500 md:text-lg text-base ${montserrat.className}`}>Descubre lo que hacemos cada día.</p>
+            <p className={`text-center mt-10 mb-3 text-zinc-500 md:text-lg text-base ${montserrat.className}`}>Descubrí lo que hacemos cada día.</p>
             <h1 className={`md:text-6xl text-4xl text-black text-center md:mx-0 mx-2 ${bebas.className}`}>Explorá Nuestro <span className="bg-gradient-to-r to-[#00a2af] from-[#46bcc9] bg-clip-text text-transparent">Trabajo Díario.</span></h1>
 
             <article className="relative md:w-[80%] mx-auto mt-20">
@@ -152,13 +152,14 @@ export const WorkContent = () => {
                                 <div className="mt-10">
                                     <button
                                         onClick={() => navigateToWhatsApp()} 
-                                        className="border-l-2 border-l-[#46bcc9] bg-cyan-50 p-2 pl-3 flex items-center gap-2">
-                                        <p className={`${montserrat.className} hover:pr-2 transition-all duration-150`}>{item.btnContent}</p>
-                                        <GoArrowRight size={25} className="text-[#46bcc9]"/>
+                                        className="bg-[#00a2af] bg-opacity-70 p-4 rounded-lg flex items-center gap-2"
+                                    >
+                                        <p className={`${montserrat.className} hover:pr-2 transition-all duration-150 text-zinc-100`}>{item.btnContent}</p>
+                                        <GoArrowRight size={25} className="text-zinc-100"/>
                                     </button>
                                 </div>
                             </div>
-                            <div className="md:w-1/2 ">
+                            <div className="md:w-1/2">
                                 <Image 
                                     src={item.img || ''}
                                     alt={item.title}
@@ -220,6 +221,11 @@ const icons = [
         title: "Ortodoncia",
         icon: ortodoncia
     },
+    {
+        id: 'odontopediatria',
+        title: "Odontopediatría",
+        icon: ortodoncia
+    },
 ]
 
 const infoWork = [
@@ -244,10 +250,23 @@ const infoWork = [
     {
         id: 'implantes',
         title: 'Implantes y Extracciones Dentales',
-        description: 'Los implantes y extracciones dentales son procedimientos clave para mantener la funcionalidad y la salud bucal. Las extracciones dentales se realizan cuando un pieza dentaria está dañada irreversiblemente, genera dolor o representa un riesgo para las piezas dentarias vecinas, incluyendo casos como muelas del juicio o caries severas. Por otro lado, los implantes dentales son una solución permanente para reemplazar las piezas dentarias perdidas, mediante la colocación de tornillos de titanio que actúan como raíces artificiales, sobre los que se fijan coronas o prótesis.',
+        description: 'Si perdiste una pieza dental y querés recuperar la estética y funcionalidad de tu sonrisa, los implantes dentales son la mejor solución. En Pinasco Odontología, trabajamos con tecnología avanzada y materiales de alta calidad para garantizar resultados seguros y duraderos.',
+        titleText1: '¿Cómo es el procedimiento?',
+        text1: [
+            'Evaluación y planificación personalizada: Analizamos tu caso con estudios específicos para diseñar un plan de tratamiento adaptado a tus necesidades.',
+            'Colocación del implante: Se inserta quirúrgicamente un tornillo de titanio en el hueso, que actuará como la raíz del diente.',
+            'Cicatrización y osteointegración: Esperamos el tiempo necesario para que el implante se fije correctamente al hueso.',
+            'Colocación de la corona definitiva: Diseñamos una prótesis personalizada para que tu nueva pieza luzca y funcione como un diente natural.'
+        ],
+        titleText2: 'Beneficios de los implantes dentales',
+        text2: [
+            'Recuperás la funcionalidad y estética de tu sonrisa.',
+            'Evitás la pérdida ósea y el desplazamiento de los dientes vecinos.',
+            'Son una solución fija y duradera, sin necesidad de adhesivos.',
+            'Brindan comodidad y confianza para hablar y masticar con naturalidad.'
+        ],
         img: implantesImg,
         btnContent: 'Quiero mi Implante Dental'
-        
     },
     {
         id: 'protesis',
@@ -345,7 +364,24 @@ const infoWork = [
         ],
         img: ortodonciaImg,
         btnContent: 'Necesito Ortodoncia'
-      }
+    },
+    {
+        id: 'odontopediatria',
+        title: 'Odontopediatría',
+        description: 'En Pinasco Odontología, sabemos lo importante que es generar una experiencia positiva en los más pequeños. Nuestro enfoque en odontopediatría está basado en la paciencia, el cuidado y la prevención, para que cada visita sea una experiencia agradable y libre de miedo.',
+        titleText1: '¿Cómo trabajamos con los niños?',
+        text1: [
+            '✅ Adaptación y confianza: Nos tomamos el tiempo necesario para que los niños se sientan cómodos y seguros.',
+            '✅ Prevención y educación: Enseñamos hábitos saludables desde la infancia para evitar problemas futuros.',
+            '✅ Tratamientos sin miedo: Aplicamos técnicas amigables y minimizamos la incomodidad en cada procedimiento.',
+            '✅ Cuidado integral: Desde la primera consulta hasta el recambio dentario, acompañamos cada etapa del crecimiento.'
+        ],
+        text2: [
+            '🌟 Cuidar la sonrisa de los más pequeños es nuestra misión. Si querés que tu hijo tenga una experiencia positiva en el dentista, en Pinasco Odontología estamos para ayudar.'
+        ],
+        img: odontopediatria,
+        btnContent: 'Agendar Consulta'
+    }
 ];
 
 const peopleOpinions = [
