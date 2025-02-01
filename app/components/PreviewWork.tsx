@@ -1,4 +1,4 @@
-
+'useclient';
 import { FaTooth } from "react-icons/fa";
 
 import { bebas, montserrat } from "@/app/fonts/fonts";
@@ -6,7 +6,7 @@ import { bebas, montserrat } from "@/app/fonts/fonts";
 
   import Link from "next/link";
   import { IoIosArrowRoundForward } from "react-icons/io";
-import { AlertDialog, AlertDialogTrigger, AlertDialogContent, AlertDialogHeader, AlertDialogTitle, AlertDialogDescription, AlertDialogFooter, AlertDialogCancel, AlertDialogAction } from "@/app/components/ui/alert-dialog";
+import { AlertDialog, AlertDialogTrigger, AlertDialogContent, AlertDialogHeader, AlertDialogTitle, AlertDialogDescription, AlertDialogFooter, AlertDialogCancel } from "@/app/components/ui/alert-dialog";
   
   export const PreviewWork = () => {
       return (
@@ -44,40 +44,42 @@ import { AlertDialog, AlertDialogTrigger, AlertDialogContent, AlertDialogHeader,
               </p>
               { name === "odontologiaDigital" ? (
                 <AlertDialog>
-                    <AlertDialogTrigger>
-                        <button className={`flex items-center justify-center w-[140px] md:w-[150px] gap-2 hover:gap-5 mt-5 px-4 py-2 border border-[#00a2af] bg-[#00a2af] text-white font-semibold text-sm md:text-base rounded-full shadow-md transition-all duration-200 hover:bg-[#008895] hover:border-[#008895]`}>
+                <AlertDialogTrigger>
+                    <button className={`flex items-center justify-center w-[140px] md:w-[150px] gap-2 hover:gap-5 mt-5 px-4 py-2 border border-[#00a2af] bg-[#00a2af] text-white font-semibold text-sm md:text-base rounded-full shadow-md transition-all duration-200 hover:bg-[#008895] hover:border-[#008895]`}>
                         <p>Ver Más</p>
                         <IoIosArrowRoundForward size={24} />
-                        </button>
-                    </AlertDialogTrigger>
-                    <AlertDialogContent >
-                        <AlertDialogHeader>
-                            <AlertDialogTitle className={`text-3xl font-semibold text-[#00a2af] ${bebas.className}`}>
-                                Odontología Digital
-                            </AlertDialogTitle>
-                        </AlertDialogHeader>
-                        <div className="flex flex-col items-center gap-5">
-                            <AlertDialogDescription className={`text-zinc-600 text-base ${montserrat.className}`}>
-                            <video
-                            className="w-full h-full"
-                            controls
-                            muted
-                            loop
-                            >
-                                <source src="/videos/odontologiaDigital" type="video/mp4" />
-                                Tu navegador no soporta el elemento de video.
-                        </video>
-                            </AlertDialogDescription>
-                            <AlertDialogFooter>
-                                <AlertDialogCancel asChild  className="w-[100px] md:w-[150px]">
-                                    <button className="w-full h-full flex items-center justify-center text-[#00a2af] font-semibold text-sm md:text-base">
-                                        Cerrar
-                                    </button>
-                                </AlertDialogCancel>
-                            </AlertDialogFooter>
-                        </div>
-                    </AlertDialogContent>
-                </AlertDialog>
+                    </button>
+                </AlertDialogTrigger>
+                <AlertDialogContent className="w-full md:w-[70%] max-w-[900px]">
+                    <AlertDialogHeader>
+                        <AlertDialogTitle className={`text-3xl font-semibold text-[#00a2af] ${bebas.className}`}>
+                            Odontología Digital
+                        </AlertDialogTitle>
+                    </AlertDialogHeader>
+                        <AlertDialogDescription className=" aspect-video bg-black rounded-lg flex flex-col items-center ">
+                            <div className="w-[30%] h-[20%]">
+                                <video
+                                    className=""
+                                    controls
+                                    muted
+                                    loop
+                                >
+                                    <source src="/videos/odontologiaDigital.mp4" type="video/mp4" />
+                                    Tu navegador no soporta el elemento de video.
+                                </video>
+                            </div>
+                        </AlertDialogDescription>
+                        <AlertDialogFooter>
+                            <AlertDialogCancel asChild className="w-[100px] md:w-[150px]">
+                                <button className="w-full h-full flex items-center justify-center text-[#00a2af] font-semibold text-sm md:text-base">
+                                    Cerrar
+                                </button>
+                            </AlertDialogCancel>
+                        </AlertDialogFooter>
+                </AlertDialogContent>
+            </AlertDialog>
+            
+            
               ) : (
                 <Link
                   href="/work"
