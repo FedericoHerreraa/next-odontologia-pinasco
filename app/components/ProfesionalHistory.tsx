@@ -16,28 +16,6 @@ export const ProfesionalHistory = () => {
             <div className="flex flex-col md:flex-row gap-12 w-[90%] md:w-[80%]">
                 <div className="flex flex-col bg-white shadow-lg overflow-hidden md:w-1/2 rounded-t-[200px]">
                     <Image 
-                        src={Micaela} 
-                        alt="Micaela Pinasco" 
-                        width={300}  
-                        className="w-full rounded-t-[200px]" 
-                    />
-                    <div className="md:p-8 p-5">
-                        <h2 className={`text-3xl font-bold text-[#00a2af] text-center ${montserrat.className}`}>Od. Micaela González Pinasco</h2>
-                        <p className="text-gray-600 mt-4 text-base">
-                            ▪ Odontóloga graduada en la Facultad de Odontología de la Universidad de Buenos Aires (2014).<br />
-                            ▪ Formación en Implantología Oral con el Dr. Mariano Amer.<br />
-                            ▪ Formación en Estética y Rehabilitación Oral en UBA, dirigida por el Dr. Carlos Zanotto.<br />
-                            ▪ Ex ayudante de cátedra en Operatoria Dental en la Universidad de Buenos Aires.<br />
-                            ▪ Capacitación en odontología restauradora indirecta en el Porcelain Workshop dictado por el Dr. Fernando Marcos Soto.<br />
-                            ▪ Entrenamiento en rehabilitación protésica en implantes en el Titanium Workshop con el Dr. Fernando Marcos Soto.<br />
-                            ▪ Curso de Estética en Sector Anterior con el Dr. Andrés Román.<br />
-                            ▪ Participación en campañas de extensión universitaria.<br />
-                        </p>
-                    </div>
-                </div>
-
-                <div className="flex flex-col bg-white shadow-lg overflow-hidden md:w-1/2 rounded-t-[200px]">
-                    <Image 
                         src={Laura} 
                         alt="Laura Pinasco" 
                         width={300} 
@@ -62,6 +40,27 @@ export const ProfesionalHistory = () => {
                                 ▪ Organizadora de PENN ENDO GLOBAL ARGENTINA 2018<br />
                                 ▪ Dictado de clases y participación académica en la Universidad Complutense de Madrid en el marco de movilidad académica internacional 2018<br />
                                 ▪ Coautora en premios de trabajos de investigación presentados en el país y en el exterior
+                        </p>
+                    </div>
+                </div>
+                <div className="flex flex-col bg-white shadow-lg overflow-hidden md:w-1/2 rounded-t-[200px]">
+                    <Image 
+                        src={Micaela} 
+                        alt="Micaela Pinasco" 
+                        width={300}  
+                        className="w-full rounded-t-[200px]" 
+                    />
+                    <div className="md:p-8 p-5">
+                        <h2 className={`text-3xl font-bold text-[#00a2af] text-center ${montserrat.className}`}>Od. Micaela González Pinasco</h2>
+                        <p className="text-gray-600 mt-4 text-base">
+                            ▪ Odontóloga graduada en la Facultad de Odontología de la Universidad de Buenos Aires (2014).<br />
+                            ▪ Formación en Implantología Oral con el Dr. Mariano Amer.<br />
+                            ▪ Formación en Estética y Rehabilitación Oral en UBA, dirigida por el Dr. Carlos Zanotto.<br />
+                            ▪ Ex ayudante de cátedra en Operatoria Dental en la Universidad de Buenos Aires.<br />
+                            ▪ Capacitación en odontología restauradora indirecta en el Porcelain Workshop dictado por el Dr. Fernando Marcos Soto.<br />
+                            ▪ Entrenamiento en rehabilitación protésica en implantes en el Titanium Workshop con el Dr. Fernando Marcos Soto.<br />
+                            ▪ Curso de Estética en Sector Anterior con el Dr. Andrés Román.<br />
+                            ▪ Participación en campañas de extensión universitaria.<br />
                         </p>
                     </div>
                 </div>
