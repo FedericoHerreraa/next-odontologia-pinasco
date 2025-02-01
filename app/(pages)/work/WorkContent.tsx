@@ -50,6 +50,7 @@ export const WorkContent = () => {
         window.open(`https://wa.me/${phoneNumber}?text=${message}`, "_blank");
     }
 
+    
     return (
         <div className="min-h-[100vh]">
             <p className={`text-center mt-10 mb-3 text-zinc-500 md:text-lg text-base ${montserrat.className}`}>Descubrí lo que hacemos cada día.</p>
