@@ -28,7 +28,7 @@ export const LandingPage = () => {
         <Header />
         <div className="flex flex-col justify-center items-center ">
           <div className="md:w-1/2 flex flex-col items-center gap-5">
-            <div className={`flex md:justify-start justify-center bg-white rounded-full md:py-32 md:px-20 py-20 px-10 bg-opacity-80 transition-transform duration-700 ${isLoaded ? "scale-100" : "scale-0"}`}>
+            <div className={`flex md:justify-start justify-center bg-white rounded-full md:py-32 md:px-20 py-20 px-10 bg-opacity-80 transition-transform duration-1000 ${isLoaded ? "scale-100" : "scale-0"}`}>
               <Image
                 src={logoVertical}
                 alt="logo"
