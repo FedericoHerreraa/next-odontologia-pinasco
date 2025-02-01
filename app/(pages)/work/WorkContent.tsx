@@ -152,13 +152,14 @@ export const WorkContent = () => {
                                 <div className="mt-10">
                                     <button
                                         onClick={() => navigateToWhatsApp()} 
-                                        className="border-l-2 border-l-[#46bcc9] bg-cyan-50 p-2 pl-3 flex items-center gap-2">
-                                        <p className={`${montserrat.className} hover:pr-2 transition-all duration-150`}>{item.btnContent}</p>
-                                        <GoArrowRight size={25} className="text-[#46bcc9]"/>
+                                        className="bg-[#00a2af] bg-opacity-70 p-4 rounded-lg flex items-center gap-2"
+                                    >
+                                        <p className={`${montserrat.className} hover:pr-2 transition-all duration-150 text-zinc-100`}>{item.btnContent}</p>
+                                        <GoArrowRight size={25} className="text-zinc-100"/>
                                     </button>
                                 </div>
                             </div>
-                            <div className="md:w-1/2 ">
+                            <div className="md:w-1/2">
                                 <Image 
                                     src={item.img || ''}
                                     alt={item.title}

@@ -10,7 +10,6 @@ import Marquee from "react-fast-marquee"
 
 // Images
 import camilla2 from '@/app/img/history/camilla2.jpeg'
-// import camilla3 from '@/app/img/history/camilla3.png'
 import consulta from '@/app/img/history/consulta.jpeg'
 import trabajando from '@/app/img/history/trabajando.jpg'
 import trabajando2 from '@/app/img/history/trabajando2.jpg'
@@ -66,7 +65,7 @@ export const HistoryContent = () => {
                             </p>
                         </div>
                         <div className="text-center p-4 rounded-lg">
-                            <h3 className={`text-2xl font-semibold text-[#00a2af] ${bebas.className}`}>Enfoque en el cliente</h3>
+                            <h3 className={`text-2xl font-semibold text-[#00a2af] ${bebas.className}`}>Enfoque en el paciente</h3>
                             <p className={`text-gray-600 ${montserrat.className}`}>
                                 Tu salud bucal es nuestra motivación. Trabajamos en equipo para lograr la sonrisa que buscas y necesitas.
                             </p>
