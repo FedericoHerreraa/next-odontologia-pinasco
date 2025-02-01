@@ -1,11 +1,12 @@
 'use client'
 
+import { useState, useEffect } from "react";
+import Link from "next/link";
+import Image from "next/image";
 import { CiMemoPad } from "react-icons/ci";
 import bgLanding from '@/app/img/background/bg-landing.png'
 import { useMobileView } from "@/app/context/MobileView";
 import { montserrat } from "@/app/fonts/fonts";
-import Link from "next/link";
-import Image from "next/image";
 import logoVertical from '@/app/img/logos/LogoVertical@2x.png'
 import { Header } from "./Header";
 
@@ -13,6 +14,11 @@ import { Header } from "./Header";
 
 export const LandingPage = () => {
   const { isMobile } = useMobileView();
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  useEffect(() => {
+    setIsLoaded(true);
+  }, [])
 
   return (
       <div
@@ -22,7 +28,7 @@ export const LandingPage = () => {
         <Header />
         <div className="flex flex-col justify-center items-center ">
           <div className="md:w-1/2 flex flex-col items-center gap-5">
-            <div className="flex md:justify-start justify-center bg-white rounded-full md:py-32 md:px-20 py-20 px-10 bg-opacity-80">
+            <div className={`flex md:justify-start justify-center bg-white rounded-full md:py-32 md:px-20 py-20 px-10 bg-opacity-80 transition-transform duration-700 ${isLoaded ? "scale-100" : "scale-0"}`}>
               <Image
                 src={logoVertical}
                 alt="logo"
