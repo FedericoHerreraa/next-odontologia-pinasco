@@ -137,7 +137,7 @@ const info = [
     name: "odontologiaRestauradora",
     title: "Odontología restauradora",
     description:
-      "La odontología restauradora se centra en abordar problemas dentales existentes con el objetivo de devolver la funcionalidad y la estética a la sonrisa del paciente. Esta disciplina abarca una variedad de tratamientos especializados, que incluyen: tratamientos de conductos, cuidado de encías, prótesis dentales, implantes y cirugías correctivas.",
+      "La odontología restauradora se centra en abordar problemas dentales existentes con el objetivo de devolver la funcionalidad y la estética a la sonrisa del paciente. Esta disciplina abarca una variedad de tratamientos especializados, que incluyen: eliminación de caries y restauraciones con resinas, tratamientos de conductos, cuidado de encías, prótesis dentales, implantes y cirugías correctivas.",
   },
 ];
 
