@@ -66,7 +66,7 @@ export const HistoryContent = () => {
                             </p>
                         </div>
                         <div className="text-center p-4 rounded-lg">
-                            <h3 className={`text-2xl font-semibold text-[#00a2af] ${bebas.className}`}>Enfoque en el cliente</h3>
+                            <h3 className={`text-2xl font-semibold text-[#00a2af] ${bebas.className}`}>Enfoque en el paciente</h3>
                             <p className={`text-gray-600 ${montserrat.className}`}>
                                 Tu salud bucal es nuestra motivación. Trabajamos en equipo para lograr la sonrisa que buscas y necesitas.
                             </p>
