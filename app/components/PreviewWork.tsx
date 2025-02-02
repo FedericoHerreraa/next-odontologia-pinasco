@@ -94,15 +94,15 @@ const Card = ({
               </AlertDialogTitle>
             </AlertDialogHeader>
             <AlertDialogDescription className="aspect-video bg-black rounded-lg flex flex-col items-center ">
-              <div className="w-[30%] h-[20%]">
-                <video className="" controls muted loop>
+              <span className="w-[30%] h-[20%]">
+                <video controls muted loop>
                   <source
                     src="/videos/odontologiaDigital.mp4"
                     type="video/mp4"
                   />
                   Tu navegador no soporta el elemento de video.
                 </video>
-              </div>
+              </span>
             </AlertDialogDescription>
             <AlertDialogFooter>
               <AlertDialogCancel asChild className="w-[100px] md:w-[150px]">
