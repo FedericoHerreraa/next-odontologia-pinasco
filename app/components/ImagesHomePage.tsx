@@ -3,9 +3,6 @@
 import { bebas, montserrat } from "@/app/fonts/fonts"
 import Image from "next/image";
 import camilla from "@/app/img/history/camilla.jpg"
-// import salaEspera from "@/app/img/history/salaEspera.jpg"
-// import consultorio from "@/app/img/history/consultorio.jpg"
-
 import salaEspera2 from '@/app/img/history/salaEspera2.png'
 import camilla2 from '@/app/img/history/camilla3.png'
 

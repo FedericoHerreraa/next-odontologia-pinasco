@@ -21,8 +21,6 @@ export const Location = () => {
                 </div>
                 <iframe 
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.1360418158156!2d-58.47316252370121!3d-34.55011075467002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb69ba4c8d1bd%3A0xecb6db762fa74929!2sCris%C3%B3logo%20Larralde%202627%2C%20C1429BTG%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1738537688504!5m2!1ses!2sar" 
-                    // width="600" 
-                    // height="450" 
                     loading="lazy" 
                     className="border border-zinc-100 rounded-lg shadow-xl md:w-2/3 md:h-[50vh] h-[50vh] w-full"
                 ></iframe>
