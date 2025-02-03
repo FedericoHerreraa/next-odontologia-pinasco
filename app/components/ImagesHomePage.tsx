@@ -3,8 +3,8 @@
 import { bebas, montserrat } from "@/app/fonts/fonts"
 import Image from "next/image";
 import camilla from "@/app/img/history/camilla.jpg"
-import salaEspera from "@/app/img/history/salaEspera.jpg"
-import consultorio from "@/app/img/history/consultorio.jpg"
+import salaEspera2 from '@/app/img/history/salaEspera2.png'
+import camilla2 from '@/app/img/history/camilla3.png'
 
 export const ImagesHomePage = () => {
     return (
@@ -50,11 +50,11 @@ const info = [
     {
         title: "Nuestro Consultorio",
         description: "Nuestro consultorio está equipado con la última tecnología en odontología, para brindarte un servicio de calidad y profesionalismo.",
-        img: consultorio
+        img: salaEspera2
     },
     {
         title: "Sala de Espera",
         description: "Nuestra sala de espera está equipada con un ambiente moderno y acogedor, pensado para brindarte tranquilidad antes de tu consulta.",
-        img: salaEspera
+        img: camilla2
     },
 ];
