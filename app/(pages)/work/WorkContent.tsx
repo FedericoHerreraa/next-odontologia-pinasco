@@ -21,6 +21,7 @@ import traumatismos from '@/app/img/icons/traumatismodental.png'
 import ortodoncia from '@/app/img/icons/ortodoncia.png'
 import placa from '@/app/img/icons/placa.png'
 import implantes from '@/app/img/icons/implantes.png'
+import odontopediatriaicon from '@/app/img/icons/odontopediatria.png'
 
 // Images
 import placasDentales from '@/app/img/work/placas-dentales.webp'
@@ -225,7 +226,7 @@ const icons = [
     {
         id: 'odontopediatria',
         title: "Odontopediatría",
-        icon: ortodoncia
+        icon: odontopediatriaicon
     },
 ]
 
