@@ -48,13 +48,13 @@ const info = [
         img: camilla
     },
     {
-        title: "Nuestro Consultorio",
-        description: "Nuestro consultorio está equipado con la última tecnología en odontología, para brindarte un servicio de calidad y profesionalismo.",
+        title: "Sala de Espera",
+        description: "Nuestra sala de espera está equipada con un ambiente moderno y acogedor, pensado para brindarte tranquilidad antes de tu consulta.",
         img: salaEspera2
     },
     {
-        title: "Sala de Espera",
-        description: "Nuestra sala de espera está equipada con un ambiente moderno y acogedor, pensado para brindarte tranquilidad antes de tu consulta.",
+        title: "Nuestro Consultorio",
+        description: "Nuestro consultorio está equipado con la última tecnología en odontología, para brindarte un servicio de calidad y profesionalismo.",
         img: camilla2
     },
 ];
