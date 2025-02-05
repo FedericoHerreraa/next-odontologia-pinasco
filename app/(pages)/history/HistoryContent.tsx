@@ -9,10 +9,10 @@ import Image from "next/image";
 import Marquee from "react-fast-marquee"
 
 // Images
-import camilla2 from '@/app/img/history/camilla2.jpeg'
 import consulta from '@/app/img/history/consulta.jpeg'
 import trabajando from '@/app/img/history/trabajando.jpg'
 import trabajando2 from '@/app/img/history/trabajando2.jpg'
+import trabajando3 from '@/app/img/history/trabajando3.png'
 
 
 export const HistoryContent = () => {
@@ -110,11 +110,10 @@ export const HistoryContent = () => {
 };
 
 const images = [
-    { id:1, src: camilla2, alt: "Camilla" },
-    // { id:2, src: camilla3, alt: "Camilla 3" },
+    { id:1, src: trabajando3, alt: "Camilla" },
     { id:2, src: consulta, alt: "Consulta" },
-    { id:3, src: camilla2, alt: "Camilla" },
     { id:4, src: trabajando, alt: "Consulta" },
+    { id:3, src: trabajando3, alt: "Camilla" },
     { id:5, src: trabajando2, alt: "Consulta" },
 ];
 
