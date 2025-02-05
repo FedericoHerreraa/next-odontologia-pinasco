@@ -154,10 +154,10 @@ export const WorkContent = () => {
                                 <div className="mt-10">
                                     <button
                                         onClick={() => navigateToWhatsApp()} 
-                                        className="bg-[#00a2af] bg-opacity-70 p-4 rounded-lg flex items-center gap-2"
+                                        className="border-2 border-[#00a2af] bg-zinc-100 px-4 py-2 rounded-full flex items-center gap-2 hover:gap-5 transition-all duration-150"
                                     >
-                                        <p className={`${montserrat.className} hover:pr-2 transition-all duration-150 text-zinc-100`}>{item.btnContent}</p>
-                                        <GoArrowRight size={25} className="text-zinc-100"/>
+                                        <p className={`${montserrat.className}   text-zinc-900`}>{item.btnContent}</p>
+                                        <GoArrowRight size={25} className="text-[#00a2af]"/>
                                     </button>
                                 </div>
                             </div>
