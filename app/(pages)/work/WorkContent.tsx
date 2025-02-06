@@ -1,6 +1,5 @@
 'use client'
 
-
 import { bebas, montserrat } from "@/app/fonts/fonts"
 import { TitleSection } from "./TitleSection"
 import Marquee from "react-fast-marquee"
@@ -22,8 +21,9 @@ import ortodoncia from '@/app/img/icons/ortodoncia.png'
 import placa from '@/app/img/icons/placa.png'
 import implantes from '@/app/img/icons/implantes.png'
 import odontopediatriaicon from '@/app/img/icons/odontopediatria.png'
+import buttonTreatments from '@/app/img/icons/treatmentButton.png'
 
-// Images
+// Fake Images
 import placasDentales from '@/app/img/work/placas-dentales.webp'
 
 // Real Images
@@ -152,12 +152,14 @@ export const WorkContent = () => {
                                     </div>
                                 )}
                                 <div className="mt-10">
-                                    <button
-                                        onClick={() => navigateToWhatsApp()} 
-                                        className="bg-[#00a2af] bg-opacity-70 p-4 rounded-lg flex items-center gap-2"
-                                    >
-                                        <p className={`${montserrat.className} hover:pr-2 transition-all duration-150 text-zinc-100`}>{item.btnContent}</p>
-                                        <GoArrowRight size={25} className="text-zinc-100"/>
+                                    <button onClick={() => navigateToWhatsApp()}>
+                                        <Image
+                                            src={buttonTreatments}
+                                            alt="pinasco button"
+                                            width={350}
+                                            height={100}
+                                            className="cursor-pointer"
+                                        />
                                     </button>
                                 </div>
                             </div>
