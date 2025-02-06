@@ -16,7 +16,7 @@ export const CallToHistory = () => {
     >
       <Link
         href="/history"
-        className="w-fit md:h-auto h-fit md:px-6 px-3 md:py-6 py-2 bg-[#00a2af] bg-opacity-75 text-center rounded-md shadow-xl hover:bg-[#008b96] md:mt-[25%]  mt-[50%]"
+        className="w-fit md:h-auto h-fit md:px-6 px-3 md:py-6 py-2 bg-[#00a2af] bg-opacity-75 text-center rounded-md shadow-xl hover:bg-[#008b96] md:mt-[18%] mt-[50%]"
       >
         <p
           className={`text-white font-thin md:text-3xl text-xl ${bebas.className}`}

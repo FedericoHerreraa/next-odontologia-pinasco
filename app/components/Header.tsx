@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
+import { useRouter } from "next/navigation";
 
 import { useMobileView } from '@/app/context/MobileView';
 import { montserrat, bebas } from "@/app/fonts/fonts";
@@ -32,6 +33,7 @@ import {
 
 export const Header = () => {
     const pathname = usePathname();
+    const router = useRouter();
     const { isMobile } = useMobileView();
     const [isOpen, setIsOpen] = useState(false)
 
@@ -39,11 +41,23 @@ export const Header = () => {
         const element = document.getElementById(sectionId);
         if (element) element.scrollIntoView({ behavior: "smooth" });
     };
+
+    const handleClick = () => {
+        if (pathname !== "/") {
+            router.push("/");
+            
+            setTimeout(() => {
+                scrollToSection("location");
+            }, 500); 
+        } else {
+            scrollToSection("location");
+        }
+    };
     
     return (
         <header className="flex flex-col items-center">
             <section className="flex items-center justify-end gap-2 border-b md:pr-10 pr-2 border-zinc-900 border-opacity-20 w-full bg-zinc-200 bg-opacity-60">
-                <div onClick={() => scrollToSection("location")}>
+                <div onClick={handleClick}>
                     <MdLocationPin size={20} className="cursor-pointer text-red-900 "/>
                 </div>
                 <Link 

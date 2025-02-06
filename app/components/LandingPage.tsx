@@ -22,18 +22,18 @@ export const LandingPage = () => {
 
   return (
       <div
-        className="bg-cover opacity-80 md:bg-fixed bg-center md:h-[100vh] h-[80vh] mb-10"
+        className="bg-cover opacity-80 md:bg-fixed bg-center md:min-h-[100vh] h-[80vh] mb-10"
         style={{ backgroundImage: `url(${bgLanding.src})` }}
       >
         <Header />
         <div className="flex flex-col justify-center items-center ">
           <div className="md:w-1/2 flex flex-col items-center gap-5">
-            <div className={`flex md:justify-start justify-center bg-white rounded-full md:py-32 md:px-20 py-20 px-10 bg-opacity-80 transition-transform duration-1000 ${isLoaded ? "scale-100" : "scale-0"}`}>
+            <div className={`flex md:justify-start justify-center bg-white rounded-full md:py-24 md:px-12 py-20 px-10 bg-opacity-80 transition-transform duration-1000 ${isLoaded ? "scale-100" : "scale-0"}`}>
               <Image
                 src={logoVertical}
                 alt="logo"
-                width={isMobile ? 200 : 270}
-                height={isMobile ? 100 : 130}
+                width={isMobile ? 200 : 250}
+                height={isMobile ? 100 : 110}
               />
             </div>
             
