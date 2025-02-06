@@ -21,7 +21,7 @@ import ortodoncia from '@/app/img/icons/ortodoncia.png'
 import placa from '@/app/img/icons/placa.png'
 import implantes from '@/app/img/icons/implantes.png'
 import odontopediatriaicon from '@/app/img/icons/odontopediatria.png'
-import buttonTreatments from '@/app/img/icons/treatmentButton3.png'
+import buttonTreatments from '@/app/img/icons/treatmentButton.png'
 
 // Fake Images
 import placasDentales from '@/app/img/work/placas-dentales.webp'
@@ -44,12 +44,12 @@ export const WorkContent = () => {
         if (element) element.scrollIntoView({ behavior: "smooth" });
     };
 
-    // const navigateToWhatsApp = () => {
-    //     const phoneNumber = process.env.NEXT_PUBLIC_PHONE_NUMBER
-    //     const message = encodeURIComponent("Hola, me gustaria hacer una consulta...")
+    const navigateToWhatsApp = () => {
+        const phoneNumber = process.env.NEXT_PUBLIC_PHONE_NUMBER
+        const message = encodeURIComponent("Hola, me gustaria hacer una consulta...")
 
-    //     window.open(`https://wa.me/${phoneNumber}?text=${message}`, "_blank");
-    // }
+        window.open(`https://wa.me/${phoneNumber}?text=${message}`, "_blank");
+    }
 
     
     return (
@@ -152,20 +152,15 @@ export const WorkContent = () => {
                                     </div>
                                 )}
                                 <div className="mt-10">
-                                    {/* <button
-                                        onClick={() => navigateToWhatsApp()} 
-                                        className=" bg-[#00a2af] bg-opacity-70 px-4 py-2 rounded-full flex items-center gap-2 hover:gap-5 transition-all duration-150"
-                                    >
-                                        <p className={`${montserrat.className}   text-zinc-100`}>{item.btnContent}</p>
-                                        <GoArrowRight size={25} className="text-zinc-100"/>
-                                    </button> */}
-                                    <Image
-                                        src={buttonTreatments}
-                                        alt="pinasco button"
-                                        width={350}
-                                        height={100}
-                                        className="cursor-pointer"
-                                    />
+                                    <button onClick={() => navigateToWhatsApp()}>
+                                        <Image
+                                            src={buttonTreatments}
+                                            alt="pinasco button"
+                                            width={350}
+                                            height={100}
+                                            className="cursor-pointer"
+                                        />
+                                    </button>
                                 </div>
                             </div>
                             <div className="md:w-1/2">
