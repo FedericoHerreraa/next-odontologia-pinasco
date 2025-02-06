@@ -21,7 +21,7 @@ import ortodoncia from '@/app/img/icons/ortodoncia.png'
 import placa from '@/app/img/icons/placa.png'
 import implantes from '@/app/img/icons/implantes.png'
 import odontopediatriaicon from '@/app/img/icons/odontopediatria.png'
-import buttonTreatments from '@/app/img/icons/treatmentButton2.png'
+import buttonTreatments from '@/app/img/icons/treatmentButton3.png'
 
 // Fake Images
 import placasDentales from '@/app/img/work/placas-dentales.webp'
@@ -162,8 +162,9 @@ export const WorkContent = () => {
                                     <Image
                                         src={buttonTreatments}
                                         alt="pinasco button"
-                                        width={400}
+                                        width={350}
                                         height={100}
+                                        className="cursor-pointer"
                                     />
                                 </div>
                             </div>
