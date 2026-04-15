@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import "./globals.css";
-// import { Header } from "./components/Header";
 import { WhatsAppIcon } from "./components/WhatsAppIcon";
 import { MobileViewProvider } from "./context/MobileView";
 import { Footer } from "./components/Footer";
+import { MetaPixel } from "./components/MetaPixel";
 
 export const metadata: Metadata = {
   title: "Pinasco Odontologia",
@@ -18,8 +18,8 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <link rel="icon" href="https://res.cloudinary.com/dikdtnj2b/image/upload/v1736119219/P_efhkut.png"/>
       </head>
       <body>
+        <MetaPixel />
         <MobileViewProvider>
-          {/* <Header /> */}
           {children}
           <WhatsAppIcon />
           <Footer />
