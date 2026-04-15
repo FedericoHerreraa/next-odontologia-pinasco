@@ -12,6 +12,7 @@ import { Header } from "./Header";
 
 
 
+
 export const LandingPage = () => {
   const { isMobile } = useMobileView();
   const [isLoaded, setIsLoaded] = useState(false);
