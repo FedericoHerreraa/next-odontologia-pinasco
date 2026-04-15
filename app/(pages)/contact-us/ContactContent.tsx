@@ -4,6 +4,7 @@
 import img from "@/app/img/background/contactoBackground.png";
 import { bebas, montserrat } from "@/app/fonts/fonts";
 import { useState } from 'react';
+import { metaTrackLead } from "@/lib/metaPixel";
 
 export const ContactContent = () => {
     const [formData, setFormData] = useState({
@@ -23,7 +24,9 @@ export const ContactContent = () => {
         }));
     };
 
-    const onSubmit = () => {
+    const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+        metaTrackLead();
         const { name, lastName, email, phone, subject, message } = formData;
         const phoneNumber = process.env.NEXT_PUBLIC_PHONE_NUMBER;
 
